@@ -1,0 +1,4060 @@
+{
+  "abiyuch, raw": {
+    "cal_per_100g": 69,
+    "category": "fruit",
+    "default_serving_g": 114
+  },
+  "acerola juice, raw": {
+    "cal_per_100g": 23,
+    "category": "fruit",
+    "default_serving_g": 30
+  },
+  "agua de horchata": {
+    "cal_per_100g": 55,
+    "category": "beverage",
+    "default_serving_g": 240
+  },
+  "alcoholic beverage, beer, light": {
+    "cal_per_100g": 29,
+    "category": "beverage",
+    "default_serving_g": 354
+  },
+  "alcoholic beverage, beer, regular, all": {
+    "cal_per_100g": 43,
+    "category": "beverage",
+    "default_serving_g": 356
+  },
+  "alcoholic beverage, daiquiri, canned": {
+    "cal_per_100g": 125,
+    "category": "beverage",
+    "default_serving_g": 30
+  },
+  "alcoholic beverage, pina colada, canned": {
+    "cal_per_100g": 237,
+    "category": "beverage",
+    "default_serving_g": 222
+  },
+  "alcoholic beverage, rice (sake)": {
+    "cal_per_100g": 134,
+    "category": "beverage",
+    "default_serving_g": 29
+  },
+  "alcoholic beverage, whiskey sour": {
+    "cal_per_100g": 149,
+    "category": "beverage",
+    "default_serving_g": 65
+  },
+  "alcoholic beverage, wine, cooking": {
+    "cal_per_100g": 50,
+    "category": "beverage",
+    "default_serving_g": 5
+  },
+  "alcoholic beverage, wine, dessert, dry": {
+    "cal_per_100g": 152,
+    "category": "beverage",
+    "default_serving_g": 103
+  },
+  "alcoholic beverage, wine, light": {
+    "cal_per_100g": 49,
+    "category": "beverage",
+    "default_serving_g": 30
+  },
+  "alcoholic beverage, wine, table, all": {
+    "cal_per_100g": 83,
+    "category": "beverage",
+    "default_serving_g": 148
+  },
+  "alcoholic beverage, wine, table, red": {
+    "cal_per_100g": 85,
+    "category": "beverage",
+    "default_serving_g": 147
+  },
+  "alcoholic beverage, wine, table, white": {
+    "cal_per_100g": 82,
+    "category": "beverage",
+    "default_serving_g": 29
+  },
+  "alcoholic beverages, wine, rose": {
+    "cal_per_100g": 83,
+    "category": "beverage",
+    "default_serving_g": 30
+  },
+  "amaranth grain, cooked": {
+    "cal_per_100g": 102,
+    "category": "grain",
+    "default_serving_g": 246
+  },
+  "amaranth leaves, raw": {
+    "cal_per_100g": 23,
+    "category": "vegetable",
+    "default_serving_g": 14
+  },
+  "animal fat, bacon grease": {
+    "cal_per_100g": 897,
+    "category": "fat",
+    "default_serving_g": 4
+  },
+  "apples, raw, without skin": {
+    "cal_per_100g": 48,
+    "category": "fruit",
+    "default_serving_g": 216
+  },
+  "apricots, raw": {
+    "cal_per_100g": 48,
+    "category": "fruit",
+    "default_serving_g": 35
+  },
+  "arepa": {
+    "cal_per_100g": 200,
+    "category": "grain",
+    "default_serving_g": 120
+  },
+  "arrowhead, raw": {
+    "cal_per_100g": 99,
+    "category": "vegetable",
+    "default_serving_g": 12
+  },
+  "arrowroot, raw": {
+    "cal_per_100g": 65,
+    "category": "vegetable",
+    "default_serving_g": 120
+  },
+  "arroz con pollo": {
+    "cal_per_100g": 150,
+    "category": "grain",
+    "default_serving_g": 300
+  },
+  "arugula, raw": {
+    "cal_per_100g": 25,
+    "category": "vegetable",
+    "default_serving_g": 10
+  },
+  "asparagus, raw": {
+    "cal_per_100g": 20,
+    "category": "vegetable",
+    "default_serving_g": 134
+  },
+  "avocados, raw, california": {
+    "cal_per_100g": 167,
+    "category": "fruit",
+    "default_serving_g": 136
+  },
+  "avocados, raw, florida": {
+    "cal_per_100g": 120,
+    "category": "fruit",
+    "default_serving_g": 304
+  },
+  "bagels, whole grain white": {
+    "cal_per_100g": 255,
+    "category": "grain",
+    "default_serving_g": 43
+  },
+  "bamboo shoots, raw": {
+    "cal_per_100g": 27,
+    "category": "vegetable",
+    "default_serving_g": 151
+  },
+  "bananas, raw": {
+    "cal_per_100g": 89,
+    "category": "fruit",
+    "default_serving_g": 126
+  },
+  "barley, pearled, cooked": {
+    "cal_per_100g": 123,
+    "category": "grain",
+    "default_serving_g": 157
+  },
+  "barley, pearled, raw": {
+    "cal_per_100g": 352,
+    "category": "grain",
+    "default_serving_g": 200
+  },
+  "basil, fresh": {
+    "cal_per_100g": 23,
+    "category": "other",
+    "default_serving_g": 5
+  },
+  "beans, baked, home prepared": {
+    "cal_per_100g": 155,
+    "category": "protein",
+    "default_serving_g": 253
+  },
+  "beans, fava, in pod, raw": {
+    "cal_per_100g": 88,
+    "category": "vegetable",
+    "default_serving_g": 6
+  },
+  "beans, navy, mature seeds, raw": {
+    "cal_per_100g": 337,
+    "category": "protein",
+    "default_serving_g": 208
+  },
+  "beans, pink, mature seeds, raw": {
+    "cal_per_100g": 343,
+    "category": "protein",
+    "default_serving_g": 210
+  },
+  "beans, snap, green, raw": {
+    "cal_per_100g": 31,
+    "category": "vegetable",
+    "default_serving_g": 55
+  },
+  "beef, grass-fed, ground, raw": {
+    "cal_per_100g": 198,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "beet greens, raw": {
+    "cal_per_100g": 22,
+    "category": "vegetable",
+    "default_serving_g": 38
+  },
+  "beets, raw": {
+    "cal_per_100g": 43,
+    "category": "vegetable",
+    "default_serving_g": 82
+  },
+  "beverages, acai berry drink, fortified": {
+    "cal_per_100g": 62,
+    "category": "beverage",
+    "default_serving_g": 60
+  },
+  "beverages, amber, hard cider": {
+    "cal_per_100g": 56,
+    "category": "beverage",
+    "default_serving_g": 355
+  },
+  "beverages, carbonated, cola, regular": {
+    "cal_per_100g": 42,
+    "category": "beverage",
+    "default_serving_g": 492
+  },
+  "beverages, carbonated, ginger ale": {
+    "cal_per_100g": 34,
+    "category": "beverage",
+    "default_serving_g": 30
+  },
+  "beverages, carbonated, grape soda": {
+    "cal_per_100g": 43,
+    "category": "beverage",
+    "default_serving_g": 372
+  },
+  "beverages, carbonated, orange": {
+    "cal_per_100g": 48,
+    "category": "beverage",
+    "default_serving_g": 31
+  },
+  "beverages, carbonated, root beer": {
+    "cal_per_100g": 41,
+    "category": "beverage",
+    "default_serving_g": 493
+  },
+  "beverages, carbonated, tonic water": {
+    "cal_per_100g": 34,
+    "category": "beverage",
+    "default_serving_g": 30
+  },
+  "beverages, carob-flavor beverage mix, powder, prepared with whole milk": {
+    "cal_per_100g": 75,
+    "category": "beverage",
+    "default_serving_g": 256
+  },
+  "beverages, chocolate syrup": {
+    "cal_per_100g": 279,
+    "category": "beverage",
+    "default_serving_g": 300
+  },
+  "beverages, chocolate syrup, prepared with whole milk": {
+    "cal_per_100g": 90,
+    "category": "beverage",
+    "default_serving_g": 282
+  },
+  "beverages, chocolate-flavor beverage mix for milk, powder, with added nutrients, prepared with whole milk": {
+    "cal_per_100g": 89,
+    "category": "beverage",
+    "default_serving_g": 266
+  },
+  "beverages, chocolate-flavor beverage mix, powder, prepared with whole milk": {
+    "cal_per_100g": 85,
+    "category": "beverage",
+    "default_serving_g": 266
+  },
+  "beverages, cocoa mix, powder": {
+    "cal_per_100g": 398,
+    "category": "beverage",
+    "default_serving_g": 28
+  },
+  "beverages, coffee substitute, cereal grain beverage, powder, prepared with whole milk": {
+    "cal_per_100g": 65,
+    "category": "beverage",
+    "default_serving_g": 185
+  },
+  "beverages, coffee, instant, chicory": {
+    "cal_per_100g": 3,
+    "category": "beverage",
+    "default_serving_g": 179
+  },
+  "beverages, cranberry juice cocktail": {
+    "cal_per_100g": 52,
+    "category": "beverage",
+    "default_serving_g": 271
+  },
+  "beverages, eggnog-flavor mix, powder, prepared with whole milk": {
+    "cal_per_100g": 95,
+    "category": "beverage",
+    "default_serving_g": 272
+  },
+  "beverages, energy drink, amp": {
+    "cal_per_100g": 46,
+    "category": "beverage",
+    "default_serving_g": 240
+  },
+  "beverages, energy drink, citrus": {
+    "cal_per_100g": 45,
+    "category": "beverage",
+    "default_serving_g": 240
+  },
+  "beverages, energy drink, full throttle": {
+    "cal_per_100g": 46,
+    "category": "beverage",
+    "default_serving_g": 240
+  },
+  "beverages, energy drink, red bull": {
+    "cal_per_100g": 43,
+    "category": "beverage",
+    "default_serving_g": 492
+  },
+  "beverages, energy drink, rockstar": {
+    "cal_per_100g": 58,
+    "category": "beverage",
+    "default_serving_g": 480
+  },
+  "beverages, energy drink, sugar free": {
+    "cal_per_100g": 4,
+    "category": "beverage",
+    "default_serving_g": 240
+  },
+  "beverages, grape drink, canned": {
+    "cal_per_100g": 61,
+    "category": "beverage",
+    "default_serving_g": 31
+  },
+  "beverages, grape juice drink, canned": {
+    "cal_per_100g": 57,
+    "category": "beverage",
+    "default_serving_g": 31
+  },
+  "beverages, kiwi strawberry juice drink": {
+    "cal_per_100g": 47,
+    "category": "beverage",
+    "default_serving_g": 473
+  },
+  "beverages, lemonade, powder": {
+    "cal_per_100g": 376,
+    "category": "beverage",
+    "default_serving_g": 18
+  },
+  "beverages, malt liquor beverage": {
+    "cal_per_100g": 40,
+    "category": "beverage",
+    "default_serving_g": 1184
+  },
+  "beverages, malted drink mix, chocolate, powder, prepared with whole milk": {
+    "cal_per_100g": 85,
+    "category": "beverage",
+    "default_serving_g": 265
+  },
+  "beverages, malted drink mix, chocolate, with added nutrients, powder, prepared with whole milk": {
+    "cal_per_100g": 87,
+    "category": "beverage",
+    "default_serving_g": 265
+  },
+  "beverages, malted drink mix, natural, powder, prepared with whole milk": {
+    "cal_per_100g": 88,
+    "category": "beverage",
+    "default_serving_g": 265
+  },
+  "beverages, malted drink mix, natural, with added nutrients, powder, prepared with whole milk": {
+    "cal_per_100g": 86,
+    "category": "beverage",
+    "default_serving_g": 265
+  },
+  "beverages, ocean spray, cran cherry": {
+    "cal_per_100g": 46,
+    "category": "beverage",
+    "default_serving_g": 248
+  },
+  "beverages, ocean spray, cran grape": {
+    "cal_per_100g": 54,
+    "category": "beverage",
+    "default_serving_g": 240
+  },
+  "beverages, ocean spray, cran lemonade": {
+    "cal_per_100g": 45,
+    "category": "beverage",
+    "default_serving_g": 247
+  },
+  "beverages, orange juice drink": {
+    "cal_per_100g": 54,
+    "category": "beverage",
+    "default_serving_g": 263
+  },
+  "beverages, orange juice, light, no pulp": {
+    "cal_per_100g": 21,
+    "category": "beverage",
+    "default_serving_g": 240
+  },
+  "beverages, protein powder soy based": {
+    "cal_per_100g": 388,
+    "category": "beverage",
+    "default_serving_g": 45
+  },
+  "beverages, protein powder whey based": {
+    "cal_per_100g": 352,
+    "category": "beverage",
+    "default_serving_g": 32
+  },
+  "beverages, rice milk, unsweetened": {
+    "cal_per_100g": 47,
+    "category": "beverage",
+    "default_serving_g": 240
+  },
+  "beverages, rich chocolate, powder": {
+    "cal_per_100g": 372,
+    "category": "beverage",
+    "default_serving_g": 11
+  },
+  "beverages, strawberry-flavor beverage mix, powder, prepared with whole milk": {
+    "cal_per_100g": 88,
+    "category": "beverage",
+    "default_serving_g": 266
+  },
+  "beverages, tea, green, brewed, regular": {
+    "cal_per_100g": 1,
+    "category": "beverage",
+    "default_serving_g": 245
+  },
+  "beverages, tea, instant, lemon, diet": {
+    "cal_per_100g": 2,
+    "category": "beverage",
+    "default_serving_g": 30
+  },
+  "beverages, tea, oolong, brewed": {
+    "cal_per_100g": 1,
+    "category": "beverage"
+  },
+  "beverages, whey protein powder isolate": {
+    "cal_per_100g": 359,
+    "category": "beverage",
+    "default_serving_g": 86
+  },
+  "beverages, whiskey sour mix, bottled": {
+    "cal_per_100g": 87,
+    "category": "beverage",
+    "default_serving_g": 32
+  },
+  "beverages, whiskey sour mix, powder": {
+    "cal_per_100g": 383,
+    "category": "beverage",
+    "default_serving_g": 17
+  },
+  "beverages, wine, non-alcoholic": {
+    "cal_per_100g": 6,
+    "category": "beverage",
+    "default_serving_g": 29
+  },
+  "biscuits, plain or buttermilk, frozen, baked": {
+    "cal_per_100g": 338,
+    "category": "grain",
+    "default_serving_g": 28
+  },
+  "bison, ground, grass-fed, raw": {
+    "cal_per_100g": 146,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "blackberries, raw": {
+    "cal_per_100g": 43,
+    "category": "fruit",
+    "default_serving_g": 144
+  },
+  "blueberries, raw": {
+    "cal_per_100g": 57,
+    "category": "fruit",
+    "default_serving_g": 148
+  },
+  "bockwurst, pork, veal, raw": {
+    "cal_per_100g": 301,
+    "category": "protein",
+    "default_serving_g": 91
+  },
+  "borage, raw": {
+    "cal_per_100g": 21,
+    "category": "vegetable",
+    "default_serving_g": 89
+  },
+  "bratwurst, chicken, cooked": {
+    "cal_per_100g": 176,
+    "category": "protein",
+    "default_serving_g": 84
+  },
+  "bratwurst, pork, cooked": {
+    "cal_per_100g": 333,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "bratwurst, veal, cooked": {
+    "cal_per_100g": 341,
+    "category": "protein",
+    "default_serving_g": 84
+  },
+  "bread, french or vienna, whole wheat": {
+    "cal_per_100g": 239,
+    "category": "grain",
+    "default_serving_g": 48
+  },
+  "bread, multi-grain (includes whole-grain)": {
+    "cal_per_100g": 265,
+    "category": "grain",
+    "default_serving_g": 41
+  },
+  "bread, multi-grain, toasted (includes whole-grain)": {
+    "cal_per_100g": 288,
+    "category": "grain",
+    "default_serving_g": 28
+  },
+  "bread, pita, whole-wheat": {
+    "cal_per_100g": 262,
+    "category": "grain",
+    "default_serving_g": 64
+  },
+  "bread, whole-wheat, commercially prepared": {
+    "cal_per_100g": 252,
+    "category": "grain",
+    "default_serving_g": 28
+  },
+  "bread, whole-wheat, commercially prepared, toasted": {
+    "cal_per_100g": 306,
+    "category": "grain",
+    "default_serving_g": 28
+  },
+  "bread, whole-wheat, prepared from recipe": {
+    "cal_per_100g": 278,
+    "category": "grain",
+    "default_serving_g": 46
+  },
+  "bread, whole-wheat, prepared from recipe, toasted": {
+    "cal_per_100g": 305,
+    "category": "grain",
+    "default_serving_g": 42
+  },
+  "breadfruit, raw": {
+    "cal_per_100g": 103,
+    "category": "fruit",
+    "default_serving_g": 96
+  },
+  "broccoli raab, cooked": {
+    "cal_per_100g": 25,
+    "category": "vegetable",
+    "default_serving_g": 437
+  },
+  "broccoli raab, raw": {
+    "cal_per_100g": 22,
+    "category": "vegetable",
+    "default_serving_g": 40
+  },
+  "broccoli, chinese, raw": {
+    "cal_per_100g": 26,
+    "category": "vegetable"
+  },
+  "broccoli, leaves, raw": {
+    "cal_per_100g": 28,
+    "category": "vegetable"
+  },
+  "broccoli, raw": {
+    "cal_per_100g": 34,
+    "category": "vegetable",
+    "default_serving_g": 608
+  },
+  "broccoli, stalks, raw": {
+    "cal_per_100g": 28,
+    "category": "vegetable",
+    "default_serving_g": 114
+  },
+  "brussels sprouts, raw": {
+    "cal_per_100g": 43,
+    "category": "vegetable",
+    "default_serving_g": 19
+  },
+  "buckwheat flour, whole-groat": {
+    "cal_per_100g": 335,
+    "category": "grain",
+    "default_serving_g": 120
+  },
+  "buckwheat groats, roasted, cooked": {
+    "cal_per_100g": 92,
+    "category": "grain",
+    "default_serving_g": 168
+  },
+  "buckwheat groats, roasted, dry": {
+    "cal_per_100g": 346,
+    "category": "grain",
+    "default_serving_g": 164
+  },
+  "bulgur, cooked": {
+    "cal_per_100g": 83,
+    "category": "grain",
+    "default_serving_g": 182
+  },
+  "burdock root, raw": {
+    "cal_per_100g": 72,
+    "category": "vegetable",
+    "default_serving_g": 156
+  },
+  "butter, light, stick, with salt": {
+    "cal_per_100g": 499,
+    "category": "fat",
+    "default_serving_g": 14
+  },
+  "butter, salted": {
+    "cal_per_100g": 717,
+    "category": "dairy",
+    "default_serving_g": 5
+  },
+  "butter, without salt": {
+    "cal_per_100g": 717,
+    "category": "dairy",
+    "default_serving_g": 5
+  },
+  "butterbur, (fuki), raw": {
+    "cal_per_100g": 14,
+    "category": "vegetable",
+    "default_serving_g": 94
+  },
+  "cabbage, napa, cooked": {
+    "cal_per_100g": 12,
+    "category": "vegetable",
+    "default_serving_g": 109
+  },
+  "cabbage, raw": {
+    "cal_per_100g": 25,
+    "category": "vegetable",
+    "default_serving_g": 33
+  },
+  "cabbage, red, raw": {
+    "cal_per_100g": 31,
+    "category": "vegetable",
+    "default_serving_g": 70
+  },
+  "cabbage, savoy, raw": {
+    "cal_per_100g": 27,
+    "category": "vegetable",
+    "default_serving_g": 70
+  },
+  "carambola, (starfruit), raw": {
+    "cal_per_100g": 31,
+    "category": "fruit",
+    "default_serving_g": 70
+  },
+  "carbonated beverage, cream soda": {
+    "cal_per_100g": 51,
+    "category": "beverage",
+    "default_serving_g": 31
+  },
+  "cardoon, raw": {
+    "cal_per_100g": 17,
+    "category": "vegetable",
+    "default_serving_g": 178
+  },
+  "carissa, (natal-plum), raw": {
+    "cal_per_100g": 62,
+    "category": "fruit",
+    "default_serving_g": 20
+  },
+  "carrots, baby, raw": {
+    "cal_per_100g": 35,
+    "category": "vegetable",
+    "default_serving_g": 85
+  },
+  "carrots, raw": {
+    "cal_per_100g": 41,
+    "category": "vegetable",
+    "default_serving_g": 110
+  },
+  "cassava, raw": {
+    "cal_per_100g": 160,
+    "category": "vegetable",
+    "default_serving_g": 206
+  },
+  "cauliflower, green, raw": {
+    "cal_per_100g": 31,
+    "category": "vegetable",
+    "default_serving_g": 325
+  },
+  "cauliflower, raw": {
+    "cal_per_100g": 25,
+    "category": "vegetable",
+    "default_serving_g": 13
+  },
+  "celeriac, raw": {
+    "cal_per_100g": 42,
+    "category": "vegetable",
+    "default_serving_g": 156
+  },
+  "celery, raw": {
+    "cal_per_100g": 14,
+    "category": "vegetable",
+    "default_serving_g": 8
+  },
+  "celtuce, raw": {
+    "cal_per_100g": 18,
+    "category": "vegetable",
+    "default_serving_g": 8
+  },
+  "cereals ready-to-eat, weetabix whole grain cereal": {
+    "cal_per_100g": 371,
+    "category": "grain",
+    "default_serving_g": 57
+  },
+  "cereals, cream of rice, cooked with water, with salt": {
+    "cal_per_100g": 52,
+    "category": "grain",
+    "default_serving_g": 244
+  },
+  "cereals, wheatena, cooked with water": {
+    "cal_per_100g": 56,
+    "category": "grain",
+    "default_serving_g": 243
+  },
+  "cereals, wheatena, cooked with water, with salt": {
+    "cal_per_100g": 59,
+    "category": "grain",
+    "default_serving_g": 243
+  },
+  "cereals, whole wheat hot natural cereal, dry": {
+    "cal_per_100g": 342,
+    "category": "grain",
+    "default_serving_g": 31
+  },
+  "ceviche": {
+    "cal_per_100g": 90,
+    "category": "protein",
+    "default_serving_g": 200
+  },
+  "chard, swiss, raw": {
+    "cal_per_100g": 19,
+    "category": "vegetable",
+    "default_serving_g": 48
+  },
+  "chayote, fruit, raw": {
+    "cal_per_100g": 19,
+    "category": "vegetable",
+    "default_serving_g": 132
+  },
+  "cheese puffs and twists, corn based, baked, low fat": {
+    "cal_per_100g": 432,
+    "category": "other",
+    "default_serving_g": 28
+  },
+  "cheese, blue": {
+    "cal_per_100g": 353,
+    "category": "dairy",
+    "default_serving_g": 17
+  },
+  "cheese, brick": {
+    "cal_per_100g": 371,
+    "category": "dairy",
+    "default_serving_g": 28
+  },
+  "cheese, brie": {
+    "cal_per_100g": 334,
+    "category": "dairy",
+    "default_serving_g": 240
+  },
+  "cheese, camembert": {
+    "cal_per_100g": 300,
+    "category": "dairy",
+    "default_serving_g": 28
+  },
+  "cheese, caraway": {
+    "cal_per_100g": 376,
+    "category": "dairy",
+    "default_serving_g": 28
+  },
+  "cheese, cheshire": {
+    "cal_per_100g": 387,
+    "category": "dairy",
+    "default_serving_g": 28
+  },
+  "cheese, colby": {
+    "cal_per_100g": 394,
+    "category": "dairy",
+    "default_serving_g": 113
+  },
+  "cheese, cream": {
+    "cal_per_100g": 350,
+    "category": "dairy",
+    "default_serving_g": 16
+  },
+  "cheese, edam": {
+    "cal_per_100g": 357,
+    "category": "dairy",
+    "default_serving_g": 28
+  },
+  "cheese, feta": {
+    "cal_per_100g": 265,
+    "category": "dairy",
+    "default_serving_g": 150
+  },
+  "cheese, fontina": {
+    "cal_per_100g": 389,
+    "category": "dairy",
+    "default_serving_g": 108
+  },
+  "cheese, fresh, queso fresco": {
+    "cal_per_100g": 299,
+    "category": "dairy",
+    "default_serving_g": 122
+  },
+  "cheese, gjetost": {
+    "cal_per_100g": 466,
+    "category": "dairy",
+    "default_serving_g": 28
+  },
+  "cheese, gouda": {
+    "cal_per_100g": 356,
+    "category": "dairy",
+    "default_serving_g": 28
+  },
+  "cheese, gruyere": {
+    "cal_per_100g": 413,
+    "category": "dairy",
+    "default_serving_g": 15
+  },
+  "cheese, limburger": {
+    "cal_per_100g": 327,
+    "category": "dairy",
+    "default_serving_g": 134
+  },
+  "cheese, monterey": {
+    "cal_per_100g": 373,
+    "category": "dairy",
+    "default_serving_g": 28
+  },
+  "cheese, mozzarella, whole milk": {
+    "cal_per_100g": 299,
+    "category": "dairy",
+    "default_serving_g": 28
+  },
+  "cheese, mozzarella, whole milk, low moisture": {
+    "cal_per_100g": 318,
+    "category": "dairy",
+    "default_serving_g": 28
+  },
+  "cheese, muenster": {
+    "cal_per_100g": 368,
+    "category": "dairy",
+    "default_serving_g": 28
+  },
+  "cheese, neufchatel": {
+    "cal_per_100g": 253,
+    "category": "dairy",
+    "default_serving_g": 28
+  },
+  "cheese, provolone": {
+    "cal_per_100g": 351,
+    "category": "dairy",
+    "default_serving_g": 132
+  },
+  "cheese, ricotta, whole milk": {
+    "cal_per_100g": 150,
+    "category": "dairy",
+    "default_serving_g": 124
+  },
+  "cheese, romano": {
+    "cal_per_100g": 387,
+    "category": "dairy",
+    "default_serving_g": 142
+  },
+  "cheese, roquefort": {
+    "cal_per_100g": 369,
+    "category": "dairy",
+    "default_serving_g": 85
+  },
+  "cheese, swiss": {
+    "cal_per_100g": 393,
+    "category": "dairy",
+    "default_serving_g": 244
+  },
+  "cheese, tilsit": {
+    "cal_per_100g": 340,
+    "category": "dairy",
+    "default_serving_g": 170
+  },
+  "cherimoya, raw": {
+    "cal_per_100g": 75,
+    "category": "fruit",
+    "default_serving_g": 160
+  },
+  "cherries, sour, red, raw": {
+    "cal_per_100g": 50,
+    "category": "fruit",
+    "default_serving_g": 155
+  },
+  "cherries, sweet, raw": {
+    "cal_per_100g": 63,
+    "category": "fruit",
+    "default_serving_g": 154
+  },
+  "chicken patty, frozen, cooked": {
+    "cal_per_100g": 287,
+    "category": "protein",
+    "default_serving_g": 60
+  },
+  "chicken, capons, giblets, raw": {
+    "cal_per_100g": 130,
+    "category": "protein",
+    "default_serving_g": 115
+  },
+  "chicken, feet, boiled": {
+    "cal_per_100g": 215,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "chicken, ground, raw": {
+    "cal_per_100g": 143,
+    "category": "protein",
+    "default_serving_g": 113
+  },
+  "chicken, roasting, giblets, raw": {
+    "cal_per_100g": 127,
+    "category": "protein",
+    "default_serving_g": 113
+  },
+  "chicken, stewing, giblets, raw": {
+    "cal_per_100g": 168,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "chicory greens, raw": {
+    "cal_per_100g": 23,
+    "category": "vegetable",
+    "default_serving_g": 29
+  },
+  "chicory roots, raw": {
+    "cal_per_100g": 72,
+    "category": "vegetable",
+    "default_serving_g": 45
+  },
+  "chicory, witloof, raw": {
+    "cal_per_100g": 17,
+    "category": "vegetable",
+    "default_serving_g": 45
+  },
+  "chives, raw": {
+    "cal_per_100g": 30,
+    "category": "vegetable",
+    "default_serving_g": 1
+  },
+  "churro": {
+    "cal_per_100g": 390,
+    "category": "other",
+    "default_serving_g": 60
+  },
+  "clementines, raw": {
+    "cal_per_100g": 47,
+    "category": "fruit",
+    "default_serving_g": 74
+  },
+  "collards, raw": {
+    "cal_per_100g": 32,
+    "category": "vegetable",
+    "default_serving_g": 36
+  },
+  "cookies, chocolate chip, refrigerated dough, baked": {
+    "cal_per_100g": 492,
+    "category": "grain",
+    "default_serving_g": 28
+  },
+  "cookies, oatmeal, refrigerated dough, baked": {
+    "cal_per_100g": 471,
+    "category": "grain",
+    "default_serving_g": 28
+  },
+  "cookies, peanut butter, refrigerated dough, baked": {
+    "cal_per_100g": 503,
+    "category": "grain",
+    "default_serving_g": 12
+  },
+  "cookies, sugar, refrigerated dough, baked": {
+    "cal_per_100g": 489,
+    "category": "grain",
+    "default_serving_g": 15
+  },
+  "corn flour, whole-grain, blue (harina de maiz morado)": {
+    "cal_per_100g": 364,
+    "category": "grain",
+    "default_serving_g": 7
+  },
+  "corn flour, whole-grain, white": {
+    "cal_per_100g": 361,
+    "category": "grain",
+    "default_serving_g": 117
+  },
+  "corn flour, whole-grain, yellow": {
+    "cal_per_100g": 361,
+    "category": "grain",
+    "default_serving_g": 117
+  },
+  "corn, sweet, white, raw": {
+    "cal_per_100g": 86,
+    "category": "vegetable",
+    "default_serving_g": 143
+  },
+  "cornmeal, whole-grain, white": {
+    "cal_per_100g": 362,
+    "category": "grain",
+    "default_serving_g": 122
+  },
+  "cornmeal, whole-grain, yellow": {
+    "cal_per_100g": 362,
+    "category": "grain",
+    "default_serving_g": 122
+  },
+  "cornsalad, raw": {
+    "cal_per_100g": 21,
+    "category": "vegetable",
+    "default_serving_g": 56
+  },
+  "couscous, cooked": {
+    "cal_per_100g": 112,
+    "category": "grain",
+    "default_serving_g": 528
+  },
+  "cowpeas, leafy tips, raw": {
+    "cal_per_100g": 29,
+    "category": "vegetable",
+    "default_serving_g": 36
+  },
+  "crabapples, raw": {
+    "cal_per_100g": 76,
+    "category": "fruit",
+    "default_serving_g": 110
+  },
+  "cracker barrel, chicken tenderloin platter, fried": {
+    "cal_per_100g": 293,
+    "category": "other",
+    "default_serving_g": 175
+  },
+  "cracker barrel, chicken tenderloin platter, fried, from kid's menu": {
+    "cal_per_100g": 294,
+    "category": "other",
+    "default_serving_g": 36
+  },
+  "cracker barrel, country fried shrimp platter": {
+    "cal_per_100g": 287,
+    "category": "other",
+    "default_serving_g": 149
+  },
+  "cracker barrel, grilled sirloin steak": {
+    "cal_per_100g": 203,
+    "category": "other",
+    "default_serving_g": 151
+  },
+  "crackers, cheese, whole grain": {
+    "cal_per_100g": 412,
+    "category": "grain",
+    "default_serving_g": 31
+  },
+  "crackers, matzo, whole-wheat": {
+    "cal_per_100g": 351,
+    "category": "grain",
+    "default_serving_g": 14
+  },
+  "crackers, saltines, whole wheat (includes multi-grain)": {
+    "cal_per_100g": 398,
+    "category": "grain",
+    "default_serving_g": 14
+  },
+  "crackers, standard snack-type, with whole wheat": {
+    "cal_per_100g": 463,
+    "category": "grain",
+    "default_serving_g": 15
+  },
+  "crackers, whole-wheat": {
+    "cal_per_100g": 427,
+    "category": "grain",
+    "default_serving_g": 28
+  },
+  "crackers, whole-wheat, low salt": {
+    "cal_per_100g": 443,
+    "category": "grain",
+    "default_serving_g": 4
+  },
+  "crackers, whole-wheat, reduced fat": {
+    "cal_per_100g": 416,
+    "category": "grain",
+    "default_serving_g": 4
+  },
+  "cranberries, raw": {
+    "cal_per_100g": 46,
+    "category": "fruit",
+    "default_serving_g": 110
+  },
+  "cranberry juice cocktail, bottled": {
+    "cal_per_100g": 54,
+    "category": "beverage",
+    "default_serving_g": 32
+  },
+  "cress, garden, raw": {
+    "cal_per_100g": 32,
+    "category": "vegetable",
+    "default_serving_g": 1
+  },
+  "crustaceans, crab, blue, raw": {
+    "cal_per_100g": 87,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "crustaceans, crab, queen, raw": {
+    "cal_per_100g": 90,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "crustaceans, shrimp, cooked": {
+    "cal_per_100g": 99,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "crustaceans, shrimp, raw": {
+    "cal_per_100g": 85,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "cucumber, peeled, raw": {
+    "cal_per_100g": 10,
+    "category": "vegetable",
+    "default_serving_g": 7
+  },
+  "cucumber, with peel, raw": {
+    "cal_per_100g": 15,
+    "category": "vegetable",
+    "default_serving_g": 301
+  },
+  "currants, european black, raw": {
+    "cal_per_100g": 63,
+    "category": "fruit",
+    "default_serving_g": 112
+  },
+  "currants, red and white, raw": {
+    "cal_per_100g": 56,
+    "category": "fruit",
+    "default_serving_g": 112
+  },
+  "dandelion greens, raw": {
+    "cal_per_100g": 45,
+    "category": "vegetable",
+    "default_serving_g": 55
+  },
+  "desserts, egg custard, baked, prepared-from-recipe": {
+    "cal_per_100g": 104,
+    "category": "other",
+    "default_serving_g": 141
+  },
+  "digiorno pizza, cheese topping, cheese stuffed crust, frozen, baked": {
+    "cal_per_100g": 279,
+    "category": "other",
+    "default_serving_g": 688
+  },
+  "digiorno pizza, cheese topping, rising crust, frozen, baked": {
+    "cal_per_100g": 256,
+    "category": "other",
+    "default_serving_g": 729
+  },
+  "digiorno pizza, cheese topping, thin crispy crust, frozen, baked": {
+    "cal_per_100g": 247,
+    "category": "other",
+    "default_serving_g": 643
+  },
+  "digiorno pizza, pepperoni topping, cheese stuffed crust, frozen, baked": {
+    "cal_per_100g": 279,
+    "category": "other",
+    "default_serving_g": 732
+  },
+  "digiorno pizza, pepperoni topping, rising crust, frozen, baked": {
+    "cal_per_100g": 265,
+    "category": "other",
+    "default_serving_g": 759
+  },
+  "digiorno pizza, pepperoni topping, thin crispy crust, frozen, baked": {
+    "cal_per_100g": 283,
+    "category": "other",
+    "default_serving_g": 548
+  },
+  "digiorno pizza, supreme topping, rising crust, frozen, baked": {
+    "cal_per_100g": 255,
+    "category": "other",
+    "default_serving_g": 876
+  },
+  "digiorno pizza, supreme topping, thin crispy crust, frozen, baked": {
+    "cal_per_100g": 255,
+    "category": "other",
+    "default_serving_g": 155
+  },
+  "dill weed, fresh": {
+    "cal_per_100g": 43,
+    "category": "other",
+    "default_serving_g": 1
+  },
+  "dock, raw": {
+    "cal_per_100g": 22,
+    "category": "vegetable",
+    "default_serving_g": 133
+  },
+  "dove, cooked (includes squab)": {
+    "cal_per_100g": 213,
+    "category": "protein",
+    "default_serving_g": 140
+  },
+  "drumstick leaves, raw": {
+    "cal_per_100g": 64,
+    "category": "vegetable",
+    "default_serving_g": 21
+  },
+  "drumstick pods, raw": {
+    "cal_per_100g": 37,
+    "category": "vegetable",
+    "default_serving_g": 100
+  },
+  "duck, domesticated, liver, raw": {
+    "cal_per_100g": 136,
+    "category": "protein",
+    "default_serving_g": 44
+  },
+  "duck, wild, meat and skin, raw": {
+    "cal_per_100g": 211,
+    "category": "protein",
+    "default_serving_g": 239
+  },
+  "dulce de leche": {
+    "cal_per_100g": 315,
+    "category": "dairy",
+    "default_serving_g": 19
+  },
+  "durian, raw or frozen": {
+    "cal_per_100g": 147,
+    "category": "fruit",
+    "default_serving_g": 243
+  },
+  "egg custards, dry mix, prepared with whole milk": {
+    "cal_per_100g": 122,
+    "category": "other",
+    "default_serving_g": 141
+  },
+  "egg, duck, whole, fresh, raw": {
+    "cal_per_100g": 185,
+    "category": "dairy",
+    "default_serving_g": 70
+  },
+  "egg, goose, whole, fresh, raw": {
+    "cal_per_100g": 185,
+    "category": "dairy",
+    "default_serving_g": 144
+  },
+  "egg, quail, whole, fresh, raw": {
+    "cal_per_100g": 158,
+    "category": "dairy",
+    "default_serving_g": 9
+  },
+  "egg, turkey, whole, fresh, raw": {
+    "cal_per_100g": 171,
+    "category": "dairy",
+    "default_serving_g": 79
+  },
+  "egg, white, dried": {
+    "cal_per_100g": 382,
+    "category": "dairy",
+    "default_serving_g": 28
+  },
+  "egg, white, raw, fresh": {
+    "cal_per_100g": 52,
+    "category": "dairy",
+    "default_serving_g": 243
+  },
+  "egg, white, raw, frozen, pasteurized": {
+    "cal_per_100g": 48,
+    "category": "dairy",
+    "default_serving_g": 28
+  },
+  "egg, whole, cooked, fried": {
+    "cal_per_100g": 196,
+    "category": "dairy",
+    "default_serving_g": 46
+  },
+  "egg, whole, cooked, hard-boiled": {
+    "cal_per_100g": 155,
+    "category": "dairy",
+    "default_serving_g": 8
+  },
+  "egg, whole, cooked, omelet": {
+    "cal_per_100g": 154,
+    "category": "dairy",
+    "default_serving_g": 61
+  },
+  "egg, whole, cooked, poached": {
+    "cal_per_100g": 143,
+    "category": "dairy",
+    "default_serving_g": 50
+  },
+  "egg, whole, cooked, scrambled": {
+    "cal_per_100g": 149,
+    "category": "dairy",
+    "default_serving_g": 220
+  },
+  "egg, whole, dried": {
+    "cal_per_100g": 592,
+    "category": "dairy",
+    "default_serving_g": 85
+  },
+  "egg, whole, dried, stabilized, glucose reduced": {
+    "cal_per_100g": 615,
+    "category": "dairy",
+    "default_serving_g": 85
+  },
+  "egg, whole, raw, fresh": {
+    "cal_per_100g": 143,
+    "category": "dairy",
+    "default_serving_g": 243
+  },
+  "egg, whole, raw, frozen, pasteurized (includes foods for usda's food distribution program)": {
+    "cal_per_100g": 147,
+    "category": "dairy",
+    "default_serving_g": 28
+  },
+  "egg, whole, raw, frozen, salted, pasteurized": {
+    "cal_per_100g": 138,
+    "category": "dairy",
+    "default_serving_g": 28
+  },
+  "egg, yolk, dried": {
+    "cal_per_100g": 669,
+    "category": "dairy",
+    "default_serving_g": 67
+  },
+  "egg, yolk, raw, fresh": {
+    "cal_per_100g": 322,
+    "category": "dairy",
+    "default_serving_g": 17
+  },
+  "egg, yolk, raw, frozen, pasteurized": {
+    "cal_per_100g": 296,
+    "category": "dairy",
+    "default_serving_g": 28
+  },
+  "egg, yolk, raw, frozen, salted, pasteurized": {
+    "cal_per_100g": 275,
+    "category": "dairy",
+    "default_serving_g": 28
+  },
+  "egg, yolk, raw, frozen, sugared, pasteurized": {
+    "cal_per_100g": 307,
+    "category": "dairy",
+    "default_serving_g": 28
+  },
+  "eggnog": {
+    "cal_per_100g": 88,
+    "category": "dairy",
+    "default_serving_g": 254
+  },
+  "eggplant, raw": {
+    "cal_per_100g": 25,
+    "category": "vegetable",
+    "default_serving_g": 548
+  },
+  "elderberries, raw": {
+    "cal_per_100g": 73,
+    "category": "fruit",
+    "default_serving_g": 145
+  },
+  "empanada": {
+    "cal_per_100g": 280,
+    "category": "grain",
+    "default_serving_g": 130
+  },
+  "emu, fan fillet, raw": {
+    "cal_per_100g": 103,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "emu, flat fillet, raw": {
+    "cal_per_100g": 102,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "emu, full rump, cooked, broiled": {
+    "cal_per_100g": 168,
+    "category": "protein",
+    "default_serving_g": 496
+  },
+  "emu, full rump, raw": {
+    "cal_per_100g": 112,
+    "category": "protein",
+    "default_serving_g": 695
+  },
+  "emu, ground, raw": {
+    "cal_per_100g": 134,
+    "category": "protein",
+    "default_serving_g": 117
+  },
+  "emu, inside drum, raw": {
+    "cal_per_100g": 108,
+    "category": "protein",
+    "default_serving_g": 572
+  },
+  "emu, outside drum, raw": {
+    "cal_per_100g": 103,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "emu, oyster, raw": {
+    "cal_per_100g": 141,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "emu, top loin, cooked, broiled": {
+    "cal_per_100g": 152,
+    "category": "protein",
+    "default_serving_g": 244
+  },
+  "endive, raw": {
+    "cal_per_100g": 17,
+    "category": "vegetable",
+    "default_serving_g": 25
+  },
+  "english muffins, whole grain white": {
+    "cal_per_100g": 245,
+    "category": "grain",
+    "default_serving_g": 57
+  },
+  "epazote, raw": {
+    "cal_per_100g": 32,
+    "category": "vegetable",
+    "default_serving_g": 2
+  },
+  "eppaw, raw": {
+    "cal_per_100g": 150,
+    "category": "vegetable",
+    "default_serving_g": 100
+  },
+  "fast foods, chicken, breaded and fried, boneless pieces, plain": {
+    "cal_per_100g": 307,
+    "category": "other",
+    "default_serving_g": 160
+  },
+  "fast foods, fried chicken, breast, meat and skin and breading": {
+    "cal_per_100g": 230,
+    "category": "other",
+    "default_serving_g": 203
+  },
+  "fast foods, fried chicken, breast, meat only, skin and breading removed": {
+    "cal_per_100g": 153,
+    "category": "other",
+    "default_serving_g": 142
+  },
+  "fast foods, fried chicken, drumstick, meat and skin with breading": {
+    "cal_per_100g": 267,
+    "category": "other",
+    "default_serving_g": 75
+  },
+  "fast foods, fried chicken, drumstick, meat only, skin and breading removed": {
+    "cal_per_100g": 172,
+    "category": "other",
+    "default_serving_g": 56
+  },
+  "fast foods, fried chicken, skin and breading from all pieces": {
+    "cal_per_100g": 398,
+    "category": "other"
+  },
+  "fast foods, fried chicken, thigh, meat and skin and breading": {
+    "cal_per_100g": 274,
+    "category": "other",
+    "default_serving_g": 66
+  },
+  "fast foods, fried chicken, thigh, meat only, skin and breading removed": {
+    "cal_per_100g": 178,
+    "category": "other",
+    "default_serving_g": 84
+  },
+  "fast foods, fried chicken, wing, meat and skin and breading": {
+    "cal_per_100g": 310,
+    "category": "other",
+    "default_serving_g": 37
+  },
+  "fast foods, fried chicken, wing, meat only, skin and breading removed": {
+    "cal_per_100g": 215,
+    "category": "other",
+    "default_serving_g": 37
+  },
+  "fast foods, onion rings, breaded and fried": {
+    "cal_per_100g": 411,
+    "category": "other",
+    "default_serving_g": 117
+  },
+  "fast foods, potato, french fried in vegetable oil": {
+    "cal_per_100g": 312,
+    "category": "other",
+    "default_serving_g": 71
+  },
+  "fast foods, shrimp, breaded and fried": {
+    "cal_per_100g": 308,
+    "category": "other",
+    "default_serving_g": 39
+  },
+  "fat, beef tallow": {
+    "cal_per_100g": 902,
+    "category": "fat",
+    "default_serving_g": 13
+  },
+  "fat, chicken": {
+    "cal_per_100g": 900,
+    "category": "fat",
+    "default_serving_g": 205
+  },
+  "fat, goose": {
+    "cal_per_100g": 900,
+    "category": "fat",
+    "default_serving_g": 13
+  },
+  "fat, turkey": {
+    "cal_per_100g": 900,
+    "category": "fat",
+    "default_serving_g": 205
+  },
+  "feijoa, raw": {
+    "cal_per_100g": 61,
+    "category": "fruit",
+    "default_serving_g": 42
+  },
+  "fennel, bulb, raw": {
+    "cal_per_100g": 31,
+    "category": "vegetable",
+    "default_serving_g": 234
+  },
+  "fiddlehead ferns, raw": {
+    "cal_per_100g": 34,
+    "category": "vegetable"
+  },
+  "figs, raw": {
+    "cal_per_100g": 74,
+    "category": "fruit",
+    "default_serving_g": 50
+  },
+  "fireweed, leaves, raw": {
+    "cal_per_100g": 103,
+    "category": "vegetable",
+    "default_serving_g": 23
+  },
+  "fish oil, cod liver": {
+    "cal_per_100g": 902,
+    "category": "fat",
+    "default_serving_g": 218
+  },
+  "fish oil, herring": {
+    "cal_per_100g": 902,
+    "category": "fat",
+    "default_serving_g": 14
+  },
+  "fish oil, menhaden": {
+    "cal_per_100g": 902,
+    "category": "fat",
+    "default_serving_g": 14
+  },
+  "fish oil, salmon": {
+    "cal_per_100g": 902,
+    "category": "fat",
+    "default_serving_g": 4
+  },
+  "fish oil, sardine": {
+    "cal_per_100g": 902,
+    "category": "fat",
+    "default_serving_g": 218
+  },
+  "fish, anchovy, european, raw": {
+    "cal_per_100g": 131,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, bass, striped, raw": {
+    "cal_per_100g": 97,
+    "category": "protein",
+    "default_serving_g": 159
+  },
+  "fish, bluefish, raw": {
+    "cal_per_100g": 124,
+    "category": "protein",
+    "default_serving_g": 150
+  },
+  "fish, burbot, cooked, dry heat": {
+    "cal_per_100g": 115,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, burbot, raw": {
+    "cal_per_100g": 90,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, butterfish, raw": {
+    "cal_per_100g": 146,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, carp, cooked, dry heat": {
+    "cal_per_100g": 162,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, carp, raw": {
+    "cal_per_100g": 127,
+    "category": "protein",
+    "default_serving_g": 218
+  },
+  "fish, cisco, raw": {
+    "cal_per_100g": 98,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, cod, atlantic, raw": {
+    "cal_per_100g": 82,
+    "category": "protein",
+    "default_serving_g": 231
+  },
+  "fish, cod, pacific, cooked": {
+    "cal_per_100g": 84,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, croaker, atlantic, raw": {
+    "cal_per_100g": 104,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, cusk, cooked, dry heat": {
+    "cal_per_100g": 112,
+    "category": "protein",
+    "default_serving_g": 95
+  },
+  "fish, cusk, raw": {
+    "cal_per_100g": 87,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, drum, freshwater, raw": {
+    "cal_per_100g": 119,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, eel, mixed species, raw": {
+    "cal_per_100g": 184,
+    "category": "protein",
+    "default_serving_g": 204
+  },
+  "fish, haddock, raw": {
+    "cal_per_100g": 74,
+    "category": "protein",
+    "default_serving_g": 193
+  },
+  "fish, halibut, greenland, raw": {
+    "cal_per_100g": 186,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, herring, atlantic, raw": {
+    "cal_per_100g": 158,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "fish, herring, pacific, raw": {
+    "cal_per_100g": 195,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, ling, cooked, dry heat": {
+    "cal_per_100g": 111,
+    "category": "protein",
+    "default_serving_g": 151
+  },
+  "fish, ling, raw": {
+    "cal_per_100g": 87,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, lingcod, raw": {
+    "cal_per_100g": 85,
+    "category": "protein",
+    "default_serving_g": 193
+  },
+  "fish, mackerel, atlantic, raw": {
+    "cal_per_100g": 205,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, mackerel, king, raw": {
+    "cal_per_100g": 105,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, mackerel, spanish, raw": {
+    "cal_per_100g": 139,
+    "category": "protein",
+    "default_serving_g": 187
+  },
+  "fish, mahimahi, raw": {
+    "cal_per_100g": 85,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, milkfish, raw": {
+    "cal_per_100g": 148,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, monkfish, raw": {
+    "cal_per_100g": 76,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, mullet, striped, raw": {
+    "cal_per_100g": 117,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "fish, perch, mixed species, raw": {
+    "cal_per_100g": 91,
+    "category": "protein",
+    "default_serving_g": 60
+  },
+  "fish, pike, northern, raw": {
+    "cal_per_100g": 88,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, pike, walleye, raw": {
+    "cal_per_100g": 93,
+    "category": "protein",
+    "default_serving_g": 159
+  },
+  "fish, pollock, alaska, cooked": {
+    "cal_per_100g": 87,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, pollock, alaska, raw": {
+    "cal_per_100g": 76,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, pollock, atlantic, raw": {
+    "cal_per_100g": 92,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, pompano, florida, raw": {
+    "cal_per_100g": 164,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, pout, ocean, raw": {
+    "cal_per_100g": 79,
+    "category": "protein",
+    "default_serving_g": 176
+  },
+  "fish, roe, mixed species, raw": {
+    "cal_per_100g": 143,
+    "category": "protein",
+    "default_serving_g": 14
+  },
+  "fish, roughy, orange, raw": {
+    "cal_per_100g": 76,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, sablefish, raw": {
+    "cal_per_100g": 195,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, salmon, chinook, raw": {
+    "cal_per_100g": 179,
+    "category": "protein",
+    "default_serving_g": 198
+  },
+  "fish, salmon, chum, raw": {
+    "cal_per_100g": 120,
+    "category": "protein",
+    "default_serving_g": 198
+  },
+  "fish, salmon, coho, wild, raw": {
+    "cal_per_100g": 146,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, salmon, pink, raw": {
+    "cal_per_100g": 127,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, salmon, sockeye, raw": {
+    "cal_per_100g": 131,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "fish, scup, cooked, dry heat": {
+    "cal_per_100g": 135,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, scup, raw": {
+    "cal_per_100g": 105,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, shad, american, raw": {
+    "cal_per_100g": 197,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, shark, mixed species, raw": {
+    "cal_per_100g": 130,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, sheepshead, raw": {
+    "cal_per_100g": 108,
+    "category": "protein",
+    "default_serving_g": 238
+  },
+  "fish, smelt, rainbow, raw": {
+    "cal_per_100g": 97,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, spot, cooked, dry heat": {
+    "cal_per_100g": 158,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, spot, raw": {
+    "cal_per_100g": 123,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, sucker, white, raw": {
+    "cal_per_100g": 92,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, swordfish, raw": {
+    "cal_per_100g": 144,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, tilapia, raw": {
+    "cal_per_100g": 96,
+    "category": "protein",
+    "default_serving_g": 116
+  },
+  "fish, tilefish, raw": {
+    "cal_per_100g": 96,
+    "category": "protein",
+    "default_serving_g": 193
+  },
+  "fish, tuna, fresh, bluefin, raw": {
+    "cal_per_100g": 144,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "fish, turbot, european, raw": {
+    "cal_per_100g": 95,
+    "category": "protein",
+    "default_serving_g": 204
+  },
+  "fish, wolffish, atlantic, raw": {
+    "cal_per_100g": 96,
+    "category": "protein",
+    "default_serving_g": 153
+  },
+  "flan, caramel custard, dry mix, prepared with whole milk": {
+    "cal_per_100g": 113,
+    "category": "other",
+    "default_serving_g": 141
+  },
+  "frijoles negros": {
+    "cal_per_100g": 132,
+    "category": "protein",
+    "default_serving_g": 170
+  },
+  "frijoles refritos": {
+    "cal_per_100g": 100,
+    "category": "protein",
+    "default_serving_g": 150
+  },
+  "frog legs, raw": {
+    "cal_per_100g": 73,
+    "category": "protein",
+    "default_serving_g": 45
+  },
+  "game meat , bison, ground, raw": {
+    "cal_per_100g": 223,
+    "category": "protein",
+    "default_serving_g": 113
+  },
+  "game meat, antelope, raw": {
+    "cal_per_100g": 114,
+    "category": "protein",
+    "default_serving_g": 454
+  },
+  "game meat, bear, raw": {
+    "cal_per_100g": 161,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "game meat, beaver, raw": {
+    "cal_per_100g": 146,
+    "category": "protein",
+    "default_serving_g": 454
+  },
+  "game meat, boar, wild, raw": {
+    "cal_per_100g": 122,
+    "category": "protein",
+    "default_serving_g": 454
+  },
+  "game meat, buffalo, water, raw": {
+    "cal_per_100g": 99,
+    "category": "protein",
+    "default_serving_g": 454
+  },
+  "game meat, caribou, raw": {
+    "cal_per_100g": 127,
+    "category": "protein",
+    "default_serving_g": 454
+  },
+  "game meat, deer, ground, raw": {
+    "cal_per_100g": 157,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "game meat, deer, raw": {
+    "cal_per_100g": 120,
+    "category": "protein",
+    "default_serving_g": 454
+  },
+  "game meat, elk, ground, raw": {
+    "cal_per_100g": 172,
+    "category": "protein",
+    "default_serving_g": 102
+  },
+  "game meat, elk, raw": {
+    "cal_per_100g": 111,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "game meat, goat, raw": {
+    "cal_per_100g": 109,
+    "category": "protein",
+    "default_serving_g": 454
+  },
+  "game meat, horse, raw": {
+    "cal_per_100g": 133,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "game meat, moose, raw": {
+    "cal_per_100g": 102,
+    "category": "protein",
+    "default_serving_g": 454
+  },
+  "game meat, muskrat, raw": {
+    "cal_per_100g": 162,
+    "category": "protein",
+    "default_serving_g": 454
+  },
+  "game meat, rabbit, wild, raw": {
+    "cal_per_100g": 114,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "game meat, squirrel, raw": {
+    "cal_per_100g": 120,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "garlic, raw": {
+    "cal_per_100g": 149,
+    "category": "vegetable",
+    "default_serving_g": 3
+  },
+  "ginger root, raw": {
+    "cal_per_100g": 80,
+    "category": "vegetable",
+    "default_serving_g": 11
+  },
+  "goose, liver, raw": {
+    "cal_per_100g": 133,
+    "category": "protein",
+    "default_serving_g": 94
+  },
+  "gooseberries, raw": {
+    "cal_per_100g": 44,
+    "category": "fruit",
+    "default_serving_g": 150
+  },
+  "grape leaves, raw": {
+    "cal_per_100g": 93,
+    "category": "vegetable",
+    "default_serving_g": 14
+  },
+  "grapefruit juice, pink, raw": {
+    "cal_per_100g": 39,
+    "category": "fruit",
+    "default_serving_g": 247
+  },
+  "grapefruit juice, white, raw": {
+    "cal_per_100g": 39,
+    "category": "fruit",
+    "default_serving_g": 196
+  },
+  "grapefruit, raw, white, florida": {
+    "cal_per_100g": 32,
+    "category": "fruit",
+    "default_serving_g": 230
+  },
+  "grapes, muscadine, raw": {
+    "cal_per_100g": 57,
+    "category": "fruit",
+    "default_serving_g": 6
+  },
+  "guacamole": {
+    "cal_per_100g": 160,
+    "category": "fat",
+    "default_serving_g": 60
+  },
+  "guava sauce, cooked": {
+    "cal_per_100g": 36,
+    "category": "fruit",
+    "default_serving_g": 238
+  },
+  "guavas, common, raw": {
+    "cal_per_100g": 68,
+    "category": "fruit",
+    "default_serving_g": 55
+  },
+  "guavas, strawberry, raw": {
+    "cal_per_100g": 69,
+    "category": "fruit",
+    "default_serving_g": 244
+  },
+  "guinea hen, meat and skin, raw": {
+    "cal_per_100g": 158,
+    "category": "protein",
+    "default_serving_g": 359
+  },
+  "guinea hen, meat only, raw": {
+    "cal_per_100g": 110,
+    "category": "protein",
+    "default_serving_g": 264
+  },
+  "ham, honey, smoked, cooked": {
+    "cal_per_100g": 122,
+    "category": "protein",
+    "default_serving_g": 55
+  },
+  "hearts of palm, raw": {
+    "cal_per_100g": 115,
+    "category": "vegetable"
+  },
+  "ice cream sandwich": {
+    "cal_per_100g": 237,
+    "category": "dairy",
+    "default_serving_g": 70
+  },
+  "jackfruit, raw": {
+    "cal_per_100g": 95,
+    "category": "fruit",
+    "default_serving_g": 151
+  },
+  "java-plum, (jambolan), raw": {
+    "cal_per_100g": 60,
+    "category": "fruit",
+    "default_serving_g": 9
+  },
+  "jew's ear, (pepeao), raw": {
+    "cal_per_100g": 25,
+    "category": "vegetable",
+    "default_serving_g": 6
+  },
+  "jujube, chinese, fresh, dried": {
+    "cal_per_100g": 281,
+    "category": "fruit"
+  },
+  "jujube, raw": {
+    "cal_per_100g": 79,
+    "category": "fruit"
+  },
+  "jute, potherb, raw": {
+    "cal_per_100g": 34,
+    "category": "vegetable",
+    "default_serving_g": 28
+  },
+  "kale, raw": {
+    "cal_per_100g": 35,
+    "category": "vegetable",
+    "default_serving_g": 21
+  },
+  "kiwifruit, green, raw": {
+    "cal_per_100g": 61,
+    "category": "fruit",
+    "default_serving_g": 69
+  },
+  "kiwifruit, zespri sungold, raw": {
+    "cal_per_100g": 63,
+    "category": "fruit",
+    "default_serving_g": 81
+  },
+  "kohlrabi, raw": {
+    "cal_per_100g": 27,
+    "category": "vegetable",
+    "default_serving_g": 16
+  },
+  "kumquats, raw": {
+    "cal_per_100g": 71,
+    "category": "fruit",
+    "default_serving_g": 19
+  },
+  "lamb, ground, cooked, broiled": {
+    "cal_per_100g": 283,
+    "category": "protein",
+    "default_serving_g": 313
+  },
+  "lamb, ground, raw": {
+    "cal_per_100g": 282,
+    "category": "protein",
+    "default_serving_g": 113
+  },
+  "lambsquarters, raw": {
+    "cal_per_100g": 43,
+    "category": "vegetable"
+  },
+  "lard": {
+    "cal_per_100g": 902,
+    "category": "fat",
+    "default_serving_g": 13
+  },
+  "lasagna, vegetable, frozen, baked": {
+    "cal_per_100g": 139,
+    "category": "other",
+    "default_serving_g": 28
+  },
+  "lemon juice, raw": {
+    "cal_per_100g": 22,
+    "category": "fruit",
+    "default_serving_g": 6
+  },
+  "lemon peel, raw": {
+    "cal_per_100g": 47,
+    "category": "fruit",
+    "default_serving_g": 2
+  },
+  "lemonade, frozen concentrate, pink": {
+    "cal_per_100g": 192,
+    "category": "beverage",
+    "default_serving_g": 36
+  },
+  "lemonade, frozen concentrate, white": {
+    "cal_per_100g": 196,
+    "category": "beverage",
+    "default_serving_g": 219
+  },
+  "lemonade, powder, prepared with water": {
+    "cal_per_100g": 14,
+    "category": "beverage",
+    "default_serving_g": 264
+  },
+  "lemons, raw, without peel": {
+    "cal_per_100g": 29,
+    "category": "fruit",
+    "default_serving_g": 212
+  },
+  "lentils, pink or red, raw": {
+    "cal_per_100g": 358,
+    "category": "protein",
+    "default_serving_g": 192
+  },
+  "lentils, raw": {
+    "cal_per_100g": 352,
+    "category": "protein",
+    "default_serving_g": 12
+  },
+  "lentils, sprouted, raw": {
+    "cal_per_100g": 106,
+    "category": "vegetable",
+    "default_serving_g": 77
+  },
+  "lettuce, green leaf, raw": {
+    "cal_per_100g": 15,
+    "category": "vegetable",
+    "default_serving_g": 360
+  },
+  "lettuce, red leaf, raw": {
+    "cal_per_100g": 13,
+    "category": "vegetable",
+    "default_serving_g": 17
+  },
+  "lime juice, raw": {
+    "cal_per_100g": 25,
+    "category": "fruit",
+    "default_serving_g": 242
+  },
+  "limes, raw": {
+    "cal_per_100g": 30,
+    "category": "fruit",
+    "default_serving_g": 67
+  },
+  "litchis, raw": {
+    "cal_per_100g": 66,
+    "category": "fruit",
+    "default_serving_g": 190
+  },
+  "longans, raw": {
+    "cal_per_100g": 60,
+    "category": "fruit",
+    "default_serving_g": 3
+  },
+  "loquats, raw": {
+    "cal_per_100g": 47,
+    "category": "fruit",
+    "default_serving_g": 16
+  },
+  "lotus root, raw": {
+    "cal_per_100g": 74,
+    "category": "vegetable",
+    "default_serving_g": 81
+  },
+  "lupins, mature seeds, raw": {
+    "cal_per_100g": 371,
+    "category": "protein",
+    "default_serving_g": 180
+  },
+  "macaroni, vegetable, enriched, cooked": {
+    "cal_per_100g": 128,
+    "category": "grain",
+    "default_serving_g": 134
+  },
+  "malabar spinach, cooked": {
+    "cal_per_100g": 23,
+    "category": "vegetable",
+    "default_serving_g": 44
+  },
+  "mammy-apple, (mamey), raw": {
+    "cal_per_100g": 51,
+    "category": "fruit",
+    "default_serving_g": 846
+  },
+  "mangos, raw": {
+    "cal_per_100g": 60,
+    "category": "fruit",
+    "default_serving_g": 336
+  },
+  "mayonnaise, made with tofu": {
+    "cal_per_100g": 322,
+    "category": "fat",
+    "default_serving_g": 240
+  },
+  "melons, cantaloupe, raw": {
+    "cal_per_100g": 34,
+    "category": "fruit",
+    "default_serving_g": 441
+  },
+  "melons, casaba, raw": {
+    "cal_per_100g": 28,
+    "category": "fruit",
+    "default_serving_g": 1640
+  },
+  "melons, honeydew, raw": {
+    "cal_per_100g": 36,
+    "category": "fruit",
+    "default_serving_g": 1280
+  },
+  "milk, buttermilk, fluid, whole": {
+    "cal_per_100g": 62,
+    "category": "dairy",
+    "default_serving_g": 245
+  },
+  "milk, chocolate, fluid, commercial, whole, with added vitamin a and vitamin d": {
+    "cal_per_100g": 83,
+    "category": "dairy",
+    "default_serving_g": 31
+  },
+  "milk, dry, whole, with added vitamin d": {
+    "cal_per_100g": 496,
+    "category": "dairy",
+    "default_serving_g": 32
+  },
+  "milk, dry, whole, without added vitamin d": {
+    "cal_per_100g": 496,
+    "category": "dairy",
+    "default_serving_g": 32
+  },
+  "milk, sheep, fluid": {
+    "cal_per_100g": 108,
+    "category": "dairy",
+    "default_serving_g": 245
+  },
+  "milk, whole, 3.25% milkfat, with added vitamin d": {
+    "cal_per_100g": 61,
+    "category": "dairy",
+    "default_serving_g": 30
+  },
+  "milk, whole, 3.25% milkfat, without added vitamin a and vitamin d": {
+    "cal_per_100g": 61,
+    "category": "dairy",
+    "default_serving_g": 30
+  },
+  "millet, cooked": {
+    "cal_per_100g": 119,
+    "category": "grain",
+    "default_serving_g": 174
+  },
+  "millet, raw": {
+    "cal_per_100g": 378,
+    "category": "grain",
+    "default_serving_g": 200
+  },
+  "mollusks, mussel, blue, raw": {
+    "cal_per_100g": 86,
+    "category": "protein",
+    "default_serving_g": 10
+  },
+  "mollusks, octopus, common, raw": {
+    "cal_per_100g": 82,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "mollusks, oyster, pacific, raw": {
+    "cal_per_100g": 81,
+    "category": "protein",
+    "default_serving_g": 50
+  },
+  "mollusks, snail, raw": {
+    "cal_per_100g": 90,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "mothbeans, mature seeds, raw": {
+    "cal_per_100g": 343,
+    "category": "protein",
+    "default_serving_g": 196
+  },
+  "muffins, english, whole-wheat": {
+    "cal_per_100g": 203,
+    "category": "grain",
+    "default_serving_g": 28
+  },
+  "mulberries, raw": {
+    "cal_per_100g": 43,
+    "category": "fruit",
+    "default_serving_g": 15
+  },
+  "mung beans, mature seeds, raw": {
+    "cal_per_100g": 347,
+    "category": "protein",
+    "default_serving_g": 13
+  },
+  "mungo beans, mature seeds, raw": {
+    "cal_per_100g": 341,
+    "category": "protein",
+    "default_serving_g": 207
+  },
+  "mushrooms, enoki, raw": {
+    "cal_per_100g": 37,
+    "category": "vegetable",
+    "default_serving_g": 5
+  },
+  "mushrooms, maitake, raw": {
+    "cal_per_100g": 31,
+    "category": "vegetable",
+    "default_serving_g": 70
+  },
+  "mushrooms, morel, raw": {
+    "cal_per_100g": 31,
+    "category": "vegetable",
+    "default_serving_g": 66
+  },
+  "mushrooms, oyster, raw": {
+    "cal_per_100g": 33,
+    "category": "vegetable",
+    "default_serving_g": 15
+  },
+  "mushrooms, shiitake, raw": {
+    "cal_per_100g": 34,
+    "category": "vegetable",
+    "default_serving_g": 19
+  },
+  "mushrooms, white, raw": {
+    "cal_per_100g": 22,
+    "category": "vegetable",
+    "default_serving_g": 10
+  },
+  "mustard greens, raw": {
+    "cal_per_100g": 27,
+    "category": "vegetable",
+    "default_serving_g": 56
+  },
+  "nectarines, raw": {
+    "cal_per_100g": 44,
+    "category": "fruit",
+    "default_serving_g": 142
+  },
+  "new zealand spinach, raw": {
+    "cal_per_100g": 14,
+    "category": "vegetable",
+    "default_serving_g": 56
+  },
+  "noodles, egg, cooked, enriched, with added salt": {
+    "cal_per_100g": 138,
+    "category": "grain",
+    "default_serving_g": 160
+  },
+  "noodles, egg, cooked, unenriched, with added salt": {
+    "cal_per_100g": 138,
+    "category": "grain",
+    "default_serving_g": 160
+  },
+  "noodles, egg, enriched, cooked": {
+    "cal_per_100g": 138,
+    "category": "grain",
+    "default_serving_g": 160
+  },
+  "noodles, egg, spinach, enriched, cooked": {
+    "cal_per_100g": 132,
+    "category": "grain",
+    "default_serving_g": 160
+  },
+  "noodles, egg, unenriched, cooked, without added salt": {
+    "cal_per_100g": 138,
+    "category": "grain",
+    "default_serving_g": 160
+  },
+  "noodles, japanese, soba, cooked": {
+    "cal_per_100g": 99,
+    "category": "grain",
+    "default_serving_g": 114
+  },
+  "noodles, japanese, somen, cooked": {
+    "cal_per_100g": 131,
+    "category": "grain",
+    "default_serving_g": 176
+  },
+  "nopales, raw": {
+    "cal_per_100g": 16,
+    "category": "vegetable",
+    "default_serving_g": 86
+  },
+  "nuts, acorns, raw": {
+    "cal_per_100g": 387,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "nuts, cashew nuts, raw": {
+    "cal_per_100g": 553,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "nuts, chestnuts, chinese, raw": {
+    "cal_per_100g": 224,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "nuts, chestnuts, japanese, raw": {
+    "cal_per_100g": 154,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "nuts, coconut meat, raw": {
+    "cal_per_100g": 354,
+    "category": "protein",
+    "default_serving_g": 80
+  },
+  "nuts, ginkgo nuts, raw": {
+    "cal_per_100g": 182,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "nuts, macadamia nuts, raw": {
+    "cal_per_100g": 718,
+    "category": "protein",
+    "default_serving_g": 134
+  },
+  "nuts, pistachio nuts, raw": {
+    "cal_per_100g": 560,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "oat bran, cooked": {
+    "cal_per_100g": 40,
+    "category": "grain",
+    "default_serving_g": 219
+  },
+  "oat bran, raw": {
+    "cal_per_100g": 246,
+    "category": "grain",
+    "default_serving_g": 94
+  },
+  "oheloberries, raw": {
+    "cal_per_100g": 28,
+    "category": "fruit",
+    "default_serving_g": 11
+  },
+  "oil, almond": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 4
+  },
+  "oil, apricot kernel": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 4
+  },
+  "oil, avocado": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 4
+  },
+  "oil, babassu": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 4
+  },
+  "oil, canola": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 4
+  },
+  "oil, cocoa butter": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 4
+  },
+  "oil, coconut": {
+    "cal_per_100g": 892,
+    "category": "fat",
+    "default_serving_g": 218
+  },
+  "oil, corn and canola": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 14
+  },
+  "oil, corn, peanut, and olive": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 4
+  },
+  "oil, cupu assu": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 218
+  },
+  "oil, flaxseed, cold pressed": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 14
+  },
+  "oil, grapeseed": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 218
+  },
+  "oil, hazelnut": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 14
+  },
+  "oil, mustard": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 4
+  },
+  "oil, nutmeg butter": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 218
+  },
+  "oil, oat": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 218
+  },
+  "oil, olive, salad or cooking": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 14
+  },
+  "oil, palm": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 4
+  },
+  "oil, peanut, salad or cooking": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 4
+  },
+  "oil, poppyseed": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 218
+  },
+  "oil, rice bran": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 14
+  },
+  "oil, sesame, salad or cooking": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 14
+  },
+  "oil, sheanut": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 218
+  },
+  "oil, soybean lecithin": {
+    "cal_per_100g": 763,
+    "category": "fat",
+    "default_serving_g": 14
+  },
+  "oil, soybean, salad or cooking": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 14
+  },
+  "oil, teaseed": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 14
+  },
+  "oil, tomatoseed": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 14
+  },
+  "oil, ucuhuba butter": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 14
+  },
+  "oil, walnut": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 4
+  },
+  "oil, wheat germ": {
+    "cal_per_100g": 884,
+    "category": "fat",
+    "default_serving_g": 14
+  },
+  "okra, raw": {
+    "cal_per_100g": 33,
+    "category": "vegetable",
+    "default_serving_g": 95
+  },
+  "onions, raw": {
+    "cal_per_100g": 40,
+    "category": "vegetable",
+    "default_serving_g": 160
+  },
+  "onions, sweet, raw": {
+    "cal_per_100g": 32,
+    "category": "vegetable",
+    "default_serving_g": 148
+  },
+  "onions, welsh, raw": {
+    "cal_per_100g": 34,
+    "category": "vegetable"
+  },
+  "orange peel, raw": {
+    "cal_per_100g": 97,
+    "category": "fruit",
+    "default_serving_g": 6
+  },
+  "oranges, raw, florida": {
+    "cal_per_100g": 46,
+    "category": "fruit",
+    "default_serving_g": 151
+  },
+  "oranges, raw, with peel": {
+    "cal_per_100g": 63,
+    "category": "fruit",
+    "default_serving_g": 159
+  },
+  "ostrich, fan, raw": {
+    "cal_per_100g": 117,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "ostrich, ground, raw": {
+    "cal_per_100g": 165,
+    "category": "protein",
+    "default_serving_g": 435
+  },
+  "ostrich, inside leg, cooked": {
+    "cal_per_100g": 141,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "ostrich, inside leg, raw": {
+    "cal_per_100g": 111,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "ostrich, inside strip, cooked": {
+    "cal_per_100g": 164,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "ostrich, inside strip, raw": {
+    "cal_per_100g": 127,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "ostrich, outside leg, raw": {
+    "cal_per_100g": 115,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "ostrich, outside strip, cooked": {
+    "cal_per_100g": 156,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "ostrich, outside strip, raw": {
+    "cal_per_100g": 120,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "ostrich, oyster, cooked": {
+    "cal_per_100g": 159,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "ostrich, oyster, raw": {
+    "cal_per_100g": 125,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "ostrich, round, raw": {
+    "cal_per_100g": 116,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "ostrich, tenderloin, raw": {
+    "cal_per_100g": 123,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "ostrich, tip trimmed, cooked": {
+    "cal_per_100g": 145,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "ostrich, tip trimmed, raw": {
+    "cal_per_100g": 114,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "ostrich, top loin, cooked": {
+    "cal_per_100g": 155,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "ostrich, top loin, raw": {
+    "cal_per_100g": 119,
+    "category": "protein",
+    "default_serving_g": 453
+  },
+  "pan dulce": {
+    "cal_per_100g": 340,
+    "category": "grain",
+    "default_serving_g": 80
+  },
+  "pancakes, whole wheat, dry mix, incomplete": {
+    "cal_per_100g": 350,
+    "category": "grain",
+    "default_serving_g": 38
+  },
+  "pancakes, whole-wheat, dry mix, incomplete": {
+    "cal_per_100g": 344,
+    "category": "grain",
+    "default_serving_g": 28
+  },
+  "pancakes, whole-wheat, dry mix, incomplete, prepared": {
+    "cal_per_100g": 208,
+    "category": "grain",
+    "default_serving_g": 129
+  },
+  "papayas, raw": {
+    "cal_per_100g": 43,
+    "category": "fruit",
+    "default_serving_g": 157
+  },
+  "parsley, fresh": {
+    "cal_per_100g": 36,
+    "category": "vegetable",
+    "default_serving_g": 60
+  },
+  "parsnips, raw": {
+    "cal_per_100g": 75,
+    "category": "vegetable",
+    "default_serving_g": 133
+  },
+  "pasta, cooked, enriched, with added salt": {
+    "cal_per_100g": 157,
+    "category": "grain",
+    "default_serving_g": 107
+  },
+  "pasta, cooked, enriched, without added salt": {
+    "cal_per_100g": 158,
+    "category": "grain",
+    "default_serving_g": 116
+  },
+  "pasta, cooked, unenriched, with added salt": {
+    "cal_per_100g": 157,
+    "category": "grain",
+    "default_serving_g": 151
+  },
+  "pasta, cooked, unenriched, without added salt": {
+    "cal_per_100g": 158,
+    "category": "grain",
+    "default_serving_g": 107
+  },
+  "pasta, fresh-refrigerated, plain, as purchased": {
+    "cal_per_100g": 288,
+    "category": "grain",
+    "default_serving_g": 128
+  },
+  "pasta, fresh-refrigerated, plain, cooked": {
+    "cal_per_100g": 131,
+    "category": "grain",
+    "default_serving_g": 128
+  },
+  "pasta, fresh-refrigerated, spinach, as purchased": {
+    "cal_per_100g": 289,
+    "category": "grain",
+    "default_serving_g": 128
+  },
+  "pasta, fresh-refrigerated, spinach, cooked": {
+    "cal_per_100g": 130,
+    "category": "grain",
+    "default_serving_g": 57
+  },
+  "pasta, gluten-free, corn and rice flour, cooked": {
+    "cal_per_100g": 179,
+    "category": "grain",
+    "default_serving_g": 141
+  },
+  "pasta, gluten-free, corn, cooked": {
+    "cal_per_100g": 126,
+    "category": "grain",
+    "default_serving_g": 140
+  },
+  "pasta, homemade, made with egg, cooked": {
+    "cal_per_100g": 130,
+    "category": "grain",
+    "default_serving_g": 57
+  },
+  "pasta, homemade, made without egg, cooked": {
+    "cal_per_100g": 124,
+    "category": "grain",
+    "default_serving_g": 57
+  },
+  "peaches, yellow, raw": {
+    "cal_per_100g": 39,
+    "category": "fruit",
+    "default_serving_g": 130
+  },
+  "peanuts, all types, raw": {
+    "cal_per_100g": 567,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "peanuts, spanish, raw": {
+    "cal_per_100g": 570,
+    "category": "protein",
+    "default_serving_g": 146
+  },
+  "peanuts, valencia, raw": {
+    "cal_per_100g": 570,
+    "category": "protein",
+    "default_serving_g": 146
+  },
+  "peanuts, virginia, raw": {
+    "cal_per_100g": 563,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "pears, asian, raw": {
+    "cal_per_100g": 42,
+    "category": "fruit",
+    "default_serving_g": 275
+  },
+  "pears, raw": {
+    "cal_per_100g": 57,
+    "category": "fruit",
+    "default_serving_g": 178
+  },
+  "pears, raw, red anjou": {
+    "cal_per_100g": 62,
+    "category": "fruit",
+    "default_serving_g": 126
+  },
+  "peas, green, raw": {
+    "cal_per_100g": 81,
+    "category": "vegetable",
+    "default_serving_g": 145
+  },
+  "pepper, banana, raw": {
+    "cal_per_100g": 27,
+    "category": "vegetable",
+    "default_serving_g": 124
+  },
+  "pepperidge farm, goldfish, baked snack crackers, pizza": {
+    "cal_per_100g": 469,
+    "category": "grain",
+    "default_serving_g": 5
+  },
+  "peppermint, fresh": {
+    "cal_per_100g": 70,
+    "category": "other"
+  },
+  "peppers, hungarian, raw": {
+    "cal_per_100g": 29,
+    "category": "vegetable",
+    "default_serving_g": 27
+  },
+  "peppers, jalapeno, raw": {
+    "cal_per_100g": 29,
+    "category": "vegetable",
+    "default_serving_g": 14
+  },
+  "peppers, serrano, raw": {
+    "cal_per_100g": 32,
+    "category": "vegetable",
+    "default_serving_g": 105
+  },
+  "persimmons, japanese, raw": {
+    "cal_per_100g": 70,
+    "category": "fruit",
+    "default_serving_g": 168
+  },
+  "persimmons, native, raw": {
+    "cal_per_100g": 127,
+    "category": "fruit",
+    "default_serving_g": 25
+  },
+  "pheasant, cooked, total edible": {
+    "cal_per_100g": 239,
+    "category": "protein",
+    "default_serving_g": 140
+  },
+  "pheasant, leg, meat only, raw": {
+    "cal_per_100g": 134,
+    "category": "protein",
+    "default_serving_g": 107
+  },
+  "pheasant, raw, meat and skin": {
+    "cal_per_100g": 181,
+    "category": "protein",
+    "default_serving_g": 400
+  },
+  "pheasant, raw, meat only": {
+    "cal_per_100g": 133,
+    "category": "protein",
+    "default_serving_g": 352
+  },
+  "pico de gallo": {
+    "cal_per_100g": 20,
+    "category": "vegetable",
+    "default_serving_g": 60
+  },
+  "pie crust, refrigerated, regular, baked": {
+    "cal_per_100g": 506,
+    "category": "grain",
+    "default_serving_g": 198
+  },
+  "pie crust, standard-type, dry mix, prepared, baked": {
+    "cal_per_100g": 501,
+    "category": "grain",
+    "default_serving_g": 20
+  },
+  "pie crust, standard-type, prepared from recipe, baked": {
+    "cal_per_100g": 527,
+    "category": "grain",
+    "default_serving_g": 23
+  },
+  "pie, fried pies, cherry": {
+    "cal_per_100g": 316,
+    "category": "grain",
+    "default_serving_g": 128
+  },
+  "pie, fried pies, fruit": {
+    "cal_per_100g": 316,
+    "category": "grain",
+    "default_serving_g": 28
+  },
+  "pie, fried pies, lemon": {
+    "cal_per_100g": 316,
+    "category": "grain",
+    "default_serving_g": 28
+  },
+  "pineapple, raw, all varieties": {
+    "cal_per_100g": 50,
+    "category": "fruit",
+    "default_serving_g": 56
+  },
+  "pitanga, (surinam-cherry), raw": {
+    "cal_per_100g": 33,
+    "category": "fruit",
+    "default_serving_g": 173
+  },
+  "pizza, cheese topping, regular crust, frozen, cooked": {
+    "cal_per_100g": 268,
+    "category": "other",
+    "default_serving_g": 81
+  },
+  "pizza, cheese topping, rising crust, frozen, cooked": {
+    "cal_per_100g": 260,
+    "category": "other",
+    "default_serving_g": 595
+  },
+  "pizza, cheese topping, thin crust, frozen, cooked": {
+    "cal_per_100g": 263,
+    "category": "other",
+    "default_serving_g": 69
+  },
+  "pizza, meat and vegetable topping, regular crust, frozen, cooked": {
+    "cal_per_100g": 276,
+    "category": "other",
+    "default_serving_g": 129
+  },
+  "pizza, meat and vegetable topping, rising crust, frozen, cooked": {
+    "cal_per_100g": 271,
+    "category": "other",
+    "default_serving_g": 891
+  },
+  "pizza, meat topping, thick crust, frozen, cooked": {
+    "cal_per_100g": 274,
+    "category": "other",
+    "default_serving_g": 103
+  },
+  "pizza, pepperoni topping, regular crust, frozen, cooked": {
+    "cal_per_100g": 274,
+    "category": "other",
+    "default_serving_g": 532
+  },
+  "plantains, green, boiled": {
+    "cal_per_100g": 121,
+    "category": "fruit",
+    "default_serving_g": 137
+  },
+  "plantains, green, fried": {
+    "cal_per_100g": 309,
+    "category": "fruit",
+    "default_serving_g": 118
+  },
+  "plantains, green, raw": {
+    "cal_per_100g": 152,
+    "category": "fruit",
+    "default_serving_g": 267
+  },
+  "plantains, yellow, baked": {
+    "cal_per_100g": 155,
+    "category": "fruit",
+    "default_serving_g": 105
+  },
+  "plantains, yellow, raw": {
+    "cal_per_100g": 122,
+    "category": "fruit",
+    "default_serving_g": 270
+  },
+  "platano maduro": {
+    "cal_per_100g": 116,
+    "category": "fruit",
+    "default_serving_g": 150
+  },
+  "platano verde": {
+    "cal_per_100g": 122,
+    "category": "fruit",
+    "default_serving_g": 150
+  },
+  "plums, raw": {
+    "cal_per_100g": 46,
+    "category": "fruit",
+    "default_serving_g": 151
+  },
+  "pomegranates, raw": {
+    "cal_per_100g": 83,
+    "category": "fruit",
+    "default_serving_g": 282
+  },
+  "popeyes, fried chicken, mild, breast, meat and skin with breading": {
+    "cal_per_100g": 274,
+    "category": "other",
+    "default_serving_g": 99
+  },
+  "popeyes, fried chicken, mild, drumstick, meat and skin with breading": {
+    "cal_per_100g": 293,
+    "category": "other",
+    "default_serving_g": 76
+  },
+  "popeyes, fried chicken, mild, skin and breading": {
+    "cal_per_100g": 433,
+    "category": "other"
+  },
+  "popeyes, fried chicken, mild, thigh, meat and skin with breading": {
+    "cal_per_100g": 310,
+    "category": "other",
+    "default_serving_g": 138
+  },
+  "popeyes, fried chicken, mild, thigh, meat only, skin and breading removed": {
+    "cal_per_100g": 188,
+    "category": "other",
+    "default_serving_g": 83
+  },
+  "popeyes, fried chicken, mild, wing, meat and skin with breading": {
+    "cal_per_100g": 338,
+    "category": "other",
+    "default_serving_g": 17
+  },
+  "popeyes, fried chicken, mild, wing, meat only, skin and breading removed": {
+    "cal_per_100g": 212,
+    "category": "other",
+    "default_serving_g": 16
+  },
+  "pork, cured, salt pork, raw": {
+    "cal_per_100g": 748,
+    "category": "protein",
+    "default_serving_g": 227
+  },
+  "pork, fresh, backfat, raw": {
+    "cal_per_100g": 812,
+    "category": "protein",
+    "default_serving_g": 113
+  },
+  "pork, fresh, belly, raw": {
+    "cal_per_100g": 518,
+    "category": "protein",
+    "default_serving_g": 454
+  },
+  "pork, fresh, ground, cooked": {
+    "cal_per_100g": 297,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "pork, fresh, ground, raw": {
+    "cal_per_100g": 263,
+    "category": "protein",
+    "default_serving_g": 113
+  },
+  "pork, fresh, separable fat, raw": {
+    "cal_per_100g": 632,
+    "category": "protein",
+    "default_serving_g": 113
+  },
+  "potatoes, raw, skin": {
+    "cal_per_100g": 58,
+    "category": "vegetable",
+    "default_serving_g": 38
+  },
+  "prickly pears, raw": {
+    "cal_per_100g": 41,
+    "category": "fruit",
+    "default_serving_g": 103
+  },
+  "puddings, banana, dry mix, instant, prepared with whole milk": {
+    "cal_per_100g": 115,
+    "category": "other",
+    "default_serving_g": 127
+  },
+  "puddings, banana, dry mix, regular, prepared with whole milk": {
+    "cal_per_100g": 111,
+    "category": "other",
+    "default_serving_g": 127
+  },
+  "puddings, chocolate, dry mix, instant, prepared with whole milk": {
+    "cal_per_100g": 111,
+    "category": "other",
+    "default_serving_g": 147
+  },
+  "puddings, chocolate, dry mix, regular, prepared with whole milk": {
+    "cal_per_100g": 120,
+    "category": "other",
+    "default_serving_g": 142
+  },
+  "puddings, coconut cream, dry mix, instant, prepared with whole milk": {
+    "cal_per_100g": 117,
+    "category": "other",
+    "default_serving_g": 147
+  },
+  "puddings, coconut cream, dry mix, regular, prepared with whole milk": {
+    "cal_per_100g": 114,
+    "category": "other",
+    "default_serving_g": 559
+  },
+  "puddings, lemon, dry mix, instant, prepared with whole milk": {
+    "cal_per_100g": 115,
+    "category": "other",
+    "default_serving_g": 147
+  },
+  "puddings, rice, dry mix, prepared with whole milk": {
+    "cal_per_100g": 121,
+    "category": "other",
+    "default_serving_g": 128
+  },
+  "puddings, tapioca, dry mix, prepared with whole milk": {
+    "cal_per_100g": 115,
+    "category": "other",
+    "default_serving_g": 128
+  },
+  "puddings, vanilla, dry mix, instant, prepared with whole milk": {
+    "cal_per_100g": 114,
+    "category": "other",
+    "default_serving_g": 142
+  },
+  "puddings, vanilla, dry mix, regular, prepared with whole milk": {
+    "cal_per_100g": 113,
+    "category": "other",
+    "default_serving_g": 559
+  },
+  "puff pastry, frozen, ready-to-bake, baked": {
+    "cal_per_100g": 558,
+    "category": "grain",
+    "default_serving_g": 28
+  },
+  "pummelo, raw": {
+    "cal_per_100g": 38,
+    "category": "fruit",
+    "default_serving_g": 190
+  },
+  "pumpkin flowers, raw": {
+    "cal_per_100g": 15,
+    "category": "vegetable",
+    "default_serving_g": 2
+  },
+  "pumpkin leaves, raw": {
+    "cal_per_100g": 19,
+    "category": "vegetable",
+    "default_serving_g": 39
+  },
+  "pumpkin, raw": {
+    "cal_per_100g": 26,
+    "category": "vegetable",
+    "default_serving_g": 116
+  },
+  "pupusa": {
+    "cal_per_100g": 210,
+    "category": "grain",
+    "default_serving_g": 130
+  },
+  "purslane, raw": {
+    "cal_per_100g": 20,
+    "category": "vegetable",
+    "default_serving_g": 3
+  },
+  "quail, breast, meat only, raw": {
+    "cal_per_100g": 123,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "quail, cooked, total edible": {
+    "cal_per_100g": 227,
+    "category": "protein",
+    "default_serving_g": 453
+  },
+  "quail, meat and skin, raw": {
+    "cal_per_100g": 192,
+    "category": "protein",
+    "default_serving_g": 405
+  },
+  "quail, meat only, raw": {
+    "cal_per_100g": 134,
+    "category": "protein",
+    "default_serving_g": 342
+  },
+  "quinces, raw": {
+    "cal_per_100g": 57,
+    "category": "fruit",
+    "default_serving_g": 92
+  },
+  "quinoa, cooked": {
+    "cal_per_100g": 120,
+    "category": "grain",
+    "default_serving_g": 185
+  },
+  "radicchio, raw": {
+    "cal_per_100g": 23,
+    "category": "vegetable",
+    "default_serving_g": 40
+  },
+  "radishes, oriental, raw": {
+    "cal_per_100g": 18,
+    "category": "vegetable",
+    "default_serving_g": 116
+  },
+  "radishes, raw": {
+    "cal_per_100g": 16,
+    "category": "vegetable",
+    "default_serving_g": 4
+  },
+  "raspberries, raw": {
+    "cal_per_100g": 52,
+    "category": "fruit",
+    "default_serving_g": 312
+  },
+  "rennin, chocolate, dry mix, prepared with whole milk": {
+    "cal_per_100g": 96,
+    "category": "other",
+    "default_serving_g": 142
+  },
+  "rennin, vanilla, dry mix, prepared with whole milk": {
+    "cal_per_100g": 89,
+    "category": "other"
+  },
+  "restaurant, chinese, fried rice, without meat": {
+    "cal_per_100g": 174,
+    "category": "other",
+    "default_serving_g": 137
+  },
+  "restaurant, family style, fish fillet, battered or breaded, fried": {
+    "cal_per_100g": 219,
+    "category": "other",
+    "default_serving_g": 226
+  },
+  "restaurant, family style, fried mozzarella sticks": {
+    "cal_per_100g": 325,
+    "category": "other",
+    "default_serving_g": 31
+  },
+  "restaurant, family style, shrimp, breaded and fried": {
+    "cal_per_100g": 308,
+    "category": "other",
+    "default_serving_g": 169
+  },
+  "restaurant, latino, bunuelos (fried yeast bread)": {
+    "cal_per_100g": 462,
+    "category": "other",
+    "default_serving_g": 70
+  },
+  "rhubarb, raw": {
+    "cal_per_100g": 21,
+    "category": "fruit",
+    "default_serving_g": 51
+  },
+  "rice noodles, cooked": {
+    "cal_per_100g": 108,
+    "category": "grain",
+    "default_serving_g": 176
+  },
+  "rice, brown, parboiled, cooked, uncle bens": {
+    "cal_per_100g": 147,
+    "category": "grain",
+    "default_serving_g": 155
+  },
+  "rice, white, glutinous, unenriched, cooked": {
+    "cal_per_100g": 97,
+    "category": "grain",
+    "default_serving_g": 174
+  },
+  "rice, white, long-grain, parboiled, enriched, cooked": {
+    "cal_per_100g": 123,
+    "category": "grain",
+    "default_serving_g": 158
+  },
+  "rice, white, long-grain, parboiled, unenriched, cooked": {
+    "cal_per_100g": 123,
+    "category": "grain",
+    "default_serving_g": 158
+  },
+  "rice, white, long-grain, regular, enriched, cooked": {
+    "cal_per_100g": 130,
+    "category": "grain",
+    "default_serving_g": 158
+  },
+  "rice, white, long-grain, regular, raw, enriched": {
+    "cal_per_100g": 365,
+    "category": "grain",
+    "default_serving_g": 185
+  },
+  "rice, white, long-grain, regular, raw, unenriched": {
+    "cal_per_100g": 365,
+    "category": "grain",
+    "default_serving_g": 185
+  },
+  "rice, white, medium-grain, cooked, unenriched": {
+    "cal_per_100g": 130,
+    "category": "grain",
+    "default_serving_g": 186
+  },
+  "rice, white, medium-grain, enriched, cooked": {
+    "cal_per_100g": 130,
+    "category": "grain",
+    "default_serving_g": 186
+  },
+  "rice, white, medium-grain, raw, enriched": {
+    "cal_per_100g": 360,
+    "category": "grain",
+    "default_serving_g": 195
+  },
+  "rice, white, medium-grain, raw, unenriched": {
+    "cal_per_100g": 360,
+    "category": "grain",
+    "default_serving_g": 195
+  },
+  "rice, white, short-grain, cooked, unenriched": {
+    "cal_per_100g": 130,
+    "category": "grain",
+    "default_serving_g": 205
+  },
+  "rice, white, short-grain, enriched, cooked": {
+    "cal_per_100g": 130,
+    "category": "grain",
+    "default_serving_g": 186
+  },
+  "rice, white, short-grain, raw, unenriched": {
+    "cal_per_100g": 358,
+    "category": "grain",
+    "default_serving_g": 200
+  },
+  "rice, white, steamed, chinese restaurant": {
+    "cal_per_100g": 151,
+    "category": "grain",
+    "default_serving_g": 132
+  },
+  "rolls, dinner, whole-wheat": {
+    "cal_per_100g": 266,
+    "category": "grain",
+    "default_serving_g": 135
+  },
+  "rolls, hamburger or hot dog, whole wheat": {
+    "cal_per_100g": 269,
+    "category": "grain",
+    "default_serving_g": 56
+  },
+  "rose-apples, raw": {
+    "cal_per_100g": 25,
+    "category": "fruit"
+  },
+  "roselle, raw": {
+    "cal_per_100g": 49,
+    "category": "fruit",
+    "default_serving_g": 57
+  },
+  "rosemary, fresh": {
+    "cal_per_100g": 131,
+    "category": "other",
+    "default_serving_g": 2
+  },
+  "rowal, raw": {
+    "cal_per_100g": 111,
+    "category": "fruit",
+    "default_serving_g": 114
+  },
+  "rutabagas, raw": {
+    "cal_per_100g": 37,
+    "category": "vegetable",
+    "default_serving_g": 772
+  },
+  "salad dressing, bacon and tomato": {
+    "cal_per_100g": 326,
+    "category": "fat",
+    "default_serving_g": 15
+  },
+  "salad dressing, buttermilk, lite": {
+    "cal_per_100g": 202,
+    "category": "fat",
+    "default_serving_g": 15
+  },
+  "salad dressing, caesar, fat-free": {
+    "cal_per_100g": 131,
+    "category": "fat",
+    "default_serving_g": 34
+  },
+  "salad dressing, coleslaw": {
+    "cal_per_100g": 404,
+    "category": "fat",
+    "default_serving_g": 19
+  },
+  "salad dressing, russian dressing": {
+    "cal_per_100g": 355,
+    "category": "fat",
+    "default_serving_g": 30
+  },
+  "salad dressing, sweet and sour": {
+    "cal_per_100g": 15,
+    "category": "fat",
+    "default_serving_g": 16
+  },
+  "salami, cooked, beef": {
+    "cal_per_100g": 261,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "salami, cooked, beef and pork": {
+    "cal_per_100g": 336,
+    "category": "protein",
+    "default_serving_g": 12
+  },
+  "salami, cooked, turkey": {
+    "cal_per_100g": 172,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "sapodilla, raw": {
+    "cal_per_100g": 83,
+    "category": "fruit",
+    "default_serving_g": 241
+  },
+  "sapote, mamey, raw": {
+    "cal_per_100g": 124,
+    "category": "fruit",
+    "default_serving_g": 558
+  },
+  "sausage, beef, fresh, cooked": {
+    "cal_per_100g": 332,
+    "category": "protein",
+    "default_serving_g": 43
+  },
+  "sausage, turkey, fresh, cooked": {
+    "cal_per_100g": 196,
+    "category": "protein",
+    "default_serving_g": 57
+  },
+  "sausage, turkey, fresh, raw": {
+    "cal_per_100g": 155,
+    "category": "protein",
+    "default_serving_g": 57
+  },
+  "school lunch, chicken nuggets, whole grain breaded": {
+    "cal_per_100g": 270,
+    "category": "other",
+    "default_serving_g": 88
+  },
+  "school lunch, chicken patty, whole grain breaded": {
+    "cal_per_100g": 246,
+    "category": "other",
+    "default_serving_g": 86
+  },
+  "seaweed, agar, raw": {
+    "cal_per_100g": 26,
+    "category": "vegetable",
+    "default_serving_g": 10
+  },
+  "seaweed, irishmoss, raw": {
+    "cal_per_100g": 49,
+    "category": "vegetable",
+    "default_serving_g": 10
+  },
+  "seaweed, kelp, raw": {
+    "cal_per_100g": 43,
+    "category": "vegetable",
+    "default_serving_g": 10
+  },
+  "seaweed, laver, raw": {
+    "cal_per_100g": 35,
+    "category": "vegetable",
+    "default_serving_g": 26
+  },
+  "seaweed, spirulina, raw": {
+    "cal_per_100g": 26,
+    "category": "vegetable"
+  },
+  "seaweed, wakame, raw": {
+    "cal_per_100g": 45,
+    "category": "vegetable",
+    "default_serving_g": 10
+  },
+  "seeds, breadfruit seeds, boiled": {
+    "cal_per_100g": 168,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "seeds, breadfruit seeds, raw": {
+    "cal_per_100g": 191,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "seeds, breadnut tree seeds, raw": {
+    "cal_per_100g": 217,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "seeds, lotus seeds, raw": {
+    "cal_per_100g": 89,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "sesbania flower, raw": {
+    "cal_per_100g": 27,
+    "category": "vegetable",
+    "default_serving_g": 20
+  },
+  "shake, fast food, vanilla": {
+    "cal_per_100g": 148,
+    "category": "beverage",
+    "default_serving_g": 250
+  },
+  "shallots, raw": {
+    "cal_per_100g": 72,
+    "category": "vegetable",
+    "default_serving_g": 10
+  },
+  "snacks, m&m mars, kudos whole grain bar, chocolate chip": {
+    "cal_per_100g": 420,
+    "category": "other",
+    "default_serving_g": 28
+  },
+  "snacks, m&m mars, kudos whole grain bar, m&m's milk chocolate": {
+    "cal_per_100g": 415,
+    "category": "other",
+    "default_serving_g": 24
+  },
+  "snacks, m&m mars, kudos whole grain bars, peanut butter": {
+    "cal_per_100g": 463,
+    "category": "other",
+    "default_serving_g": 28
+  },
+  "snacks, peas, roasted, wasabi-flavored": {
+    "cal_per_100g": 432,
+    "category": "other",
+    "default_serving_g": 28
+  },
+  "snacks, potato chips, white, restructured, baked": {
+    "cal_per_100g": 469,
+    "category": "other",
+    "default_serving_g": 12
+  },
+  "snacks, pretzels, hard, whole-wheat including both salted and unsalted": {
+    "cal_per_100g": 362,
+    "category": "other",
+    "default_serving_g": 28
+  },
+  "snacks, tortilla chips, light (baked with less oil)": {
+    "cal_per_100g": 465,
+    "category": "other",
+    "default_serving_g": 63
+  },
+  "sorghum flour, whole-grain": {
+    "cal_per_100g": 359,
+    "category": "grain",
+    "default_serving_g": 121
+  },
+  "sour cream, light": {
+    "cal_per_100g": 136,
+    "category": "dairy",
+    "default_serving_g": 230
+  },
+  "soursop, raw": {
+    "cal_per_100g": 66,
+    "category": "fruit",
+    "default_serving_g": 625
+  },
+  "soy flour, full-fat, raw": {
+    "cal_per_100g": 434,
+    "category": "protein",
+    "default_serving_g": 84
+  },
+  "soy flour, full-fat, roasted": {
+    "cal_per_100g": 439,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "soy meal, defatted, raw": {
+    "cal_per_100g": 337,
+    "category": "protein",
+    "default_serving_g": 122
+  },
+  "soybeans, green, raw": {
+    "cal_per_100g": 147,
+    "category": "vegetable",
+    "default_serving_g": 256
+  },
+  "soybeans, mature seeds, raw": {
+    "cal_per_100g": 446,
+    "category": "protein",
+    "default_serving_g": 186
+  },
+  "spaghetti, spinach, cooked": {
+    "cal_per_100g": 130,
+    "category": "grain",
+    "default_serving_g": 140
+  },
+  "spearmint, fresh": {
+    "cal_per_100g": 44,
+    "category": "other",
+    "default_serving_g": 11
+  },
+  "spelt, cooked": {
+    "cal_per_100g": 127,
+    "category": "grain",
+    "default_serving_g": 194
+  },
+  "spinach, raw": {
+    "cal_per_100g": 23,
+    "category": "vegetable",
+    "default_serving_g": 340
+  },
+  "squab, (pigeon), meat only, raw": {
+    "cal_per_100g": 142,
+    "category": "protein",
+    "default_serving_g": 251
+  },
+  "strawberries, raw": {
+    "cal_per_100g": 32,
+    "category": "fruit",
+    "default_serving_g": 232
+  },
+  "strawberry-flavor beverage mix, powder": {
+    "cal_per_100g": 389,
+    "category": "beverage",
+    "default_serving_g": 22
+  },
+  "sugar-apples, (sweetsop), raw": {
+    "cal_per_100g": 94,
+    "category": "fruit",
+    "default_serving_g": 155
+  },
+  "t.g.i. friday's, fried mozzarella": {
+    "cal_per_100g": 333,
+    "category": "other",
+    "default_serving_g": 35
+  },
+  "taco shells, baked": {
+    "cal_per_100g": 476,
+    "category": "grain",
+    "default_serving_g": 13
+  },
+  "taco shells, baked, without added salt": {
+    "cal_per_100g": 468,
+    "category": "grain",
+    "default_serving_g": 28
+  },
+  "tamale": {
+    "cal_per_100g": 180,
+    "category": "grain",
+    "default_serving_g": 150
+  },
+  "tamarinds, raw": {
+    "cal_per_100g": 239,
+    "category": "fruit",
+    "default_serving_g": 120
+  },
+  "tangerine juice, raw": {
+    "cal_per_100g": 43,
+    "category": "fruit",
+    "default_serving_g": 247
+  },
+  "taro leaves, raw": {
+    "cal_per_100g": 42,
+    "category": "vegetable",
+    "default_serving_g": 10
+  },
+  "taro shoots, raw": {
+    "cal_per_100g": 11,
+    "category": "vegetable",
+    "default_serving_g": 83
+  },
+  "taro, cooked, with salt": {
+    "cal_per_100g": 142,
+    "category": "vegetable",
+    "default_serving_g": 132
+  },
+  "taro, raw": {
+    "cal_per_100g": 112,
+    "category": "vegetable",
+    "default_serving_g": 104
+  },
+  "taro, tahitian, raw": {
+    "cal_per_100g": 44,
+    "category": "vegetable",
+    "default_serving_g": 125
+  },
+  "teff, cooked": {
+    "cal_per_100g": 101,
+    "category": "grain",
+    "default_serving_g": 252
+  },
+  "tempeh, cooked": {
+    "cal_per_100g": 195,
+    "category": "protein"
+  },
+  "thyme, fresh": {
+    "cal_per_100g": 101,
+    "category": "other",
+    "default_serving_g": 1
+  },
+  "tofu, fried": {
+    "cal_per_100g": 270,
+    "category": "protein",
+    "default_serving_g": 28
+  },
+  "tomatillos, raw": {
+    "cal_per_100g": 32,
+    "category": "vegetable",
+    "default_serving_g": 34
+  },
+  "tomatoes, green, raw": {
+    "cal_per_100g": 23,
+    "category": "vegetable",
+    "default_serving_g": 123
+  },
+  "tomatoes, orange, raw": {
+    "cal_per_100g": 16,
+    "category": "vegetable",
+    "default_serving_g": 158
+  },
+  "tomatoes, yellow, raw": {
+    "cal_per_100g": 15,
+    "category": "vegetable",
+    "default_serving_g": 212
+  },
+  "tortellini, pasta with cheese filling, fresh-refrigerated, as purchased": {
+    "cal_per_100g": 307,
+    "category": "other",
+    "default_serving_g": 81
+  },
+  "tortilla chips, low fat, baked without fat": {
+    "cal_per_100g": 448,
+    "category": "other",
+    "default_serving_g": 28
+  },
+  "tortillas, ready-to-bake or -fry, whole wheat": {
+    "cal_per_100g": 310,
+    "category": "grain",
+    "default_serving_g": 41
+  },
+  "tostada": {
+    "cal_per_100g": 260,
+    "category": "grain",
+    "default_serving_g": 50
+  },
+  "triticale flour, whole-grain": {
+    "cal_per_100g": 338,
+    "category": "grain",
+    "default_serving_g": 130
+  },
+  "turkey, all classes, heart, raw": {
+    "cal_per_100g": 140,
+    "category": "protein",
+    "default_serving_g": 113
+  },
+  "turkey, all classes, liver, raw": {
+    "cal_per_100g": 128,
+    "category": "protein",
+    "default_serving_g": 78
+  },
+  "turkey, ground, cooked": {
+    "cal_per_100g": 203,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "turkey, ground, fat free, raw": {
+    "cal_per_100g": 112,
+    "category": "protein",
+    "default_serving_g": 113
+  },
+  "turkey, ground, raw": {
+    "cal_per_100g": 148,
+    "category": "protein",
+    "default_serving_g": 454
+  },
+  "turkey, whole, giblets, raw": {
+    "cal_per_100g": 124,
+    "category": "protein",
+    "default_serving_g": 157
+  },
+  "turkey, whole, light meat, raw": {
+    "cal_per_100g": 114,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "turkey, whole, meat only, raw": {
+    "cal_per_100g": 115,
+    "category": "protein",
+    "default_serving_g": 113
+  },
+  "turnip greens, raw": {
+    "cal_per_100g": 32,
+    "category": "vegetable",
+    "default_serving_g": 55
+  },
+  "turnips, raw": {
+    "cal_per_100g": 28,
+    "category": "vegetable",
+    "default_serving_g": 122
+  },
+  "turtle, green, raw": {
+    "cal_per_100g": 89,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "udi's, gluten free, soft & hearty whole grain bread": {
+    "cal_per_100g": 309,
+    "category": "grain",
+    "default_serving_g": 25
+  },
+  "udi's, gluten free, whole grain dinner rolls": {
+    "cal_per_100g": 329,
+    "category": "grain",
+    "default_serving_g": 44
+  },
+  "veal, external fat only, raw": {
+    "cal_per_100g": 503,
+    "category": "protein",
+    "default_serving_g": 113
+  },
+  "veal, ground, cooked, broiled": {
+    "cal_per_100g": 172,
+    "category": "protein",
+    "default_serving_g": 299
+  },
+  "veal, ground, raw": {
+    "cal_per_100g": 197,
+    "category": "protein",
+    "default_serving_g": 113
+  },
+  "veal, seam fat only, cooked": {
+    "cal_per_100g": 505,
+    "category": "protein",
+    "default_serving_g": 85
+  },
+  "veal, seam fat only, raw": {
+    "cal_per_100g": 444,
+    "category": "protein",
+    "default_serving_g": 113
+  },
+  "vegetable oil, palm kernel": {
+    "cal_per_100g": 862,
+    "category": "fat",
+    "default_serving_g": 27
+  },
+  "waffles, whole wheat, lowfat, frozen, ready-to-heat": {
+    "cal_per_100g": 257,
+    "category": "grain",
+    "default_serving_g": 70
+  },
+  "wasabi, root, raw": {
+    "cal_per_100g": 109,
+    "category": "vegetable",
+    "default_serving_g": 130
+  },
+  "water convolvulus,raw": {
+    "cal_per_100g": 19,
+    "category": "vegetable",
+    "default_serving_g": 13
+  },
+  "watercress, raw": {
+    "cal_per_100g": 11,
+    "category": "vegetable",
+    "default_serving_g": 25
+  },
+  "watermelon, raw": {
+    "cal_per_100g": 30,
+    "category": "fruit",
+    "default_serving_g": 280
+  },
+  "wheat flour, whole-grain, soft wheat": {
+    "cal_per_100g": 332,
+    "category": "grain"
+  },
+  "wheat, khorasan, cooked": {
+    "cal_per_100g": 132,
+    "category": "grain",
+    "default_serving_g": 172
+  },
+  "whey, acid, dried": {
+    "cal_per_100g": 339,
+    "category": "dairy",
+    "default_serving_g": 3
+  },
+  "whey, acid, fluid": {
+    "cal_per_100g": 24,
+    "category": "dairy",
+    "default_serving_g": 984
+  },
+  "whey, sweet, dried": {
+    "cal_per_100g": 353,
+    "category": "dairy",
+    "default_serving_g": 8
+  },
+  "whey, sweet, fluid": {
+    "cal_per_100g": 27,
+    "category": "dairy",
+    "default_serving_g": 984
+  },
+  "wild rice, cooked": {
+    "cal_per_100g": 101,
+    "category": "grain",
+    "default_serving_g": 164
+  },
+  "wild rice, raw": {
+    "cal_per_100g": 357,
+    "category": "grain",
+    "default_serving_g": 160
+  },
+  "winged bean leaves, raw": {
+    "cal_per_100g": 74,
+    "category": "vegetable"
+  },
+  "winged bean tuber, raw": {
+    "cal_per_100g": 148,
+    "category": "vegetable"
+  },
+  "yam, raw": {
+    "cal_per_100g": 118,
+    "category": "vegetable",
+    "default_serving_g": 150
+  },
+  "yambean (jicama), raw": {
+    "cal_per_100g": 38,
+    "category": "vegetable",
+    "default_serving_g": 6
+  },
+  "yardlong bean, raw": {
+    "cal_per_100g": 47,
+    "category": "vegetable",
+    "default_serving_g": 91
+  },
+  "yautia (tannier), raw": {
+    "cal_per_100g": 98,
+    "category": "vegetable",
+    "default_serving_g": 135
+  },
+  "yogurt, greek, fruit, whole milk": {
+    "cal_per_100g": 106,
+    "category": "dairy"
+  },
+  "yogurt, greek, plain, whole milk": {
+    "cal_per_100g": 97,
+    "category": "dairy"
+  },
+  "yogurt, greek, whole, plain, chobani": {
+    "cal_per_100g": 82,
+    "category": "dairy"
+  },
+  "yogurt, plain, whole milk": {
+    "cal_per_100g": 61,
+    "category": "dairy",
+    "default_serving_g": 227
+  }
+}

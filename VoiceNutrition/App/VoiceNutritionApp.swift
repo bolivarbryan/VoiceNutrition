@@ -3,6 +3,8 @@ import SwiftUI
 /// The main entry point for VoiceNutrition.
 @main
 struct VoiceNutritionApp: App {
+    @State private var container = DependencyContainer()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
