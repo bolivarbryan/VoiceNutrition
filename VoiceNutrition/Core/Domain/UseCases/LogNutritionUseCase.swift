@@ -156,6 +156,105 @@ public final class LogNutritionUseCase: Sendable {
         )
     }
 
+    // MARK: - Review Trigger
+
+    /// Determines whether the review sheet should be presented.
+    ///
+    /// Returns `false` for the happy path (all items confirmed, none unresolved,
+    /// no date ambiguity), allowing the session to be saved immediately.
+    ///
+    /// - Parameter data: The processed review data from `process(text:)`.
+    /// - Returns: `true` if any item needs user review.
+    public static func needsReview(_ data: ReviewData) -> Bool {
+        !data.resolvedItems.isEmpty || !data.unresolvedItems.isEmpty || data.needsDateConfirmation
+    }
+
+    // MARK: - Save Orchestration
+
+    /// Builds a ``NutritionSession`` from selected review items and persists it.
+    ///
+    /// Save order (PERS-05): SwiftData first, HealthKit second. Local data is
+    /// never lost even if HealthKit fails. On successful HealthKit sync, the
+    /// `healthKitSynced` flag is updated with a second SwiftData save.
+    ///
+    /// - Parameters:
+    ///   - reviewData: The processed review data with metadata.
+    ///   - selectedConfirmed: Confirmed items the user kept.
+    ///   - selectedLowConfidence: Low-confidence items the user accepted.
+    ///   - selectedUnresolved: Unresolved items the user chose to include.
+    ///   - confirmedDate: The final confirmed consumption date.
+    ///   - sessionStore: The local persistence store.
+    ///   - healthKit: The HealthKit write integration.
+    /// - Returns: The persisted ``NutritionSession``.
+    /// - Throws: ``VoiceNutritionError/persistenceFailed`` if local save fails.
+    @MainActor
+    public func finalize(
+        reviewData: ReviewData,
+        selectedConfirmed: [ResolvedFoodItem],
+        selectedLowConfidence: [ResolvedFoodItem],
+        selectedUnresolved: [UnresolvedFoodItem],
+        confirmedDate: Date,
+        sessionStore: any NutritionSessionStoring,
+        healthKit: any HealthKitWriting
+    ) throws -> NutritionSession {
+        // Build entries from selected items
+        var entries: [FoodEntry] = []
+
+        for item in selectedConfirmed + selectedLowConfidence {
+            entries.append(FoodEntry(
+                name: item.name,
+                calories: item.calories,
+                portionGrams: item.portionGrams,
+                confidence: item.confidence,
+                matchQuality: matchQualityString(item.matchQuality),
+                consumedAt: item.consumedAt,
+                isResolved: true
+            ))
+        }
+
+        for item in selectedUnresolved {
+            entries.append(FoodEntry(
+                name: item.name,
+                calories: 0,
+                portionGrams: 0,
+                confidence: 0.0,
+                matchQuality: "notFound",
+                consumedAt: confirmedDate,
+                isResolved: false
+            ))
+        }
+
+        let totalCalories = (selectedConfirmed + selectedLowConfidence)
+            .reduce(0) { $0 + $1.calories }
+
+        let session = NutritionSession(
+            date: confirmedDate,
+            mealContext: reviewData.mealContext,
+            totalCalories: totalCalories,
+            waterMl: reviewData.waterMl,
+            hasUnresolvedItems: !selectedUnresolved.isEmpty,
+            entries: entries
+        )
+
+        // PERS-05: SwiftData first — local data never lost
+        try sessionStore.save(session)
+
+        // HealthKit second — fire-and-forget on @MainActor
+        // NutritionSession is @Model (not Sendable), so HealthKit sync
+        // runs in a Task on @MainActor to avoid data races.
+        Task { @MainActor in
+            do {
+                try await healthKit.save(session)
+                session.healthKitSynced = true
+                try sessionStore.save(session)
+            } catch {
+                // Silently ignore — healthKitSynced stays false
+            }
+        }
+
+        return session
+    }
+
     // MARK: - Private
 
     /// Determines the overall date resolution from all resolved items.
@@ -198,5 +297,14 @@ public final class LogNutritionUseCase: Sendable {
             return .approximated(earliestDate)
         }
         return .exact(earliestDate)
+    }
+
+    /// Converts a ``MatchQuality`` enum to its string representation for persistence.
+    private func matchQualityString(_ quality: MatchQuality) -> String {
+        switch quality {
+        case .strong: "strong"
+        case .weak: "weak"
+        case .notFound: "notFound"
+        }
     }
 }

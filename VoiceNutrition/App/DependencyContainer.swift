@@ -1,4 +1,5 @@
 import Foundation
+import SwiftData
 
 /// Composition Root for the application.
 ///
@@ -19,11 +20,15 @@ final class DependencyContainer: Sendable {
     /// Orchestrates the full nutrition logging pipeline.
     let logNutritionUseCase: LogNutritionUseCase
 
-    // let healthKit: any HealthKitWriting             // Phase 3
-    // let sessionStore: any NutritionSessionStoring   // Phase 3
+    /// Local session persistence via SwiftData.
+    let sessionStore: any NutritionSessionStoring
+
+    /// HealthKit write-only integration.
+    let healthKit: any HealthKitWriting
 
     /// Creates the container, wiring all concrete dependencies.
-    init() {
+    /// - Parameter modelContext: The SwiftData model context for persistence.
+    init(modelContext: ModelContext) {
         self.speechResolver = SpeechRepository()
         self.intentResolver = FoundationModelIntentRepository()
         self.foodDatabase = FoodDatabaseRepository()
@@ -31,5 +36,7 @@ final class DependencyContainer: Sendable {
             intentResolver: intentResolver,
             foodDatabase: foodDatabase
         )
+        self.sessionStore = SwiftDataNutritionSessionRepository(modelContext: modelContext)
+        self.healthKit = HealthKitRepository()
     }
 }

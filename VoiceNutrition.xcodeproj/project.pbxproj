@@ -13,6 +13,7 @@
 		0AB1983392EF20AC0BFFB6CC /* PortionSizeResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFC5188C8B0AED92629A60A /* PortionSizeResolver.swift */; };
 		0DFE3A54CCAC627F30143C1E /* MatchQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744B7D9D54F218BBB7E6D6D4 /* MatchQuality.swift */; };
 		0F4A6B646EF4E0A955A9647F /* ResolvedFoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3150B912A6434F48F60470D2 /* ResolvedFoodItem.swift */; };
+		13640F3BBA0531E6CAF01C8C /* ReviewTriggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A61F6CAE35E174DB7CCF744 /* ReviewTriggerTests.swift */; };
 		13823974D337EDCC5CB40BB5 /* DateResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CE9392D9CEEA5E3876FDF /* DateResolverTests.swift */; };
 		1AD08B6A591C683CB3FC2378 /* MockHealthKitWriting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E018C5603FD54D08F3A73EB3 /* MockHealthKitWriting.swift */; };
 		1B3732CF70CFF4ABA9C0250F /* DateResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C155AD2C31BC1FDD8A68354 /* DateResolver.swift */; };
@@ -44,6 +45,7 @@
 		AD5C972F8681C6F0788B6755 /* VoiceNutritionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA5B2AD29BF54CAF740B599 /* VoiceNutritionState.swift */; };
 		B47E2EF129D2FBDC1BABC655 /* FoundationModelIntentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C68640F8F0D5D92C4CA3379 /* FoundationModelIntentRepository.swift */; };
 		B4CA01E70E7DF276D083A3DE /* VoiceNutritionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94F217445D9B440A06F974A /* VoiceNutritionError.swift */; };
+		B9EC74C4CAD87B5594BDB1F4 /* SaveOrchestrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39566651C5B1FEEDB34C22BA /* SaveOrchestrationTests.swift */; };
 		BF07649DC7CD4EE6D68B2265 /* HealthKitPermissionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B505AF2081C3DA098C013F9 /* HealthKitPermissionStatus.swift */; };
 		C3F0ABE7648EAE9A17262F1B /* FoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F53244190726B3D5BD754AC /* FoodEntry.swift */; };
 		C6237D5AEA8B3BCA5FD60080 /* DomainModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7774D0589718CF0A61004066 /* DomainModelTests.swift */; };
@@ -77,6 +79,7 @@
 		26C059A9770358D0F1D2538B /* NutritionSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionSession.swift; sourceTree = "<group>"; };
 		29B5D8F88E5FF6EFCB3588D7 /* LogNutritionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogNutritionUseCase.swift; sourceTree = "<group>"; };
 		3150B912A6434F48F60470D2 /* ResolvedFoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolvedFoodItem.swift; sourceTree = "<group>"; };
+		39566651C5B1FEEDB34C22BA /* SaveOrchestrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveOrchestrationTests.swift; sourceTree = "<group>"; };
 		3A317AC48C55A914CED86F3E /* FoodDatabaseRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDatabaseRepositoryTests.swift; sourceTree = "<group>"; };
 		3B505AF2081C3DA098C013F9 /* HealthKitPermissionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitPermissionStatus.swift; sourceTree = "<group>"; };
 		3E0424ED0517ECB8B0C845E9 /* ConfidenceCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfidenceCalculatorTests.swift; sourceTree = "<group>"; };
@@ -84,6 +87,7 @@
 		4A11981407064D87F15BF320 /* VoiceNutrition.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = VoiceNutrition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C155AD2C31BC1FDD8A68354 /* DateResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateResolver.swift; sourceTree = "<group>"; };
 		4F53244190726B3D5BD754AC /* FoodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodEntry.swift; sourceTree = "<group>"; };
+		5A61F6CAE35E174DB7CCF744 /* ReviewTriggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTriggerTests.swift; sourceTree = "<group>"; };
 		5C68640F8F0D5D92C4CA3379 /* FoundationModelIntentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationModelIntentRepository.swift; sourceTree = "<group>"; };
 		744B7D9D54F218BBB7E6D6D4 /* MatchQuality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchQuality.swift; sourceTree = "<group>"; };
 		7774D0589718CF0A61004066 /* DomainModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainModelTests.swift; sourceTree = "<group>"; };
@@ -251,6 +255,8 @@
 				B08E59AB187B9FFC776CED58 /* MockIntentRepositoryTests.swift */,
 				F5E20BC8943AA26EB1B0152B /* MockNutritionSessionStoring.swift */,
 				010BAAFCCDAC81EBB4A0867A /* PortionSizeResolverTests.swift */,
+				5A61F6CAE35E174DB7CCF744 /* ReviewTriggerTests.swift */,
+				39566651C5B1FEEDB34C22BA /* SaveOrchestrationTests.swift */,
 				E3CF64A145983E891C01EFAF /* VoiceNutritionErrorTests.swift */,
 				C258643D0F65954761446CEC /* VoiceNutritionStateTests.swift */,
 				EAE3E0013E5F98A6B784B511 /* VoiceNutritionTests.swift */,
@@ -277,14 +283,14 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		"TEMP_3BBE1AB4-8E10-4AB3-9D86-D23B85842EEB" /* Nutrition */ = {
+		"TEMP_7EF42779-F422-45CE-B097-7A0925688A64" /* Nutrition */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Nutrition;
 			sourceTree = "<group>";
 		};
-		"TEMP_B6087159-2DF2-4C7E-B9E7-AEB5C8C5F039" /* Features */ = {
+		"TEMP_A6F3D3AF-63EF-4047-9972-223FC188F8AF" /* Features */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -388,6 +394,8 @@
 				4E3A07B8FF34D52F2609961E /* MockIntentRepositoryTests.swift in Sources */,
 				D5B4C23113A36481A5FB591D /* MockNutritionSessionStoring.swift in Sources */,
 				5E7EC9B2F01AFD1A7276DCBF /* PortionSizeResolverTests.swift in Sources */,
+				13640F3BBA0531E6CAF01C8C /* ReviewTriggerTests.swift in Sources */,
+				B9EC74C4CAD87B5594BDB1F4 /* SaveOrchestrationTests.swift in Sources */,
 				4599BCD6B4F80058A0BF52EF /* VoiceNutritionErrorTests.swift in Sources */,
 				4BCAEF47F9B044142CDED3F8 /* VoiceNutritionStateTests.swift in Sources */,
 				9BDBE852C1C14FC3E6F2A1AF /* VoiceNutritionTests.swift in Sources */,
