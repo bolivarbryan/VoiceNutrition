@@ -52,102 +52,27 @@ struct HistoryView: View {
             ForEach(groupedSections, id: \.date) { section in
                 Section {
                     ForEach(section.sessions) { session in
-                        sessionRow(session)
-                            .contentShape(Rectangle())
-                            .onTapGesture {
-                                withAnimation {
-                                    toggleExpanded(session.id)
-                                }
+                        SessionRow(
+                            session: session,
+                            isExpanded: expandedSessionIDs.contains(session.id)
+                        )
+                        .contentShape(Rectangle())
+                        .onTapGesture {
+                            withAnimation(.spring(duration: 0.3)) {
+                                toggleExpanded(session.id)
                             }
-                            .accessibilityIdentifier("history.sessionRow.\(session.id)")
+                        }
+                        .accessibilityIdentifier("history.sessionRow.\(session.id)")
                     }
                 } header: {
-                    HStack {
-                        Text(section.title)
-                        Spacer()
-                        Text("\(section.totalCalories) cal")
-                            .font(.subheadline.weight(.medium))
-                            .foregroundStyle(.secondary)
-                    }
+                    DaySectionHeader(
+                        title: section.title,
+                        totalCalories: section.totalCalories
+                    )
                 }
             }
         }
         .listStyle(.insetGrouped)
-    }
-
-    // MARK: - Session Row
-
-    private func sessionRow(_ session: NutritionSession) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
-            HStack {
-                VStack(alignment: .leading, spacing: 2) {
-                    if let context = session.mealContext, !context.isEmpty {
-                        Text(context.capitalized)
-                            .font(.headline)
-                    }
-                    Text(timeFormatter.string(from: session.date))
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                }
-
-                Spacer()
-
-                HStack(spacing: 8) {
-                    if let waterMl = session.waterMl, waterMl > 0 {
-                        Image(systemName: "drop.fill")
-                            .font(.caption)
-                            .foregroundStyle(.blue)
-                    }
-
-                    if session.hasUnresolvedItems {
-                        Image(systemName: "exclamationmark.triangle.fill")
-                            .font(.caption)
-                            .foregroundStyle(.orange)
-                            .accessibilityIdentifier("history.unresolvedBadge.\(session.id)")
-                    }
-
-                    Text("\(session.totalCalories) cal")
-                        .font(.body.weight(.semibold))
-                }
-            }
-
-            if expandedSessionIDs.contains(session.id) {
-                expandedEntries(session.entries)
-            }
-        }
-    }
-
-    // MARK: - Expanded Entries
-
-    private func expandedEntries(_ entries: [FoodEntry]) -> some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Divider()
-            ForEach(entries) { entry in
-                HStack {
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text(entry.name)
-                            .font(.subheadline)
-                        Text("\(entry.portionGrams)g")
-                            .font(.caption)
-                            .foregroundStyle(.secondary)
-                    }
-
-                    Spacer()
-
-                    HStack(spacing: 6) {
-                        if !entry.isResolved {
-                            Image(systemName: "questionmark.circle")
-                                .font(.caption)
-                                .foregroundStyle(.orange)
-                        }
-                        Text("\(entry.calories) cal")
-                            .font(.subheadline)
-                    }
-                }
-                .accessibilityIdentifier("history.entryRow.\(entry.id)")
-            }
-        }
-        .padding(.top, 4)
     }
 
     // MARK: - Helpers
@@ -195,11 +120,141 @@ struct HistoryView: View {
             return date.formatted(.dateTime.month(.wide).day())
         }
     }
+}
 
-    private var timeFormatter: DateFormatter {
+// MARK: - Day Section Header
+
+@MainActor
+private struct DaySectionHeader: View {
+
+    let title: String
+    let totalCalories: Int
+
+    var body: some View {
+        HStack {
+            Text(title)
+            Spacer()
+            Text("\(totalCalories) cal")
+                .font(.subheadline.weight(.semibold))
+                .monospacedDigit()
+                .foregroundStyle(.secondary)
+        }
+    }
+}
+
+// MARK: - Session Row
+
+@MainActor
+private struct SessionRow: View {
+
+    let session: NutritionSession
+    let isExpanded: Bool
+
+    private static let timeFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "h:mm a"
         return formatter
+    }()
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            // Header row
+            HStack {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(sessionTitle)
+                        .font(.headline)
+                    Text(Self.timeFormatter.string(from: session.date))
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                }
+
+                Spacer()
+
+                HStack(spacing: 8) {
+                    if let waterMl = session.waterMl, waterMl > 0 {
+                        Image(systemName: "drop.fill")
+                            .font(.caption)
+                            .foregroundStyle(.blue)
+                    }
+
+                    if session.hasUnresolvedItems {
+                        Image(systemName: "exclamationmark.triangle.fill")
+                            .font(.caption)
+                            .foregroundStyle(.orange)
+                            .accessibilityIdentifier("history.unresolvedBadge.\(session.id)")
+                    }
+
+                    Text("\(session.totalCalories) cal")
+                        .font(.body.weight(.semibold))
+                        .monospacedDigit()
+
+                    Image(systemName: "chevron.down")
+                        .font(.caption2.weight(.semibold))
+                        .foregroundStyle(.tertiary)
+                        .rotationEffect(.degrees(isExpanded ? 0 : -90))
+                }
+            }
+
+            // Expanded entries
+            if isExpanded {
+                expandedEntries
+            }
+        }
+    }
+
+    private var sessionTitle: String {
+        if let context = session.mealContext, !context.isEmpty, context.lowercased() != "nil" {
+            return context.capitalized
+        }
+        return mealContextFromTime
+    }
+
+    private var mealContextFromTime: String {
+        let hour = Calendar.current.component(.hour, from: session.date)
+        switch hour {
+        case 5..<11: return "Breakfast"
+        case 11..<14: return "Lunch"
+        case 14..<17: return "Snack"
+        case 17..<21: return "Dinner"
+        default: return "Meal"
+        }
+    }
+
+    private var expandedEntries: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            Divider()
+                .padding(.vertical, 6)
+
+            ForEach(session.entries) { entry in
+                HStack {
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text(entry.name.capitalized)
+                            .font(.subheadline)
+                        if entry.portionGrams > 0 {
+                            Text("\(entry.portionGrams)g")
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        }
+                    }
+
+                    Spacer()
+
+                    HStack(spacing: 6) {
+                        if !entry.isResolved {
+                            Image(systemName: "questionmark.circle")
+                                .font(.caption)
+                                .foregroundStyle(.orange)
+                        }
+                        Text("\(entry.calories) cal")
+                            .font(.subheadline.weight(.medium))
+                            .monospacedDigit()
+                    }
+                }
+                .padding(.vertical, 4)
+                .accessibilityIdentifier("history.entryRow.\(entry.id)")
+            }
+        }
+        .transition(.opacity.combined(with: .move(edge: .top)))
     }
 }
 

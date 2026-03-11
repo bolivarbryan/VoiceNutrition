@@ -15,13 +15,9 @@ struct FlowBar: View {
     @State private var animateWaveform: Bool = false
 
     var body: some View {
-        VStack {
-            Spacer()
-            pillContent
-                .padding(.horizontal, 24)
-                .padding(.bottom, 32)
-        }
-        .accessibilityIdentifier("nutrition.flowBar")
+        pillContent
+            .animation(.spring(duration: 0.35), value: viewModel.state)
+            .accessibilityIdentifier("nutrition.flowBar")
     }
 
     @ViewBuilder
@@ -53,57 +49,51 @@ struct FlowBar: View {
         }
     }
 
+    // MARK: - Idle
+
     private var idlePill: some View {
-        HStack(spacing: 12) {
-            Image(systemName: "mic.fill")
-                .font(.title2)
-                .foregroundStyle(.white)
-            Text("Tap to speak")
-                .font(.subheadline)
-                .foregroundStyle(.white.opacity(0.8))
-        }
-        .padding(.horizontal, 24)
-        .padding(.vertical, 14)
-        .background(
-            Capsule()
-                .fill(.tint)
-                .shadow(color: .black.opacity(0.2), radius: 8, y: 4)
-        )
-        .onTapGesture {
-            Task {
-                await viewModel.startRecording()
+        Button {
+            Task { await viewModel.startRecording() }
+        } label: {
+            HStack(spacing: 12) {
+                Image(systemName: "mic.fill")
+                    .font(.title2)
+                Text("Tap to speak")
+                    .font(.subheadline.weight(.medium))
             }
+            .foregroundStyle(.white)
+            .padding(.horizontal, 28)
+            .padding(.vertical, 16)
         }
+        .buttonStyle(PillButtonStyle(color: .accentColor))
         .accessibilityIdentifier("nutrition.micButton")
     }
 
+    // MARK: - Recording
+
     private var recordingPill: some View {
-        HStack(spacing: 6) {
-            Image(systemName: "mic.fill")
-                .font(.title2)
-                .foregroundStyle(.white)
+        Button {
+            Task { await viewModel.stopRecording() }
+        } label: {
+            HStack(spacing: 8) {
+                Image(systemName: "mic.fill")
+                    .font(.title2)
+                    .symbolEffect(.pulse, isActive: true)
 
-            waveformBars
+                waveformBars
 
-            Text("Tap to stop")
-                .font(.subheadline)
-                .foregroundStyle(.white.opacity(0.8))
-        }
-        .padding(.horizontal, 24)
-        .padding(.vertical, 14)
-        .background(
-            Capsule()
-                .fill(.red)
-                .shadow(color: .black.opacity(0.2), radius: 8, y: 4)
-        )
-        .onTapGesture {
-            Task {
-                await viewModel.stopRecording()
+                Text("Tap to stop")
+                    .font(.subheadline.weight(.medium))
             }
+            .foregroundStyle(.white)
+            .padding(.horizontal, 28)
+            .padding(.vertical, 16)
         }
+        .buttonStyle(PillButtonStyle(color: .red))
         .onAppear { animateWaveform = true }
         .onDisappear { animateWaveform = false }
         .transition(.scale.combined(with: .opacity))
+        .accessibilityIdentifier("nutrition.stopButton")
     }
 
     private var waveformBars: some View {
@@ -122,73 +112,75 @@ struct FlowBar: View {
         .frame(height: 24)
     }
 
+    // MARK: - Processing
+
     private var processingPill: some View {
         HStack(spacing: 12) {
             ProgressView()
                 .tint(.white)
 
             Text(processingLabel)
-                .font(.subheadline)
-                .foregroundStyle(.white.opacity(0.8))
+                .font(.subheadline.weight(.medium))
+                .foregroundStyle(.white)
         }
-        .padding(.horizontal, 24)
-        .padding(.vertical, 14)
+        .padding(.horizontal, 28)
+        .padding(.vertical, 16)
         .background(
             Capsule()
-                .fill(.tint)
-                .shadow(color: .black.opacity(0.2), radius: 8, y: 4)
+                .fill(.accentColor)
+                .shadow(color: .black.opacity(0.15), radius: 12, y: 6)
         )
         .transition(.scale.combined(with: .opacity))
     }
 
     private var processingLabel: String {
         switch viewModel.state {
-        case .transcribing: return "Transcribing..."
-        case .resolving: return "Resolving..."
-        case .saving: return "Saving..."
-        default: return "Processing..."
+        case .transcribing: "Listening..."
+        case .resolving: "Analyzing..."
+        case .saving: "Saving..."
+        default: "Processing..."
         }
     }
+
+    // MARK: - Saved
 
     private func savedPill(totalCalories: Int) -> some View {
         HStack(spacing: 12) {
             Image(systemName: "checkmark.circle.fill")
                 .font(.title2)
-                .foregroundStyle(.white)
             Text("\(totalCalories) cal logged")
                 .font(.subheadline.weight(.semibold))
-                .foregroundStyle(.white)
         }
-        .padding(.horizontal, 24)
-        .padding(.vertical, 14)
+        .foregroundStyle(.white)
+        .padding(.horizontal, 28)
+        .padding(.vertical, 16)
         .background(
             Capsule()
                 .fill(.green)
-                .shadow(color: .black.opacity(0.2), radius: 8, y: 4)
+                .shadow(color: .green.opacity(0.3), radius: 12, y: 6)
         )
         .transition(.scale.combined(with: .opacity))
     }
+
+    // MARK: - Text Fallback
 
     private var textFallbackPill: some View {
         HStack(spacing: 8) {
             TextField("Describe your food...", text: $textInput)
                 .textFieldStyle(.plain)
-                .foregroundStyle(.primary)
-                .padding(.horizontal, 12)
-                .padding(.vertical, 10)
+                .padding(.horizontal, 16)
+                .padding(.vertical, 12)
                 .accessibilityIdentifier("nutrition.textField")
 
             Button {
                 guard !textInput.trimmingCharacters(in: .whitespaces).isEmpty else { return }
                 let text = textInput
                 textInput = ""
-                Task {
-                    await viewModel.submitText(text)
-                }
+                Task { await viewModel.submitText(text) }
             } label: {
                 Image(systemName: "arrow.up.circle.fill")
                     .font(.title2)
-                    .foregroundStyle(.tint)
+                    .foregroundStyle(.accentColor)
             }
             .accessibilityIdentifier("nutrition.sendButton")
         }
@@ -197,30 +189,48 @@ struct FlowBar: View {
         .background(
             Capsule()
                 .fill(.regularMaterial)
-                .shadow(color: .black.opacity(0.15), radius: 8, y: 4)
+                .shadow(color: .black.opacity(0.1), radius: 12, y: 6)
         )
     }
 
+    // MARK: - Error
+
     private func errorPill(error: VoiceNutritionError) -> some View {
-        HStack(spacing: 12) {
-            Image(systemName: "exclamationmark.triangle.fill")
-                .font(.title3)
-                .foregroundStyle(.white)
-            Text(error.errorDescription ?? "Something went wrong")
-                .font(.subheadline)
-                .foregroundStyle(.white)
-                .lineLimit(2)
-        }
-        .padding(.horizontal, 24)
-        .padding(.vertical, 14)
-        .background(
-            Capsule()
-                .fill(.red.opacity(0.9))
-                .shadow(color: .black.opacity(0.2), radius: 8, y: 4)
-        )
-        .onTapGesture {
+        Button {
             viewModel.dismissError()
+        } label: {
+            HStack(spacing: 12) {
+                Image(systemName: "exclamationmark.triangle.fill")
+                    .font(.title3)
+                Text(error.errorDescription ?? "Something went wrong")
+                    .font(.subheadline)
+                    .lineLimit(2)
+            }
+            .foregroundStyle(.white)
+            .padding(.horizontal, 28)
+            .padding(.vertical, 16)
         }
+        .buttonStyle(PillButtonStyle(color: Color.red.opacity(0.9)))
         .transition(.scale.combined(with: .opacity))
+        .accessibilityIdentifier("nutrition.errorPill")
+    }
+}
+
+// MARK: - Pill Button Style
+
+/// Reusable capsule button style with shadow and press feedback.
+private struct PillButtonStyle: ButtonStyle {
+
+    let color: Color
+
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .background(
+                Capsule()
+                    .fill(color)
+                    .shadow(color: color.opacity(0.3), radius: 12, y: 6)
+            )
+            .scaleEffect(configuration.isPressed ? 0.96 : 1.0)
+            .animation(.spring(duration: 0.2), value: configuration.isPressed)
     }
 }
