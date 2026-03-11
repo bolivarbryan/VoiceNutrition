@@ -47,6 +47,7 @@
 		D2D6D461281A8DC2AC47D0B8 /* ConfidenceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CC218152759ACAF223550 /* ConfidenceCalculator.swift */; };
 		D716968D53639ED5F18A14FD /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99C7EF4B7239D42E36E84CF /* DependencyContainer.swift */; };
 		D85E90AA36F7DC4D431DBF83 /* NutritionLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EABFE7B9E49A0D31175EA7 /* NutritionLog.swift */; };
+		E0B0E42EAFD49E27F1ACCFBD /* SpeechRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9839713F2B63F4829BF6D8AE /* SpeechRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		8FA1465A3A7729D350721775 /* MockIntentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockIntentRepository.swift; sourceTree = "<group>"; };
 		9278EE978064659BDAE87AF5 /* foods.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = foods.json; sourceTree = "<group>"; };
 		949993BB4F1A8D5E0BA5462D /* UnresolvedFoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnresolvedFoodItem.swift; sourceTree = "<group>"; };
+		9839713F2B63F4829BF6D8AE /* SpeechRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRepository.swift; sourceTree = "<group>"; };
 		9A42C02DCD4CAF75A33BA523 /* NutritionSessionStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionSessionStoring.swift; sourceTree = "<group>"; };
 		A836A0AB579D6F140F4C2814 /* ReviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewData.swift; sourceTree = "<group>"; };
 		B08E59AB187B9FFC776CED58 /* MockIntentRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockIntentRepositoryTests.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				119B3F22921894ED26F8DF54 /* FoodDatabaseRepository.swift */,
 				5C68640F8F0D5D92C4CA3379 /* FoundationModelIntentRepository.swift */,
 				8FA1465A3A7729D350721775 /* MockIntentRepository.swift */,
+				9839713F2B63F4829BF6D8AE /* SpeechRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -259,14 +262,14 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		"TEMP_84FE3BF3-5129-438E-A811-D74BEA2E9EA4" /* Features */ = {
+		"TEMP_267810D1-CB03-4C47-8873-BF29F46B54B3" /* Features */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Features;
 			sourceTree = "<group>";
 		};
-		"TEMP_9D89C0FF-5DCA-4827-B823-09E2D003D807" /* Nutrition */ = {
+		"TEMP_A3CF0ACF-2158-4D6B-8A5F-507E77F53C01" /* Nutrition */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -400,6 +403,7 @@
 				0F4A6B646EF4E0A955A9647F /* ResolvedFoodItem.swift in Sources */,
 				6BFF115459DA9A8E6F71152B /* ReviewData.swift in Sources */,
 				6881BDCE8FD7ACE8876AAAF1 /* SpeechAvailabilityStatus.swift in Sources */,
+				E0B0E42EAFD49E27F1ACCFBD /* SpeechRepository.swift in Sources */,
 				0208F48953B5B3AFD98423D4 /* SpeechResolving.swift in Sources */,
 				75F2839713260F768EF64E02 /* UnresolvedFoodItem.swift in Sources */,
 				90209990A10A2DF4FAE63EAB /* VoiceNutritionApp.swift in Sources */,

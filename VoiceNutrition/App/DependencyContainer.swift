@@ -7,16 +7,29 @@ import Foundation
 @MainActor
 final class DependencyContainer: Sendable {
 
-    /// Intent resolution — uses mock in Phase 1, real implementation in Phase 2.
+    /// Speech recognition for voice input.
+    let speechResolver: any SpeechResolving
+
+    /// Intent resolution via on-device Foundation Models.
     let intentResolver: any IntentResolving
 
-    // let speechResolver: any SpeechResolving        // Phase 2
-    // let foodDatabase: any FoodDatabaseResolving     // Phase 2
+    /// Food database for fuzzy name matching via NLEmbedding.
+    let foodDatabase: any FoodDatabaseResolving
+
+    /// Orchestrates the full nutrition logging pipeline.
+    let logNutritionUseCase: LogNutritionUseCase
+
     // let healthKit: any HealthKitWriting             // Phase 3
     // let sessionStore: any NutritionSessionStoring   // Phase 3
 
     /// Creates the container, wiring all concrete dependencies.
     init() {
-        self.intentResolver = MockIntentRepository()
+        self.speechResolver = SpeechRepository()
+        self.intentResolver = FoundationModelIntentRepository()
+        self.foodDatabase = FoodDatabaseRepository()
+        self.logNutritionUseCase = LogNutritionUseCase(
+            intentResolver: intentResolver,
+            foodDatabase: foodDatabase
+        )
     }
 }
