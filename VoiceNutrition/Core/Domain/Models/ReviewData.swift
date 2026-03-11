@@ -4,7 +4,9 @@ import Foundation
 ///
 /// Carries all resolved and unresolved items, plus session metadata,
 /// so the review UI can display everything the user needs to confirm.
-public struct ReviewData: Equatable, Sendable {
+public struct ReviewData: Equatable, Sendable, Identifiable {
+    /// Stable identity for sheet presentation.
+    public let id = UUID()
     /// Food items that were successfully matched against the database.
     public let resolvedItems: [ResolvedFoodItem]
     /// Food items that could not be matched.
@@ -19,4 +21,15 @@ public struct ReviewData: Equatable, Sendable {
     public let needsDateConfirmation: Bool
     /// How the consumption date was resolved from user input.
     public let dateResolution: DateResolution
+
+    /// Equality excludes `id` — two ReviewData values are equal if their content matches.
+    public static func == (lhs: ReviewData, rhs: ReviewData) -> Bool {
+        lhs.resolvedItems == rhs.resolvedItems &&
+        lhs.unresolvedItems == rhs.unresolvedItems &&
+        lhs.confirmedItems == rhs.confirmedItems &&
+        lhs.waterMl == rhs.waterMl &&
+        lhs.mealContext == rhs.mealContext &&
+        lhs.needsDateConfirmation == rhs.needsDateConfirmation &&
+        lhs.dateResolution == rhs.dateResolution
+    }
 }

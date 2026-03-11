@@ -15,10 +15,7 @@ struct NutritionScreen: View {
 
     // MARK: - Local State
 
-    /// Controls the review sheet presentation.
-    @State private var showingReview: Bool = false
-
-    /// Cached review data for the sheet.
+    /// The review data driving the sheet. Non-nil means the sheet is presented.
     @State private var currentReviewData: ReviewData?
 
     // MARK: - Body
@@ -34,31 +31,28 @@ struct NutritionScreen: View {
         .onChange(of: viewModel.state) { _, newState in
             if case .awaitingReview(let reviewData) = newState {
                 currentReviewData = reviewData
-                showingReview = true
             } else {
-                showingReview = false
+                currentReviewData = nil
             }
         }
-        .sheet(isPresented: $showingReview) {
-            if let reviewData = currentReviewData {
-                ReviewSheet(
-                    reviewData: reviewData,
-                    onSave: { confirmed, lowConfidence, unresolved, date in
-                        Task {
-                            await viewModel.saveReview(
-                                reviewData: reviewData,
-                                selectedConfirmed: confirmed,
-                                selectedLowConfidence: lowConfidence,
-                                selectedUnresolved: unresolved,
-                                confirmedDate: date
-                            )
-                        }
-                    },
-                    onCancel: {
-                        viewModel.cancelReview()
+        .sheet(item: $currentReviewData) { reviewData in
+            ReviewSheet(
+                reviewData: reviewData,
+                onSave: { confirmed, lowConfidence, unresolved, date in
+                    Task {
+                        await viewModel.saveReview(
+                            reviewData: reviewData,
+                            selectedConfirmed: confirmed,
+                            selectedLowConfidence: lowConfidence,
+                            selectedUnresolved: unresolved,
+                            confirmedDate: date
+                        )
                     }
-                )
-            }
+                },
+                onCancel: {
+                    viewModel.cancelReview()
+                }
+            )
         }
     }
 }
