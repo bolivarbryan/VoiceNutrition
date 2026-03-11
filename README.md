@@ -2,6 +2,16 @@
 
 Voice-powered calorie logging for iOS. 100% on-device using Apple Foundation Models, SFSpeechRecognizer, and NLEmbedding. Zero network dependency.
 
+## Screenshots
+
+| Onboarding | Microphone | Speech Permission | Speech Recognition | Health Integration |
+|:---:|:---:|:---:|:---:|:---:|
+| <img src="demo/1.png" width="180"/> | <img src="demo/2.png" width="180"/> | <img src="demo/3.png" width="180"/> | <img src="demo/4.png" width="180"/> | <img src="demo/5.png" width="180"/> |
+
+| HealthKit Access | Main Screen | Meal Logged | History |
+|:---:|:---:|:---:|:---:|
+| <img src="demo/6.png" width="180"/> | <img src="demo/7.png" width="180"/> | <img src="demo/8.png" width="180"/> | <img src="demo/9.png" width="180"/> |
+
 ## How It Works
 
 ```
