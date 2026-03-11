@@ -202,9 +202,22 @@ private struct SessionRow: View {
         }
     }
 
+    /// Words the AI sometimes puts in mealContext that aren't real meal names.
+    private static let ignoredContexts: Set<String> = [
+        "nil", "none", "null", ""
+    ]
+
     private var sessionTitle: String {
-        if let context = session.mealContext, !context.isEmpty, context.lowercased() != "nil" {
-            return context.capitalized
+        if let context = session.mealContext {
+            let trimmed = context.trimmingCharacters(in: .whitespaces)
+            let lower = trimmed.lowercased()
+            // Filter out junk values and time references the AI puts in mealContext
+            if !Self.ignoredContexts.contains(lower),
+               !lower.contains("yesterday"),
+               !lower.contains("last night"),
+               !lower.contains("this morning") {
+                return trimmed.capitalized
+            }
         }
         return mealContextFromTime
     }
