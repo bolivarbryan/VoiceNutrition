@@ -58,9 +58,6 @@ public final class FoundationModelIntentRepository: IntentResolving, Sendable {
     ///
     /// - Returns: A ``VoiceNutritionError`` if the model is unavailable, or `nil` if ready.
     public static func checkAvailability() -> VoiceNutritionError? {
-        #if targetEnvironment(simulator)
-        return .modelUnavailable("Apple Intelligence is not available in the simulator.")
-        #else
         let availability = SystemLanguageModel.default.availability
         switch availability {
         case .available:
@@ -79,6 +76,5 @@ public final class FoundationModelIntentRepository: IntentResolving, Sendable {
         @unknown default:
             return .modelUnavailable("AI features are currently unavailable.")
         }
-        #endif
     }
 }
