@@ -49,7 +49,7 @@ public final class NutritionViewModel {
     /// Convenience initializer from DependencyContainer.
     ///
     /// - Parameter container: The application dependency container.
-    public convenience init(container: DependencyContainer) {
+    convenience init(container: DependencyContainer) {
         self.init(
             speechResolver: container.speechResolver,
             logNutritionUseCase: container.logNutritionUseCase,
