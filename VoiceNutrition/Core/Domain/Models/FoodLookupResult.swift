@@ -7,6 +7,8 @@ public struct FoodLookupResult: Sendable {
     public let originalItem: NutritionLog.FoodItem
     /// The matched database entry, if found.
     public let matchedEntry: FoodDatabaseEntry?
+    /// The name of the matched database entry, if found.
+    public let matchedName: String?
     /// The quality of the match.
     public let matchQuality: MatchQuality
 }

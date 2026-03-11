@@ -204,6 +204,7 @@ struct DomainModelTests {
         let result = FoodLookupResult(
             originalItem: foodItem,
             matchedEntry: entry,
+            matchedName: "banana",
             matchQuality: .strong
         )
 
