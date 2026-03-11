@@ -65,7 +65,7 @@ struct FlowBar: View {
             .padding(.horizontal, 28)
             .padding(.vertical, 16)
         }
-        .buttonStyle(PillButtonStyle(color: .accentColor))
+        .buttonStyle(PillButtonStyle(color: Color.accentColor))
         .accessibilityIdentifier("nutrition.micButton")
     }
 
@@ -127,7 +127,7 @@ struct FlowBar: View {
         .padding(.vertical, 16)
         .background(
             Capsule()
-                .fill(.accentColor)
+                .fill(Color.accentColor)
                 .shadow(color: .black.opacity(0.15), radius: 12, y: 6)
         )
         .transition(.scale.combined(with: .opacity))
@@ -180,7 +180,7 @@ struct FlowBar: View {
             } label: {
                 Image(systemName: "arrow.up.circle.fill")
                     .font(.title2)
-                    .foregroundStyle(.accentColor)
+                    .foregroundStyle(Color.accentColor)
             }
             .accessibilityIdentifier("nutrition.sendButton")
         }
