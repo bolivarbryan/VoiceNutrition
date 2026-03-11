@@ -1,0 +1,30 @@
+# Internal planning docs — never commit
+CLAUDE.md
+EXECUTION_PLAN.md
+SystemDesign_v3.md
+VoiceNutrition_SystemDesign_v3.docx
+docs/
+.planning/
+
+# macOS
+.DS_Store
+
+# Xcode
+*.xcuserdata
+xcuserdata/
+DerivedData/
+build/
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+# Swift Package Manager
+.swiftpm/
+
+# CocoaPods
+Pods/
+
+# Build artifacts
+*.ipa
+*.dSYM.zip
+*.dSYM
