@@ -56,12 +56,12 @@ struct AppCoordinator: View {
 
         case .ready, .speechUnavailable:
             if let viewModel {
-                NutritionScreen(viewModel: viewModel)
+                NutritionScreen(viewModel: viewModel, sessionStore: container.sessionStore)
             }
 
         case .modelUnavailable(let error):
             if let viewModel {
-                NutritionScreen(viewModel: viewModel)
+                NutritionScreen(viewModel: viewModel, sessionStore: container.sessionStore)
                     .overlay(alignment: .top) {
                         modelUnavailableBanner(error: error)
                     }
