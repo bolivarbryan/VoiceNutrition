@@ -1,11 +1,12 @@
 import SwiftUI
 
-/// Root navigation view managing availability-based routing.
+/// Root navigation view managing onboarding, availability-based routing,
+/// and history navigation.
 ///
 /// Checks speech recognition and AI model availability on appear and
-/// on every foreground transition. Routes to ``NutritionScreen`` when
-/// at least the AI model is available, or to a blocking
-/// ``FullyUnavailableView`` when both are down.
+/// on every foreground transition. Shows onboarding on first launch,
+/// then routes to ``NutritionScreen`` when at least the AI model is
+/// available, or to a blocking ``FullyUnavailableView`` when both are down.
 @MainActor
 struct AppCoordinator: View {
 
@@ -28,37 +29,63 @@ struct AppCoordinator: View {
     // MARK: - Body
 
     var body: some View {
-        Group {
-            switch availabilityState {
-            case .checking:
-                ProgressView("Checking availability...")
-
-            case .ready, .speechUnavailable:
-                if let viewModel {
-                    NutritionScreen(viewModel: viewModel)
-                }
-
-            case .modelUnavailable(let error):
-                if let viewModel {
-                    NutritionScreen(viewModel: viewModel)
-                        .overlay(alignment: .top) {
-                            modelUnavailableBanner(error: error)
+        if !hasCompletedOnboarding {
+            OnboardingView(container: container) {
+                hasCompletedOnboarding = true
+            }
+        } else {
+            NavigationStack {
+                mainContent
+                    .toolbar {
+                        ToolbarItem(placement: .topBarTrailing) {
+                            NavigationLink {
+                                HistoryView(sessionStore: container.sessionStore)
+                            } label: {
+                                Image(systemName: "clock.arrow.trianglehead.counterclockwise.rotate.90")
+                            }
+                            .accessibilityIdentifier("coordinator.historyButton")
                         }
-                }
+                    }
+                    .task {
+                        await checkAvailability()
+                    }
+                    .onReceive(
+                        NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)
+                    ) { _ in
+                        Task {
+                            await checkAvailability()
+                        }
+                    }
+            }
+        }
+    }
 
-            case .fullyUnavailable(let error):
-                FullyUnavailableView(error: error)
+    // MARK: - Main Content
+
+    @ViewBuilder
+    private var mainContent: some View {
+        switch availabilityState {
+        case .checking:
+            ProgressView("Checking availability...")
+
+        case .ready, .speechUnavailable:
+            if let viewModel {
+                NutritionScreen(viewModel: viewModel)
             }
-        }
-        .task {
-            await checkAvailability()
-        }
-        .onReceive(
-            NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)
-        ) { _ in
-            Task {
-                await checkAvailability()
+
+        case .modelUnavailable(let error):
+            if let viewModel {
+                NutritionScreen(viewModel: viewModel)
+                    .overlay(alignment: .top) {
+                        modelUnavailableBanner(error: error)
+                    }
             }
+
+        case .fullyUnavailable(let error):
+            FullyUnavailableView(
+                error: error,
+                sessionStore: container.sessionStore
+            )
         }
     }
 
@@ -149,6 +176,9 @@ private struct FullyUnavailableView: View {
     /// The error describing why features are unavailable.
     let error: VoiceNutritionError
 
+    /// The session store for history navigation.
+    let sessionStore: any NutritionSessionStoring
+
     var body: some View {
         VStack(spacing: 24) {
             Image(systemName: "exclamationmark.triangle")
@@ -173,9 +203,8 @@ private struct FullyUnavailableView: View {
             }
             .padding(.horizontal, 32)
 
-            // Placeholder for History navigation (Plan 03 will wire)
-            Button {
-                // Will navigate to History in Plan 03
+            NavigationLink {
+                HistoryView(sessionStore: sessionStore)
             } label: {
                 Label("View History", systemImage: "clock.arrow.trianglehead.counterclockwise.rotate.90")
             }
