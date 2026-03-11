@@ -15,16 +15,8 @@ struct VoiceNutritionApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppCoordinator(container: container)
         }
         .modelContainer(modelContainer)
-    }
-}
-
-/// Placeholder root view for the app.
-struct ContentView: View {
-    var body: some View {
-        Text("VoiceNutrition")
-            .accessibilityIdentifier("content.title")
     }
 }
