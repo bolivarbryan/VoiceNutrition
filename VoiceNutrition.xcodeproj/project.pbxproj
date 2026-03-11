@@ -53,6 +53,7 @@
 		D2D6D461281A8DC2AC47D0B8 /* ConfidenceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CC218152759ACAF223550 /* ConfidenceCalculator.swift */; };
 		D5B4C23113A36481A5FB591D /* MockNutritionSessionStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E20BC8943AA26EB1B0152B /* MockNutritionSessionStoring.swift */; };
 		D716968D53639ED5F18A14FD /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99C7EF4B7239D42E36E84CF /* DependencyContainer.swift */; };
+		D7E47614F66B692F9C9CE1CB /* ReviewSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF760D5F27E85EFD9ACC906 /* ReviewSheet.swift */; };
 		D85E90AA36F7DC4D431DBF83 /* NutritionLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EABFE7B9E49A0D31175EA7 /* NutritionLog.swift */; };
 		E0B0E42EAFD49E27F1ACCFBD /* SpeechRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9839713F2B63F4829BF6D8AE /* SpeechRepository.swift */; };
 /* End PBXBuildFile section */
@@ -75,6 +76,7 @@
 		0A7CE9392D9CEEA5E3876FDF /* DateResolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateResolverTests.swift; sourceTree = "<group>"; };
 		119B3F22921894ED26F8DF54 /* FoodDatabaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDatabaseRepository.swift; sourceTree = "<group>"; };
 		1C8C7E69E605F5631E741F2A /* SpeechAvailabilityStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechAvailabilityStatus.swift; sourceTree = "<group>"; };
+		1DF760D5F27E85EFD9ACC906 /* ReviewSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewSheet.swift; sourceTree = "<group>"; };
 		2094C12A3FF99DDA49CCEBD0 /* VoiceNutrition.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VoiceNutrition.entitlements; sourceTree = "<group>"; };
 		26C059A9770358D0F1D2538B /* NutritionSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionSession.swift; sourceTree = "<group>"; };
 		29B5D8F88E5FF6EFCB3588D7 /* LogNutritionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogNutritionUseCase.swift; sourceTree = "<group>"; };
@@ -122,6 +124,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		20FE2DD305BB5F8868758478 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				7974437158DA185015A6ED1F /* Nutrition */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
 		212FF4EF0215250C784EE672 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +147,7 @@
 				2094C12A3FF99DDA49CCEBD0 /* VoiceNutrition.entitlements */,
 				212FF4EF0215250C784EE672 /* App */,
 				4245497845105B0EDF5A97EA /* Core */,
+				20FE2DD305BB5F8868758478 /* Features */,
 				E805EE11B1B700C1C20E1BB9 /* Resources */,
 			);
 			path = VoiceNutrition;
@@ -203,6 +214,14 @@
 			path = UseCases;
 			sourceTree = "<group>";
 		};
+		7974437158DA185015A6ED1F /* Nutrition */ = {
+			isa = PBXGroup;
+			children = (
+				B8FAA30423B63694E4116C0A /* Components */,
+			);
+			path = Nutrition;
+			sourceTree = "<group>";
+		};
 		831A4453B91C1CCEEA591D9C /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +241,14 @@
 				0224DB9DF67B1478429334AF /* SpeechResolving.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B8FAA30423B63694E4116C0A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1DF760D5F27E85EFD9ACC906 /* ReviewSheet.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		C98B085DC73E88060A520034 = {
@@ -281,20 +308,6 @@
 				4A95A72C40C734F992744B9B /* UseCases */,
 			);
 			path = Domain;
-			sourceTree = "<group>";
-		};
-		"TEMP_7EF42779-F422-45CE-B097-7A0925688A64" /* Nutrition */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Nutrition;
-			sourceTree = "<group>";
-		};
-		"TEMP_A6F3D3AF-63EF-4047-9972-223FC188F8AF" /* Features */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,6 +442,7 @@
 				0AB1983392EF20AC0BFFB6CC /* PortionSizeResolver.swift in Sources */,
 				0F4A6B646EF4E0A955A9647F /* ResolvedFoodItem.swift in Sources */,
 				6BFF115459DA9A8E6F71152B /* ReviewData.swift in Sources */,
+				D7E47614F66B692F9C9CE1CB /* ReviewSheet.swift in Sources */,
 				6881BDCE8FD7ACE8876AAAF1 /* SpeechAvailabilityStatus.swift in Sources */,
 				E0B0E42EAFD49E27F1ACCFBD /* SpeechRepository.swift in Sources */,
 				0208F48953B5B3AFD98423D4 /* SpeechResolving.swift in Sources */,
