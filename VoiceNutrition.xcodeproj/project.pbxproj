@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0208F48953B5B3AFD98423D4 /* SpeechResolving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224DB9DF67B1478429334AF /* SpeechResolving.swift */; };
+		0DFE3A54CCAC627F30143C1E /* MatchQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744B7D9D54F218BBB7E6D6D4 /* MatchQuality.swift */; };
+		0F4A6B646EF4E0A955A9647F /* ResolvedFoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3150B912A6434F48F60470D2 /* ResolvedFoodItem.swift */; };
+		1D025699D6691BF8C7B444C4 /* FoodLookupResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C02431556B31F0434C7531 /* FoodLookupResult.swift */; };
+		2E5FA3CBA1ABAA1F9D79A701 /* IntentResolving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862DE724ED266ED53A6CE3ED /* IntentResolving.swift */; };
+		3948A1043609955489C5864C /* DateResolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2416AB8520EFF8428B9B58F /* DateResolution.swift */; };
+		4565347A7F8C4BFCABB806C9 /* NutritionSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C059A9770358D0F1D2538B /* NutritionSession.swift */; };
+		6881BDCE8FD7ACE8876AAAF1 /* SpeechAvailabilityStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C7E69E605F5631E741F2A /* SpeechAvailabilityStatus.swift */; };
+		75F2839713260F768EF64E02 /* UnresolvedFoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949993BB4F1A8D5E0BA5462D /* UnresolvedFoodItem.swift */; };
+		8F3CAB781D249A08D2D4BED5 /* NutritionSessionStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A42C02DCD4CAF75A33BA523 /* NutritionSessionStoring.swift */; };
+		90209990A10A2DF4FAE63EAB /* VoiceNutritionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09552F3FD3881B4FCA5B035 /* VoiceNutritionApp.swift */; };
+		9BDBE852C1C14FC3E6F2A1AF /* VoiceNutritionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE3E0013E5F98A6B784B511 /* VoiceNutritionTests.swift */; };
+		A4EE5F61AD2FD26D6E409629 /* FoodDatabaseResolving.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEC3A034091C094C7459C0 /* FoodDatabaseResolving.swift */; };
+		AB2A2E1959F44A16C299E289 /* FoodDatabaseEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051570720C0670C6D7C8D283 /* FoodDatabaseEntry.swift */; };
+		ACCB7476C3A8FAF58F9E05A7 /* HealthKitWriting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B195A69BA8BE38604B011C74 /* HealthKitWriting.swift */; };
+		BF07649DC7CD4EE6D68B2265 /* HealthKitPermissionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B505AF2081C3DA098C013F9 /* HealthKitPermissionStatus.swift */; };
+		C3F0ABE7648EAE9A17262F1B /* FoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F53244190726B3D5BD754AC /* FoodEntry.swift */; };
+		C6237D5AEA8B3BCA5FD60080 /* DomainModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7774D0589718CF0A61004066 /* DomainModelTests.swift */; };
+		D716968D53639ED5F18A14FD /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99C7EF4B7239D42E36E84CF /* DependencyContainer.swift */; };
+		D85E90AA36F7DC4D431DBF83 /* NutritionLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EABFE7B9E49A0D31175EA7 /* NutritionLog.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		824BDA07F84FBF4DA981FF02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0A63468B6A50AE4A576D64F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3918F3789A42BBC8A6C0795E;
+			remoteInfo = VoiceNutrition;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0224DB9DF67B1478429334AF /* SpeechResolving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechResolving.swift; sourceTree = "<group>"; };
+		051570720C0670C6D7C8D283 /* FoodDatabaseEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDatabaseEntry.swift; sourceTree = "<group>"; };
+		1C8C7E69E605F5631E741F2A /* SpeechAvailabilityStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechAvailabilityStatus.swift; sourceTree = "<group>"; };
+		2094C12A3FF99DDA49CCEBD0 /* VoiceNutrition.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VoiceNutrition.entitlements; sourceTree = "<group>"; };
+		26C059A9770358D0F1D2538B /* NutritionSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionSession.swift; sourceTree = "<group>"; };
+		3150B912A6434F48F60470D2 /* ResolvedFoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolvedFoodItem.swift; sourceTree = "<group>"; };
+		3B505AF2081C3DA098C013F9 /* HealthKitPermissionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitPermissionStatus.swift; sourceTree = "<group>"; };
+		4A11981407064D87F15BF320 /* VoiceNutrition.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = VoiceNutrition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F53244190726B3D5BD754AC /* FoodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodEntry.swift; sourceTree = "<group>"; };
+		744B7D9D54F218BBB7E6D6D4 /* MatchQuality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchQuality.swift; sourceTree = "<group>"; };
+		7774D0589718CF0A61004066 /* DomainModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainModelTests.swift; sourceTree = "<group>"; };
+		862DE724ED266ED53A6CE3ED /* IntentResolving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentResolving.swift; sourceTree = "<group>"; };
+		949993BB4F1A8D5E0BA5462D /* UnresolvedFoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnresolvedFoodItem.swift; sourceTree = "<group>"; };
+		9A42C02DCD4CAF75A33BA523 /* NutritionSessionStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionSessionStoring.swift; sourceTree = "<group>"; };
+		B195A69BA8BE38604B011C74 /* HealthKitWriting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitWriting.swift; sourceTree = "<group>"; };
+		B2EABFE7B9E49A0D31175EA7 /* NutritionLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionLog.swift; sourceTree = "<group>"; };
+		C09552F3FD3881B4FCA5B035 /* VoiceNutritionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNutritionApp.swift; sourceTree = "<group>"; };
+		C9C02431556B31F0434C7531 /* FoodLookupResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLookupResult.swift; sourceTree = "<group>"; };
+		CF7B75B23C024DF04BE243CA /* VoiceNutritionTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = VoiceNutritionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5BEC3A034091C094C7459C0 /* FoodDatabaseResolving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDatabaseResolving.swift; sourceTree = "<group>"; };
+		E2416AB8520EFF8428B9B58F /* DateResolution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateResolution.swift; sourceTree = "<group>"; };
+		E99C7EF4B7239D42E36E84CF /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		EAE3E0013E5F98A6B784B511 /* VoiceNutritionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNutritionTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		212FF4EF0215250C784EE672 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E99C7EF4B7239D42E36E84CF /* DependencyContainer.swift */,
+				C09552F3FD3881B4FCA5B035 /* VoiceNutritionApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		23A6E4256DAA9FA009E60159 /* VoiceNutrition */ = {
+			isa = PBXGroup;
+			children = (
+				2094C12A3FF99DDA49CCEBD0 /* VoiceNutrition.entitlements */,
+				212FF4EF0215250C784EE672 /* App */,
+				4245497845105B0EDF5A97EA /* Core */,
+			);
+			path = VoiceNutrition;
+			sourceTree = "<group>";
+		};
+		38B57F8EE3BDFE49B2CEEE35 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E2416AB8520EFF8428B9B58F /* DateResolution.swift */,
+				051570720C0670C6D7C8D283 /* FoodDatabaseEntry.swift */,
+				4F53244190726B3D5BD754AC /* FoodEntry.swift */,
+				C9C02431556B31F0434C7531 /* FoodLookupResult.swift */,
+				3B505AF2081C3DA098C013F9 /* HealthKitPermissionStatus.swift */,
+				744B7D9D54F218BBB7E6D6D4 /* MatchQuality.swift */,
+				B2EABFE7B9E49A0D31175EA7 /* NutritionLog.swift */,
+				26C059A9770358D0F1D2538B /* NutritionSession.swift */,
+				3150B912A6434F48F60470D2 /* ResolvedFoodItem.swift */,
+				1C8C7E69E605F5631E741F2A /* SpeechAvailabilityStatus.swift */,
+				949993BB4F1A8D5E0BA5462D /* UnresolvedFoodItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4245497845105B0EDF5A97EA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EF44AA4F6D96EA1D196DD425 /* Domain */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		831A4453B91C1CCEEA591D9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A11981407064D87F15BF320 /* VoiceNutrition.app */,
+				CF7B75B23C024DF04BE243CA /* VoiceNutritionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F8B75F3E51D82172765C040 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D5BEC3A034091C094C7459C0 /* FoodDatabaseResolving.swift */,
+				B195A69BA8BE38604B011C74 /* HealthKitWriting.swift */,
+				862DE724ED266ED53A6CE3ED /* IntentResolving.swift */,
+				9A42C02DCD4CAF75A33BA523 /* NutritionSessionStoring.swift */,
+				0224DB9DF67B1478429334AF /* SpeechResolving.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C98B085DC73E88060A520034 = {
+			isa = PBXGroup;
+			children = (
+				23A6E4256DAA9FA009E60159 /* VoiceNutrition */,
+				E081643FD7C6365DBA3464A8 /* VoiceNutritionTests */,
+				831A4453B91C1CCEEA591D9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E081643FD7C6365DBA3464A8 /* VoiceNutritionTests */ = {
+			isa = PBXGroup;
+			children = (
+				7774D0589718CF0A61004066 /* DomainModelTests.swift */,
+				EAE3E0013E5F98A6B784B511 /* VoiceNutritionTests.swift */,
+			);
+			path = VoiceNutritionTests;
+			sourceTree = "<group>";
+		};
+		EF44AA4F6D96EA1D196DD425 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				38B57F8EE3BDFE49B2CEEE35 /* Models */,
+				8F8B75F3E51D82172765C040 /* Protocols */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		"TEMP_564394C0-6044-4CD5-A8F4-889F27D85776" /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		"TEMP_6DB43D38-2777-433E-ADFA-16B1F16966A7" /* Nutrition */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Nutrition;
+			sourceTree = "<group>";
+		};
+		"TEMP_C2F7330E-0D75-48A9-A45F-C5269BE41651" /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3918F3789A42BBC8A6C0795E /* VoiceNutrition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 539B962E63D118A2557E719C /* Build configuration list for PBXNativeTarget "VoiceNutrition" */;
+			buildPhases = (
+				39222AB57AEB30539C078853 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoiceNutrition;
+			packageProductDependencies = (
+			);
+			productName = VoiceNutrition;
+			productReference = 4A11981407064D87F15BF320 /* VoiceNutrition.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDBB346CE12DD96B2BAE0339 /* VoiceNutritionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 450684C0A6A400AAEB41B621 /* Build configuration list for PBXNativeTarget "VoiceNutritionTests" */;
+			buildPhases = (
+				138F3ED2B567EEAE36815CFE /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D2AD741EBFD0BAE76F30432 /* PBXTargetDependency */,
+			);
+			name = VoiceNutritionTests;
+			packageProductDependencies = (
+			);
+			productName = VoiceNutritionTests;
+			productReference = CF7B75B23C024DF04BE243CA /* VoiceNutritionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0A63468B6A50AE4A576D64F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 82E09FC2C4984ED1F1D11DE1 /* Build configuration list for PBXProject "VoiceNutrition" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C98B085DC73E88060A520034;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 831A4453B91C1CCEEA591D9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3918F3789A42BBC8A6C0795E /* VoiceNutrition */,
+				FDBB346CE12DD96B2BAE0339 /* VoiceNutritionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		138F3ED2B567EEAE36815CFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6237D5AEA8B3BCA5FD60080 /* DomainModelTests.swift in Sources */,
+				9BDBE852C1C14FC3E6F2A1AF /* VoiceNutritionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39222AB57AEB30539C078853 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3948A1043609955489C5864C /* DateResolution.swift in Sources */,
+				D716968D53639ED5F18A14FD /* DependencyContainer.swift in Sources */,
+				AB2A2E1959F44A16C299E289 /* FoodDatabaseEntry.swift in Sources */,
+				A4EE5F61AD2FD26D6E409629 /* FoodDatabaseResolving.swift in Sources */,
+				C3F0ABE7648EAE9A17262F1B /* FoodEntry.swift in Sources */,
+				1D025699D6691BF8C7B444C4 /* FoodLookupResult.swift in Sources */,
+				BF07649DC7CD4EE6D68B2265 /* HealthKitPermissionStatus.swift in Sources */,
+				ACCB7476C3A8FAF58F9E05A7 /* HealthKitWriting.swift in Sources */,
+				2E5FA3CBA1ABAA1F9D79A701 /* IntentResolving.swift in Sources */,
+				0DFE3A54CCAC627F30143C1E /* MatchQuality.swift in Sources */,
+				D85E90AA36F7DC4D431DBF83 /* NutritionLog.swift in Sources */,
+				4565347A7F8C4BFCABB806C9 /* NutritionSession.swift in Sources */,
+				8F3CAB781D249A08D2D4BED5 /* NutritionSessionStoring.swift in Sources */,
+				0F4A6B646EF4E0A955A9647F /* ResolvedFoodItem.swift in Sources */,
+				6881BDCE8FD7ACE8876AAAF1 /* SpeechAvailabilityStatus.swift in Sources */,
+				0208F48953B5B3AFD98423D4 /* SpeechResolving.swift in Sources */,
+				75F2839713260F768EF64E02 /* UnresolvedFoodItem.swift in Sources */,
+				90209990A10A2DF4FAE63EAB /* VoiceNutritionApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D2AD741EBFD0BAE76F30432 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3918F3789A42BBC8A6C0795E /* VoiceNutrition */;
+			targetProxy = 824BDA07F84FBF4DA981FF02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		050EE615A655D9191F115E66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		3B92276F2AFB72122B00F872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VoiceNutrition/VoiceNutrition.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "VoiceNutrition reads your health data to avoid duplicates.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "VoiceNutrition saves your calorie and water intake to Health.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "VoiceNutrition needs microphone access to hear your food descriptions.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "VoiceNutrition uses speech recognition to transcribe your food descriptions.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicenutrition.app;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4604C98212CC9B1D1442BCA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		88C2AA1BE9930E07A87E98EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicenutrition.VoiceNutritionTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceNutrition.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VoiceNutrition";
+			};
+			name = Debug;
+		};
+		8FB250EB570A2DB5FDAA3F4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VoiceNutrition/VoiceNutrition.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "VoiceNutrition reads your health data to avoid duplicates.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "VoiceNutrition saves your calorie and water intake to Health.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "VoiceNutrition needs microphone access to hear your food descriptions.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "VoiceNutrition uses speech recognition to transcribe your food descriptions.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicenutrition.app;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93C02DA4DC1176CC8749AE0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicenutrition.VoiceNutritionTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceNutrition.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VoiceNutrition";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		450684C0A6A400AAEB41B621 /* Build configuration list for PBXNativeTarget "VoiceNutritionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88C2AA1BE9930E07A87E98EC /* Debug */,
+				93C02DA4DC1176CC8749AE0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		539B962E63D118A2557E719C /* Build configuration list for PBXNativeTarget "VoiceNutrition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB250EB570A2DB5FDAA3F4D /* Debug */,
+				3B92276F2AFB72122B00F872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		82E09FC2C4984ED1F1D11DE1 /* Build configuration list for PBXProject "VoiceNutrition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				050EE615A655D9191F115E66 /* Debug */,
+				4604C98212CC9B1D1442BCA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0A63468B6A50AE4A576D64F /* Project object */;
+}
