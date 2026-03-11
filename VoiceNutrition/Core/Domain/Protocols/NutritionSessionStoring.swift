@@ -2,6 +2,9 @@
 ///
 /// Implementations use SwiftData for persistence with cascade
 /// delete relationships between sessions and entries.
+/// Marked `@MainActor` because `NutritionSession` is an `@Model` class
+/// whose mutation and persistence must occur on the main actor.
+@MainActor
 public protocol NutritionSessionStoring {
     /// Saves a nutrition session.
     /// - Parameter session: The session to save.

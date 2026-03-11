@@ -14,6 +14,7 @@
 		0DFE3A54CCAC627F30143C1E /* MatchQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744B7D9D54F218BBB7E6D6D4 /* MatchQuality.swift */; };
 		0F4A6B646EF4E0A955A9647F /* ResolvedFoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3150B912A6434F48F60470D2 /* ResolvedFoodItem.swift */; };
 		13823974D337EDCC5CB40BB5 /* DateResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CE9392D9CEEA5E3876FDF /* DateResolverTests.swift */; };
+		1AD08B6A591C683CB3FC2378 /* MockHealthKitWriting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E018C5603FD54D08F3A73EB3 /* MockHealthKitWriting.swift */; };
 		1B3732CF70CFF4ABA9C0250F /* DateResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C155AD2C31BC1FDD8A68354 /* DateResolver.swift */; };
 		1D025699D6691BF8C7B444C4 /* FoodLookupResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C02431556B31F0434C7531 /* FoodLookupResult.swift */; };
 		2E5FA3CBA1ABAA1F9D79A701 /* IntentResolving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862DE724ED266ED53A6CE3ED /* IntentResolving.swift */; };
@@ -21,6 +22,7 @@
 		4565347A7F8C4BFCABB806C9 /* NutritionSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C059A9770358D0F1D2538B /* NutritionSession.swift */; };
 		4599BCD6B4F80058A0BF52EF /* VoiceNutritionErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CF64A145983E891C01EFAF /* VoiceNutritionErrorTests.swift */; };
 		4BCAEF47F9B044142CDED3F8 /* VoiceNutritionStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C258643D0F65954761446CEC /* VoiceNutritionStateTests.swift */; };
+		4BFF66C62AF8E956577B0112 /* SwiftDataNutritionSessionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965D5D8CF970CCC2C9621BD5 /* SwiftDataNutritionSessionRepository.swift */; };
 		4E3A07B8FF34D52F2609961E /* MockIntentRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08E59AB187B9FFC776CED58 /* MockIntentRepositoryTests.swift */; };
 		5B42A990A11B6BA4D5FD5850 /* foods.json in Resources */ = {isa = PBXBuildFile; fileRef = 9278EE978064659BDAE87AF5 /* foods.json */; };
 		5E7EC9B2F01AFD1A7276DCBF /* PortionSizeResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010BAAFCCDAC81EBB4A0867A /* PortionSizeResolverTests.swift */; };
@@ -30,10 +32,12 @@
 		75F2839713260F768EF64E02 /* UnresolvedFoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949993BB4F1A8D5E0BA5462D /* UnresolvedFoodItem.swift */; };
 		7C1201AA57331AA319FA6467 /* FoodDatabaseEntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167493A7993F22FE4D5132E /* FoodDatabaseEntryTests.swift */; };
 		8C2E1648B76C8D749FE40805 /* MockIntentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA1465A3A7729D350721775 /* MockIntentRepository.swift */; };
+		8E6CE8FF2DFF013EAE069FDC /* HealthKitRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B2223085D9279398EC6CBD /* HealthKitRepositoryTests.swift */; };
 		8F3CAB781D249A08D2D4BED5 /* NutritionSessionStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A42C02DCD4CAF75A33BA523 /* NutritionSessionStoring.swift */; };
 		90209990A10A2DF4FAE63EAB /* VoiceNutritionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09552F3FD3881B4FCA5B035 /* VoiceNutritionApp.swift */; };
 		9BDBE852C1C14FC3E6F2A1AF /* VoiceNutritionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE3E0013E5F98A6B784B511 /* VoiceNutritionTests.swift */; };
 		9DE00395EF4DAD3AADDAEA3D /* FoodDatabaseRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A317AC48C55A914CED86F3E /* FoodDatabaseRepositoryTests.swift */; };
+		A0184BD6262EC9A825EB4CE7 /* HealthKitRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A69AA8296FB9E27A2EFAD /* HealthKitRepository.swift */; };
 		A4EE5F61AD2FD26D6E409629 /* FoodDatabaseResolving.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEC3A034091C094C7459C0 /* FoodDatabaseResolving.swift */; };
 		AB2A2E1959F44A16C299E289 /* FoodDatabaseEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051570720C0670C6D7C8D283 /* FoodDatabaseEntry.swift */; };
 		ACCB7476C3A8FAF58F9E05A7 /* HealthKitWriting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B195A69BA8BE38604B011C74 /* HealthKitWriting.swift */; };
@@ -45,6 +49,7 @@
 		C6237D5AEA8B3BCA5FD60080 /* DomainModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7774D0589718CF0A61004066 /* DomainModelTests.swift */; };
 		D25343DFABF9A743A2B059AC /* LogNutritionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B5D8F88E5FF6EFCB3588D7 /* LogNutritionUseCase.swift */; };
 		D2D6D461281A8DC2AC47D0B8 /* ConfidenceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CC218152759ACAF223550 /* ConfidenceCalculator.swift */; };
+		D5B4C23113A36481A5FB591D /* MockNutritionSessionStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E20BC8943AA26EB1B0152B /* MockNutritionSessionStoring.swift */; };
 		D716968D53639ED5F18A14FD /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99C7EF4B7239D42E36E84CF /* DependencyContainer.swift */; };
 		D85E90AA36F7DC4D431DBF83 /* NutritionLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EABFE7B9E49A0D31175EA7 /* NutritionLog.swift */; };
 		E0B0E42EAFD49E27F1ACCFBD /* SpeechRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9839713F2B63F4829BF6D8AE /* SpeechRepository.swift */; };
@@ -75,6 +80,7 @@
 		3A317AC48C55A914CED86F3E /* FoodDatabaseRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDatabaseRepositoryTests.swift; sourceTree = "<group>"; };
 		3B505AF2081C3DA098C013F9 /* HealthKitPermissionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitPermissionStatus.swift; sourceTree = "<group>"; };
 		3E0424ED0517ECB8B0C845E9 /* ConfidenceCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfidenceCalculatorTests.swift; sourceTree = "<group>"; };
+		47B2223085D9279398EC6CBD /* HealthKitRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitRepositoryTests.swift; sourceTree = "<group>"; };
 		4A11981407064D87F15BF320 /* VoiceNutrition.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = VoiceNutrition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C155AD2C31BC1FDD8A68354 /* DateResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateResolver.swift; sourceTree = "<group>"; };
 		4F53244190726B3D5BD754AC /* FoodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodEntry.swift; sourceTree = "<group>"; };
@@ -85,6 +91,7 @@
 		8FA1465A3A7729D350721775 /* MockIntentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockIntentRepository.swift; sourceTree = "<group>"; };
 		9278EE978064659BDAE87AF5 /* foods.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = foods.json; sourceTree = "<group>"; };
 		949993BB4F1A8D5E0BA5462D /* UnresolvedFoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnresolvedFoodItem.swift; sourceTree = "<group>"; };
+		965D5D8CF970CCC2C9621BD5 /* SwiftDataNutritionSessionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataNutritionSessionRepository.swift; sourceTree = "<group>"; };
 		9839713F2B63F4829BF6D8AE /* SpeechRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRepository.swift; sourceTree = "<group>"; };
 		9A42C02DCD4CAF75A33BA523 /* NutritionSessionStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionSessionStoring.swift; sourceTree = "<group>"; };
 		A836A0AB579D6F140F4C2814 /* ReviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewData.swift; sourceTree = "<group>"; };
@@ -98,12 +105,15 @@
 		C9C02431556B31F0434C7531 /* FoodLookupResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLookupResult.swift; sourceTree = "<group>"; };
 		CBFC5188C8B0AED92629A60A /* PortionSizeResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortionSizeResolver.swift; sourceTree = "<group>"; };
 		CF7B75B23C024DF04BE243CA /* VoiceNutritionTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = VoiceNutritionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF8A69AA8296FB9E27A2EFAD /* HealthKitRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitRepository.swift; sourceTree = "<group>"; };
 		D5BEC3A034091C094C7459C0 /* FoodDatabaseResolving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDatabaseResolving.swift; sourceTree = "<group>"; };
 		D94F217445D9B440A06F974A /* VoiceNutritionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNutritionError.swift; sourceTree = "<group>"; };
+		E018C5603FD54D08F3A73EB3 /* MockHealthKitWriting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHealthKitWriting.swift; sourceTree = "<group>"; };
 		E2416AB8520EFF8428B9B58F /* DateResolution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateResolution.swift; sourceTree = "<group>"; };
 		E3CF64A145983E891C01EFAF /* VoiceNutritionErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNutritionErrorTests.swift; sourceTree = "<group>"; };
 		E99C7EF4B7239D42E36E84CF /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		EAE3E0013E5F98A6B784B511 /* VoiceNutritionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNutritionTests.swift; sourceTree = "<group>"; };
+		F5E20BC8943AA26EB1B0152B /* MockNutritionSessionStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNutritionSessionStoring.swift; sourceTree = "<group>"; };
 		FDA5B2AD29BF54CAF740B599 /* VoiceNutritionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNutritionState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,8 +143,10 @@
 			children = (
 				119B3F22921894ED26F8DF54 /* FoodDatabaseRepository.swift */,
 				5C68640F8F0D5D92C4CA3379 /* FoundationModelIntentRepository.swift */,
+				CF8A69AA8296FB9E27A2EFAD /* HealthKitRepository.swift */,
 				8FA1465A3A7729D350721775 /* MockIntentRepository.swift */,
 				9839713F2B63F4829BF6D8AE /* SpeechRepository.swift */,
+				965D5D8CF970CCC2C9621BD5 /* SwiftDataNutritionSessionRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -233,8 +245,11 @@
 				7774D0589718CF0A61004066 /* DomainModelTests.swift */,
 				0167493A7993F22FE4D5132E /* FoodDatabaseEntryTests.swift */,
 				3A317AC48C55A914CED86F3E /* FoodDatabaseRepositoryTests.swift */,
+				47B2223085D9279398EC6CBD /* HealthKitRepositoryTests.swift */,
 				B2B510B7D56805E54DAC68C1 /* LogNutritionUseCaseTests.swift */,
+				E018C5603FD54D08F3A73EB3 /* MockHealthKitWriting.swift */,
 				B08E59AB187B9FFC776CED58 /* MockIntentRepositoryTests.swift */,
+				F5E20BC8943AA26EB1B0152B /* MockNutritionSessionStoring.swift */,
 				010BAAFCCDAC81EBB4A0867A /* PortionSizeResolverTests.swift */,
 				E3CF64A145983E891C01EFAF /* VoiceNutritionErrorTests.swift */,
 				C258643D0F65954761446CEC /* VoiceNutritionStateTests.swift */,
@@ -262,18 +277,18 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		"TEMP_267810D1-CB03-4C47-8873-BF29F46B54B3" /* Features */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Features;
-			sourceTree = "<group>";
-		};
-		"TEMP_A3CF0ACF-2158-4D6B-8A5F-507E77F53C01" /* Nutrition */ = {
+		"TEMP_3BBE1AB4-8E10-4AB3-9D86-D23B85842EEB" /* Nutrition */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Nutrition;
+			sourceTree = "<group>";
+		};
+		"TEMP_B6087159-2DF2-4C7E-B9E7-AEB5C8C5F039" /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,8 +382,11 @@
 				C6237D5AEA8B3BCA5FD60080 /* DomainModelTests.swift in Sources */,
 				7C1201AA57331AA319FA6467 /* FoodDatabaseEntryTests.swift in Sources */,
 				9DE00395EF4DAD3AADDAEA3D /* FoodDatabaseRepositoryTests.swift in Sources */,
+				8E6CE8FF2DFF013EAE069FDC /* HealthKitRepositoryTests.swift in Sources */,
 				08125C71A1A8B690102AEC85 /* LogNutritionUseCaseTests.swift in Sources */,
+				1AD08B6A591C683CB3FC2378 /* MockHealthKitWriting.swift in Sources */,
 				4E3A07B8FF34D52F2609961E /* MockIntentRepositoryTests.swift in Sources */,
+				D5B4C23113A36481A5FB591D /* MockNutritionSessionStoring.swift in Sources */,
 				5E7EC9B2F01AFD1A7276DCBF /* PortionSizeResolverTests.swift in Sources */,
 				4599BCD6B4F80058A0BF52EF /* VoiceNutritionErrorTests.swift in Sources */,
 				4BCAEF47F9B044142CDED3F8 /* VoiceNutritionStateTests.swift in Sources */,
@@ -391,6 +409,7 @@
 				1D025699D6691BF8C7B444C4 /* FoodLookupResult.swift in Sources */,
 				B47E2EF129D2FBDC1BABC655 /* FoundationModelIntentRepository.swift in Sources */,
 				BF07649DC7CD4EE6D68B2265 /* HealthKitPermissionStatus.swift in Sources */,
+				A0184BD6262EC9A825EB4CE7 /* HealthKitRepository.swift in Sources */,
 				ACCB7476C3A8FAF58F9E05A7 /* HealthKitWriting.swift in Sources */,
 				2E5FA3CBA1ABAA1F9D79A701 /* IntentResolving.swift in Sources */,
 				D25343DFABF9A743A2B059AC /* LogNutritionUseCase.swift in Sources */,
@@ -405,6 +424,7 @@
 				6881BDCE8FD7ACE8876AAAF1 /* SpeechAvailabilityStatus.swift in Sources */,
 				E0B0E42EAFD49E27F1ACCFBD /* SpeechRepository.swift in Sources */,
 				0208F48953B5B3AFD98423D4 /* SpeechResolving.swift in Sources */,
+				4BFF66C62AF8E956577B0112 /* SwiftDataNutritionSessionRepository.swift in Sources */,
 				75F2839713260F768EF64E02 /* UnresolvedFoodItem.swift in Sources */,
 				90209990A10A2DF4FAE63EAB /* VoiceNutritionApp.swift in Sources */,
 				B4CA01E70E7DF276D083A3DE /* VoiceNutritionError.swift in Sources */,

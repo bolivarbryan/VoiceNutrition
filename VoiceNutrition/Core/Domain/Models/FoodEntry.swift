@@ -8,7 +8,7 @@ import SwiftData
 @Model
 public final class FoodEntry {
     /// Unique identifier for the entry.
-    @Attribute(.unique) public var id: UUID
+    public var id: UUID
     /// The food item name.
     public var name: String
     /// Calculated calories.

@@ -8,7 +8,7 @@ import SwiftData
 @Model
 public final class NutritionSession {
     /// Unique identifier for the session.
-    @Attribute(.unique) public var id: UUID
+    public var id: UUID
     /// When the session was logged.
     public var date: Date
     /// Meal context (e.g. "breakfast", "lunch"), if provided.
