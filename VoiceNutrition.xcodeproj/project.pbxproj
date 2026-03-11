@@ -17,7 +17,9 @@
 		13823974D337EDCC5CB40BB5 /* DateResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CE9392D9CEEA5E3876FDF /* DateResolverTests.swift */; };
 		1AD08B6A591C683CB3FC2378 /* MockHealthKitWriting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E018C5603FD54D08F3A73EB3 /* MockHealthKitWriting.swift */; };
 		1B3732CF70CFF4ABA9C0250F /* DateResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C155AD2C31BC1FDD8A68354 /* DateResolver.swift */; };
+		1B3948A9859FEB5EC7CFE21E /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482D5B1D6F1A0B3A3276445 /* HistoryView.swift */; };
 		1D025699D6691BF8C7B444C4 /* FoodLookupResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C02431556B31F0434C7531 /* FoodLookupResult.swift */; };
+		2C69B93427074FCE3C240A35 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA13E22CEC345BDB41D24C04 /* OnboardingView.swift */; };
 		2E5FA3CBA1ABAA1F9D79A701 /* IntentResolving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862DE724ED266ED53A6CE3ED /* IntentResolving.swift */; };
 		3948A1043609955489C5864C /* DateResolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2416AB8520EFF8428B9B58F /* DateResolution.swift */; };
 		4565347A7F8C4BFCABB806C9 /* NutritionSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C059A9770358D0F1D2538B /* NutritionSession.swift */; };
@@ -77,6 +79,7 @@
 		010BAAFCCDAC81EBB4A0867A /* PortionSizeResolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortionSizeResolverTests.swift; sourceTree = "<group>"; };
 		0167493A7993F22FE4D5132E /* FoodDatabaseEntryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDatabaseEntryTests.swift; sourceTree = "<group>"; };
 		0224DB9DF67B1478429334AF /* SpeechResolving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechResolving.swift; sourceTree = "<group>"; };
+		0482D5B1D6F1A0B3A3276445 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		051570720C0670C6D7C8D283 /* FoodDatabaseEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDatabaseEntry.swift; sourceTree = "<group>"; };
 		0A7CE9392D9CEEA5E3876FDF /* DateResolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateResolverTests.swift; sourceTree = "<group>"; };
 		0C93E186B85E98595817256B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -128,6 +131,7 @@
 		E2416AB8520EFF8428B9B58F /* DateResolution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateResolution.swift; sourceTree = "<group>"; };
 		E3CF64A145983E891C01EFAF /* VoiceNutritionErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNutritionErrorTests.swift; sourceTree = "<group>"; };
 		E99C7EF4B7239D42E36E84CF /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		EA13E22CEC345BDB41D24C04 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		EAE3E0013E5F98A6B784B511 /* VoiceNutritionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNutritionTests.swift; sourceTree = "<group>"; };
 		F5E20BC8943AA26EB1B0152B /* MockNutritionSessionStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNutritionSessionStoring.swift; sourceTree = "<group>"; };
 		FDA5B2AD29BF54CAF740B599 /* VoiceNutritionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNutritionState.swift; sourceTree = "<group>"; };
@@ -137,7 +141,9 @@
 		20FE2DD305BB5F8868758478 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				5DFC85CDE5B86ADE50FC5B8E /* History */,
 				7974437158DA185015A6ED1F /* Nutrition */,
+				4756E153D41A7C8FB47C3CD7 /* Onboarding */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -217,12 +223,28 @@
 			path = Resolvers;
 			sourceTree = "<group>";
 		};
+		4756E153D41A7C8FB47C3CD7 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EA13E22CEC345BDB41D24C04 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		4A95A72C40C734F992744B9B /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
 				29B5D8F88E5FF6EFCB3588D7 /* LogNutritionUseCase.swift */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		5DFC85CDE5B86ADE50FC5B8E /* History */ = {
+			isa = PBXGroup;
+			children = (
+				0482D5B1D6F1A0B3A3276445 /* HistoryView.swift */,
+			);
+			path = History;
 			sourceTree = "<group>";
 		};
 		7974437158DA185015A6ED1F /* Nutrition */ = {
@@ -458,6 +480,7 @@
 				BF07649DC7CD4EE6D68B2265 /* HealthKitPermissionStatus.swift in Sources */,
 				A0184BD6262EC9A825EB4CE7 /* HealthKitRepository.swift in Sources */,
 				ACCB7476C3A8FAF58F9E05A7 /* HealthKitWriting.swift in Sources */,
+				1B3948A9859FEB5EC7CFE21E /* HistoryView.swift in Sources */,
 				2E5FA3CBA1ABAA1F9D79A701 /* IntentResolving.swift in Sources */,
 				D25343DFABF9A743A2B059AC /* LogNutritionUseCase.swift in Sources */,
 				0DFE3A54CCAC627F30143C1E /* MatchQuality.swift in Sources */,
@@ -467,6 +490,7 @@
 				4565347A7F8C4BFCABB806C9 /* NutritionSession.swift in Sources */,
 				8F3CAB781D249A08D2D4BED5 /* NutritionSessionStoring.swift in Sources */,
 				745DB12934E71D1BC08E94B4 /* NutritionViewModel.swift in Sources */,
+				2C69B93427074FCE3C240A35 /* OnboardingView.swift in Sources */,
 				0AB1983392EF20AC0BFFB6CC /* PortionSizeResolver.swift in Sources */,
 				0F4A6B646EF4E0A955A9647F /* ResolvedFoodItem.swift in Sources */,
 				6BFF115459DA9A8E6F71152B /* ReviewData.swift in Sources */,
@@ -568,6 +592,7 @@
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "VoiceNutrition saves your calorie and water intake to Health.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "VoiceNutrition needs microphone access to hear your food descriptions.";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "VoiceNutrition uses speech recognition to transcribe your food descriptions.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -664,6 +689,7 @@
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "VoiceNutrition saves your calorie and water intake to Health.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "VoiceNutrition needs microphone access to hear your food descriptions.";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "VoiceNutrition uses speech recognition to transcribe your food descriptions.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
