@@ -8,7 +8,7 @@ public protocol SpeechResolving: Sendable {
 
     /// Starts live audio transcription.
     /// - Throws: `VoiceNutritionError.microphoneUnavailable` if the mic is not accessible.
-    func startTranscription() throws
+    func startTranscription() async throws
 
     /// Stops recording and returns the finalized transcription.
     /// - Returns: The transcribed text.

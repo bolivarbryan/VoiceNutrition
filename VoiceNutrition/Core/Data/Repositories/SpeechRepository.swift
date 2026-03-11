@@ -27,6 +27,12 @@ public final class SpeechRepository: SpeechResolving, @unchecked Sendable {
     /// The continuation for the async `stopAndFinalize()` call.
     private var continuation: CheckedContinuation<String, any Error>?
 
+    /// Stores a result that arrives before `stopAndFinalize()` sets up its continuation.
+    private var earlyResult: Result<String, any Error>?
+
+    /// The latest partial transcription received from the recognizer.
+    private var latestTranscription: String?
+
     /// Creates a new speech repository with the given locale.
     ///
     /// - Parameter locale: The locale for speech recognition. Defaults to `en-US`.
@@ -71,23 +77,38 @@ public final class SpeechRepository: SpeechResolving, @unchecked Sendable {
     /// for retrieval by ``stopAndFinalize()``.
     ///
     /// - Throws: ``VoiceNutritionError/speechRecognitionUnavailable`` if the recognizer
-    ///   is nil or unavailable.
-    public func startTranscription() throws {
+    ///   is nil or unavailable, or ``VoiceNutritionError/microphoneUnavailable`` if the
+    ///   audio input format is invalid.
+    public func startTranscription() async throws {
         guard let recognizer, recognizer.isAvailable else {
             throw VoiceNutritionError.speechRecognitionUnavailable
         }
 
+        // Cancel any existing task and reset engine.
+        task?.cancel()
+        self.task = nil
+        audioEngine.stop()
+        audioEngine.reset()
+
         let audioSession = AVAudioSession.sharedInstance()
-        try audioSession.setCategory(.record, mode: .measurement)
+        try audioSession.setCategory(.playAndRecord, mode: .default, options: [.defaultToSpeaker, .allowBluetooth])
         try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
 
         let newRequest = SFSpeechAudioBufferRecognitionRequest()
-        newRequest.shouldReportPartialResults = false
-        newRequest.requiresOnDeviceRecognition = true
+        newRequest.shouldReportPartialResults = true
+        newRequest.addsPunctuation = true
         self.request = newRequest
+        self.earlyResult = nil
+        self.latestTranscription = nil
 
         let inputNode = audioEngine.inputNode
+        inputNode.removeTap(onBus: 0)
         let recordingFormat = inputNode.outputFormat(forBus: 0)
+
+        guard recordingFormat.channelCount > 0 else {
+            throw VoiceNutritionError.microphoneUnavailable
+        }
+
         inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { [weak self] buffer, _ in
             self?.request?.append(buffer)
         }
@@ -98,19 +119,27 @@ public final class SpeechRepository: SpeechResolving, @unchecked Sendable {
         self.task = recognizer.recognitionTask(with: newRequest) { [weak self] result, error in
             guard let self else { return }
 
-            if let error {
-                self.resumeContinuation(with: .failure(VoiceNutritionError.transcriptionFailed))
-                _ = error // suppress unused warning
+            if let result {
+                let text = result.bestTranscription.formattedString
+                self.latestTranscription = text
+                if result.isFinal {
+                    if text.isEmpty {
+                        self.resumeContinuation(with: .failure(VoiceNutritionError.emptyTranscription))
+                    } else {
+                        self.resumeContinuation(with: .success(text))
+                    }
+                }
                 return
             }
 
-            guard let result, result.isFinal else { return }
-
-            let text = result.bestTranscription.formattedString
-            if text.isEmpty {
-                self.resumeContinuation(with: .failure(VoiceNutritionError.emptyTranscription))
-            } else {
-                self.resumeContinuation(with: .success(text))
+            if error != nil {
+                // If we have a partial transcription, use it instead of failing.
+                if let text = self.latestTranscription, !text.isEmpty {
+                    self.resumeContinuation(with: .success(text))
+                } else {
+                    self.resumeContinuation(with: .failure(VoiceNutritionError.emptyTranscription))
+                }
+                return
             }
         }
     }
@@ -118,18 +147,24 @@ public final class SpeechRepository: SpeechResolving, @unchecked Sendable {
     /// Stops recording and returns the finalized transcription.
     ///
     /// Signals end-of-audio to the recognition request, stops the audio engine,
-    /// and removes the microphone tap. The continuation is set up first so the
-    /// recognition callback can resume it when the final result arrives.
+    /// and removes the microphone tap. If the recognition callback already delivered
+    /// a result before this method was called, it resumes immediately.
     ///
     /// - Returns: The transcribed text.
     /// - Throws: ``VoiceNutritionError/transcriptionFailed`` if transcription fails,
     ///   or ``VoiceNutritionError/emptyTranscription`` if no speech was detected.
     public func stopAndFinalize() async throws -> String {
         try await withCheckedThrowingContinuation { continuation in
-            self.continuation = continuation
             self.request?.endAudio()
             self.audioEngine.stop()
             self.audioEngine.inputNode.removeTap(onBus: 0)
+
+            if let earlyResult {
+                self.earlyResult = nil
+                continuation.resume(with: earlyResult)
+            } else {
+                self.continuation = continuation
+            }
         }
     }
 
@@ -137,10 +172,14 @@ public final class SpeechRepository: SpeechResolving, @unchecked Sendable {
 
     /// Safely resumes the stored continuation exactly once, then nils it out.
     ///
-    /// Guards against double-resume by checking for nil before resuming.
+    /// If no continuation exists yet (callback fired before `stopAndFinalize`),
+    /// stores the result for later retrieval.
     /// - Parameter result: The result to resume with.
     private func resumeContinuation(with result: Result<String, any Error>) {
-        guard let continuation else { return }
+        guard let continuation else {
+            self.earlyResult = result
+            return
+        }
         self.continuation = nil
         continuation.resume(with: result)
     }

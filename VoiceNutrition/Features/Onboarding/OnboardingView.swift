@@ -190,20 +190,18 @@ struct OnboardingView: View {
     // MARK: - Permission Requests
 
     private func requestMicrophonePermission() {
-        AVAudioApplication.requestRecordPermission { granted in
-            Task { @MainActor in
-                micPermissionRequested = true
-                micPermissionDenied = !granted
-            }
+        Task { @MainActor in
+            let granted = await Self.requestMicPermissionDetached()
+            micPermissionRequested = true
+            micPermissionDenied = !granted
         }
     }
 
     private func requestSpeechPermission() {
-        SFSpeechRecognizer.requestAuthorization { status in
-            Task { @MainActor in
-                speechPermissionRequested = true
-                speechPermissionDenied = (status != .authorized)
-            }
+        Task { @MainActor in
+            let status = await Self.requestSpeechAuthorizationDetached()
+            speechPermissionRequested = true
+            speechPermissionDenied = (status != .authorized)
         }
     }
 
@@ -216,6 +214,28 @@ struct OnboardingView: View {
             } catch {
                 healthPermissionRequested = true
                 healthPermissionDenied = true
+            }
+        }
+    }
+
+    // MARK: - Detached Permission Helpers
+
+    /// Requests microphone permission off the MainActor so the callback
+    /// does not capture any `@MainActor`-isolated state.
+    private static nonisolated func requestMicPermissionDetached() async -> Bool {
+        await withCheckedContinuation { continuation in
+            AVAudioApplication.requestRecordPermission { granted in
+                continuation.resume(returning: granted)
+            }
+        }
+    }
+
+    /// Requests speech authorization off the MainActor so the callback
+    /// does not capture any `@MainActor`-isolated state.
+    private static nonisolated func requestSpeechAuthorizationDetached() async -> SFSpeechRecognizerAuthorizationStatus {
+        await withCheckedContinuation { continuation in
+            SFSpeechRecognizer.requestAuthorization { status in
+                continuation.resume(returning: status)
             }
         }
     }

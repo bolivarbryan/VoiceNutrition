@@ -90,10 +90,10 @@ public final class NutritionViewModel {
     ///
     /// Transitions: idle -> awakened -> recording.
     /// On error: transitions to ``VoiceNutritionState/error(_:)``.
-    public func startRecording() {
+    public func startRecording() async {
         do {
             state = .awakened
-            try speechResolver.startTranscription()
+            try await speechResolver.startTranscription()
             state = .recording
         } catch let error as VoiceNutritionError {
             state = .error(error)

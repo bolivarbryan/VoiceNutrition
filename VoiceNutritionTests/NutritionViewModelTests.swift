@@ -34,7 +34,7 @@ final class MockSpeechResolving: SpeechResolving, @unchecked Sendable {
         }
     }
 
-    func startTranscription() throws {
+    func startTranscription() async throws {
         startCalled = true
         if shouldThrowOnStart {
             throw VoiceNutritionError.microphoneUnavailable
@@ -131,9 +131,9 @@ struct NutritionViewModelTests {
 
     @Test("startRecording transitions idle to recording")
     @MainActor
-    func test_startRecording_fromIdle_transitionsToRecording() {
+    func test_startRecording_fromIdle_transitionsToRecording() async {
         let (vm, _, _, _) = makeSUT()
-        vm.startRecording()
+        await vm.startRecording()
         #expect(vm.state == .recording)
     }
 
@@ -141,7 +141,7 @@ struct NutritionViewModelTests {
     @MainActor
     func test_stopRecording_happyPath_transitionsToSaved() async {
         let (vm, _, _, _) = makeSUT()
-        vm.startRecording()
+        await vm.startRecording()
 
         // stopRecording processes through transcribing -> resolving -> saving -> saved
         // We need to check the final state (saved auto-resets, but we catch it before)
@@ -282,9 +282,9 @@ struct NutritionViewModelTests {
 
     @Test("startRecording error transitions to error state")
     @MainActor
-    func test_startRecording_micUnavailable_transitionsToError() {
+    func test_startRecording_micUnavailable_transitionsToError() async {
         let (vm, _, _, _) = makeSUT(shouldThrowOnStart: true)
-        vm.startRecording()
+        await vm.startRecording()
         #expect(vm.state == .error(.microphoneUnavailable))
     }
 
@@ -294,7 +294,7 @@ struct NutritionViewModelTests {
     @MainActor
     func test_stopRecording_transcriptionFails_transitionsToError() async {
         let (vm, _, _, _) = makeSUT(shouldThrowOnStop: true)
-        vm.startRecording()
+        await vm.startRecording()
         await vm.stopRecording()
         #expect(vm.state == .error(.transcriptionFailed))
     }

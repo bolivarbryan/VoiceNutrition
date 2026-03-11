@@ -67,13 +67,13 @@ struct FlowBar: View {
 
     // MARK: - Idle Pill
 
-    /// Collapsed mic pill. Long press to record.
+    /// Collapsed mic pill. Tap to start recording.
     private var idlePill: some View {
         HStack(spacing: 12) {
             Image(systemName: "mic.fill")
                 .font(.title2)
                 .foregroundStyle(.white)
-            Text("Hold to speak")
+            Text("Tap to speak")
                 .font(.subheadline)
                 .foregroundStyle(.white.opacity(0.8))
         }
@@ -84,23 +84,17 @@ struct FlowBar: View {
                 .fill(.tint)
                 .shadow(color: .black.opacity(0.2), radius: 8, y: 4)
         )
-        .onLongPressGesture(minimumDuration: 60, pressing: { pressing in
-            if pressing {
-                viewModel.startRecording()
-            } else {
-                if case .recording = viewModel.state {
-                    Task {
-                        await viewModel.stopRecording()
-                    }
-                }
+        .onTapGesture {
+            Task {
+                await viewModel.startRecording()
             }
-        }, perform: {})
+        }
         .accessibilityIdentifier("nutrition.micButton")
     }
 
     // MARK: - Recording Pill
 
-    /// Expanded pill with animated waveform bars.
+    /// Expanded pill with animated waveform bars. Tap to stop.
     private var recordingPill: some View {
         HStack(spacing: 6) {
             Image(systemName: "mic.fill")
@@ -109,7 +103,7 @@ struct FlowBar: View {
 
             waveformBars
 
-            Text("Listening...")
+            Text("Tap to stop")
                 .font(.subheadline)
                 .foregroundStyle(.white.opacity(0.8))
         }
@@ -120,13 +114,11 @@ struct FlowBar: View {
                 .fill(.red)
                 .shadow(color: .black.opacity(0.2), radius: 8, y: 4)
         )
-        .onLongPressGesture(minimumDuration: 60, pressing: { pressing in
-            if !pressing {
-                Task {
-                    await viewModel.stopRecording()
-                }
+        .onTapGesture {
+            Task {
+                await viewModel.stopRecording()
             }
-        }, perform: {})
+        }
         .onAppear { animateWaveform = true }
         .onDisappear { animateWaveform = false }
         .transition(.scale.combined(with: .opacity))
