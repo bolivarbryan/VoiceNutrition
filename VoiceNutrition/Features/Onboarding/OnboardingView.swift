@@ -9,15 +9,8 @@ import Speech
 @MainActor
 struct OnboardingView: View {
 
-    // MARK: - Dependencies
-
-    /// The application dependency container for permission requests.
     let container: DependencyContainer
-
-    /// Callback invoked when onboarding completes.
     let onComplete: () -> Void
-
-    // MARK: - State
 
     @State private var currentPage: Int = 0
     @State private var micPermissionRequested: Bool = false
@@ -26,8 +19,6 @@ struct OnboardingView: View {
     @State private var speechPermissionDenied: Bool = false
     @State private var healthPermissionRequested: Bool = false
     @State private var healthPermissionDenied: Bool = false
-
-    // MARK: - Body
 
     var body: some View {
         TabView(selection: $currentPage) {
@@ -49,8 +40,6 @@ struct OnboardingView: View {
         .tabViewStyle(.page(indexDisplayMode: .always))
         .indexViewStyle(.page(backgroundDisplayMode: .always))
     }
-
-    // MARK: - Pages
 
     private var valuePropositionPage: some View {
         OnboardingPageView(
@@ -187,8 +176,6 @@ struct OnboardingView: View {
         .accessibilityIdentifier("onboarding.page.4")
     }
 
-    // MARK: - Permission Requests
-
     private func requestMicrophonePermission() {
         Task { @MainActor in
             let granted = await Self.requestMicPermissionDetached()
@@ -218,10 +205,8 @@ struct OnboardingView: View {
         }
     }
 
-    // MARK: - Detached Permission Helpers
-
-    /// Requests microphone permission off the MainActor so the callback
-    /// does not capture any `@MainActor`-isolated state.
+    /// Requests microphone permission off the MainActor to avoid
+    /// capturing `@MainActor`-isolated state in the callback.
     private static nonisolated func requestMicPermissionDetached() async -> Bool {
         await withCheckedContinuation { continuation in
             AVAudioApplication.requestRecordPermission { granted in
@@ -230,8 +215,8 @@ struct OnboardingView: View {
         }
     }
 
-    /// Requests speech authorization off the MainActor so the callback
-    /// does not capture any `@MainActor`-isolated state.
+    /// Requests speech authorization off the MainActor to avoid
+    /// capturing `@MainActor`-isolated state in the callback.
     private static nonisolated func requestSpeechAuthorizationDetached() async -> SFSpeechRecognizerAuthorizationStatus {
         await withCheckedContinuation { continuation in
             SFSpeechRecognizer.requestAuthorization { status in
@@ -241,12 +226,7 @@ struct OnboardingView: View {
     }
 }
 
-// MARK: - Onboarding Page View
-
 /// Reusable page layout for onboarding screens.
-///
-/// Provides a consistent layout with a large icon, headline, subtitle,
-/// and customizable action area.
 @MainActor
 private struct OnboardingPageView<Actions: View>: View {
 

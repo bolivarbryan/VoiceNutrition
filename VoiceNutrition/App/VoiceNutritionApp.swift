@@ -8,9 +8,13 @@ struct VoiceNutritionApp: App {
     @State private var container: DependencyContainer
 
     init() {
-        let modelContainer = try! ModelContainer(for: NutritionSession.self, FoodEntry.self)
-        self.modelContainer = modelContainer
-        self._container = State(initialValue: DependencyContainer(modelContext: modelContainer.mainContext))
+        do {
+            let modelContainer = try ModelContainer(for: NutritionSession.self, FoodEntry.self)
+            self.modelContainer = modelContainer
+            self._container = State(initialValue: DependencyContainer(modelContext: modelContainer.mainContext))
+        } catch {
+            fatalError("Failed to create ModelContainer: \(error.localizedDescription)")
+        }
     }
 
     var body: some Scene {

@@ -96,7 +96,7 @@
 		3B505AF2081C3DA098C013F9 /* HealthKitPermissionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitPermissionStatus.swift; sourceTree = "<group>"; };
 		3E0424ED0517ECB8B0C845E9 /* ConfidenceCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfidenceCalculatorTests.swift; sourceTree = "<group>"; };
 		47B2223085D9279398EC6CBD /* HealthKitRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitRepositoryTests.swift; sourceTree = "<group>"; };
-		4A11981407064D87F15BF320 /* VoiceNutrition.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = VoiceNutrition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A11981407064D87F15BF320 /* VoiceNutrition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceNutrition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C155AD2C31BC1FDD8A68354 /* DateResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateResolver.swift; sourceTree = "<group>"; };
 		4F53244190726B3D5BD754AC /* FoodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodEntry.swift; sourceTree = "<group>"; };
 		5A61F6CAE35E174DB7CCF744 /* ReviewTriggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTriggerTests.swift; sourceTree = "<group>"; };
@@ -402,8 +402,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 2620;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = 82E09FC2C4984ED1F1D11DE1 /* Build configuration list for PBXProject "VoiceNutrition" */;
 			developmentRegion = en;
@@ -587,6 +585,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = VoiceNutrition/VoiceNutrition.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LS23BY7VCQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "VoiceNutrition reads your health data to avoid duplicates.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "VoiceNutrition saves your calorie and water intake to Health.";
@@ -597,7 +597,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.voicenutrition.app;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sponsiv.vinu.bellatuscany;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -684,6 +685,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = VoiceNutrition/VoiceNutrition.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LS23BY7VCQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "VoiceNutrition reads your health data to avoid duplicates.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "VoiceNutrition saves your calorie and water intake to Health.";
@@ -694,7 +697,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.voicenutrition.app;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sponsiv.vinu.bellatuscany;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

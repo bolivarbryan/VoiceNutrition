@@ -8,26 +8,12 @@ import SwiftData
 @MainActor
 final class DependencyContainer: Sendable {
 
-    /// Speech recognition for voice input.
     let speechResolver: any SpeechResolving
-
-    /// Intent resolution via on-device Foundation Models.
     let intentResolver: any IntentResolving
-
-    /// Food database for fuzzy name matching via NLEmbedding.
     let foodDatabase: any FoodDatabaseResolving
-
-    /// Orchestrates the full nutrition logging pipeline.
     let logNutritionUseCase: LogNutritionUseCase
-
-    /// Local session persistence via SwiftData.
     let sessionStore: any NutritionSessionStoring
-
-    /// HealthKit write-only integration.
     let healthKit: any HealthKitWriting
-
-    /// Creates the container, wiring all concrete dependencies.
-    /// - Parameter modelContext: The SwiftData model context for persistence.
     init(modelContext: ModelContext) {
         self.speechResolver = SpeechRepository()
         self.intentResolver = FoundationModelIntentRepository()

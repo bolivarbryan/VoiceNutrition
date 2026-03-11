@@ -11,18 +11,8 @@ import FoundationModels
 ///   unavailability states and present appropriate user messaging.
 public final class FoundationModelIntentRepository: IntentResolving, Sendable {
 
-    /// Creates a new Foundation Model intent repository.
     public init() {}
 
-    /// Resolves a natural language transcription into a structured ``NutritionLog``.
-    ///
-    /// Creates a ``LanguageModelSession`` with a nutrition extraction system prompt,
-    /// then uses structured generation to produce a ``NutritionLog``.
-    ///
-    /// - Parameter transcription: The text to resolve into nutrition data.
-    /// - Returns: A ``NutritionLog`` with extracted food items.
-    /// - Throws: ``VoiceNutritionError/resolutionFailed`` if the model cannot
-    ///   produce a valid result.
     public func resolve(_ transcription: String) async throws -> NutritionLog {
         let session = LanguageModelSession(
             instructions: """
@@ -49,14 +39,7 @@ public final class FoundationModelIntentRepository: IntentResolving, Sendable {
         }
     }
 
-    /// Checks whether the on-device language model is available.
-    ///
-    /// Maps the three unavailability states to appropriate ``VoiceNutritionError`` cases:
-    /// - ``SystemLanguageModel/Availability/available``: Returns `nil` (no error).
-    /// - ``SystemLanguageModel/Availability/unavailable(_:)``: Returns ``VoiceNutritionError/modelUnavailable(_:)``.
-    /// - Other states: Returns ``VoiceNutritionError/modelNotDownloaded``.
-    ///
-    /// - Returns: A ``VoiceNutritionError`` if the model is unavailable, or `nil` if ready.
+    /// Returns a ``VoiceNutritionError`` if the on-device model is unavailable, or `nil` if ready.
     public static func checkAvailability() -> VoiceNutritionError? {
         let availability = SystemLanguageModel.default.availability
         switch availability {

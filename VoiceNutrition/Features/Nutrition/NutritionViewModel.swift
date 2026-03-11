@@ -9,29 +9,13 @@ import Foundation
 @Observable
 public final class NutritionViewModel {
 
-    // MARK: - Published State
-
-    /// The current state of the nutrition logging flow.
     public private(set) var state: VoiceNutritionState = .idle
-
-    // MARK: - Dependencies
 
     private let speechResolver: any SpeechResolving
     private let logNutritionUseCase: LogNutritionUseCase
     private let sessionStore: any NutritionSessionStoring
     private let healthKit: any HealthKitWriting
     private let modelAvailabilityCheck: () -> VoiceNutritionError?
-
-    // MARK: - Init
-
-    /// Creates a new NutritionViewModel with dependencies from the container.
-    ///
-    /// - Parameters:
-    ///   - speechResolver: Speech recognition service.
-    ///   - logNutritionUseCase: The nutrition processing pipeline.
-    ///   - sessionStore: Local persistence store.
-    ///   - healthKit: HealthKit write integration.
-    ///   - modelAvailabilityCheck: Closure checking model availability.
     public init(
         speechResolver: any SpeechResolving,
         logNutritionUseCase: LogNutritionUseCase,
@@ -46,9 +30,6 @@ public final class NutritionViewModel {
         self.modelAvailabilityCheck = modelAvailabilityCheck
     }
 
-    /// Convenience initializer from DependencyContainer.
-    ///
-    /// - Parameter container: The application dependency container.
     convenience init(container: DependencyContainer) {
         self.init(
             speechResolver: container.speechResolver,
@@ -58,13 +39,7 @@ public final class NutritionViewModel {
         )
     }
 
-    // MARK: - Actions
-
-    /// Checks availability of speech and model, setting state accordingly.
-    ///
-    /// - If both unavailable: sets ``VoiceNutritionState/fullyUnavailable``
-    /// - If speech unavailable but model available: sets ``VoiceNutritionState/textFallback``
-    /// - If both available: keeps ``VoiceNutritionState/idle``
+    /// Checks availability of speech and model, routing to the appropriate state.
     public func checkAvailability() async {
         let speechStatus = await speechResolver.availabilityStatus
         let modelError = modelAvailabilityCheck()
@@ -86,10 +61,7 @@ public final class NutritionViewModel {
         }
     }
 
-    /// Begins voice recording.
-    ///
-    /// Transitions: idle -> awakened -> recording.
-    /// On error: transitions to ``VoiceNutritionState/error(_:)``.
+    /// Begins voice recording. Transitions: idle -> awakened -> recording.
     public func startRecording() async {
         do {
             state = .awakened
@@ -102,10 +74,7 @@ public final class NutritionViewModel {
         }
     }
 
-    /// Stops recording and processes the transcription.
-    ///
-    /// Transitions: recording -> transcribing -> resolving -> saving/awaitingReview.
-    /// On error: transitions to ``VoiceNutritionState/error(_:)``.
+    /// Stops recording and processes the transcription through the pipeline.
     public func stopRecording() async {
         state = .transcribing
         do {
@@ -119,26 +88,11 @@ public final class NutritionViewModel {
     }
 
     /// Submits text input for processing (text fallback path).
-    ///
-    /// Transitions: textFallback -> resolving -> saving/awaitingReview.
-    /// On error: transitions to ``VoiceNutritionState/error(_:)``.
-    ///
-    /// - Parameter text: The food description to process.
     public func submitText(_ text: String) async {
         await processText(text)
     }
 
-    /// Saves reviewed items after user confirmation.
-    ///
-    /// Transitions: awaitingReview -> saving -> saved -> idle (auto-reset).
-    /// On error: transitions to ``VoiceNutritionState/error(_:)``.
-    ///
-    /// - Parameters:
-    ///   - reviewData: The processed review data.
-    ///   - selectedConfirmed: Confirmed items the user kept.
-    ///   - selectedLowConfidence: Low-confidence items the user accepted.
-    ///   - selectedUnresolved: Unresolved items the user included.
-    ///   - confirmedDate: The confirmed consumption date.
+    /// Saves reviewed items after user confirmation in the review screen.
     public func saveReview(
         reviewData: ReviewData,
         selectedConfirmed: [ResolvedFoodItem],
@@ -166,19 +120,14 @@ public final class NutritionViewModel {
         }
     }
 
-    /// Cancels the review and returns to idle.
     public func cancelReview() {
         state = .idle
     }
 
-    /// Dismisses the current error and returns to idle.
     public func dismissError() {
         state = .idle
     }
 
-    // MARK: - Private
-
-    /// Processes text through the nutrition pipeline.
     private func processText(_ text: String) async {
         state = .resolving
         do {
@@ -186,7 +135,6 @@ public final class NutritionViewModel {
             if LogNutritionUseCase.needsReview(reviewData) {
                 state = .awaitingReview(reviewData)
             } else {
-                // Happy path: auto-save confirmed items
                 state = .saving
                 let session = try logNutritionUseCase.finalize(
                     reviewData: reviewData,
@@ -207,7 +155,6 @@ public final class NutritionViewModel {
         }
     }
 
-    /// Auto-resets from saved to idle after a delay.
     private func autoResetToIdle() async {
         try? await Task.sleep(for: .seconds(2))
         if case .saved = state {

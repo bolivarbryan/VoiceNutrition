@@ -12,38 +12,21 @@ import AVFoundation
 ///   Verification is build-only per project conventions.
 public final class SpeechRepository: SpeechResolving, @unchecked Sendable {
 
-    /// The speech recognizer configured for the given locale.
     private let recognizer: SFSpeechRecognizer?
-
-    /// The audio engine for capturing microphone input.
     private let audioEngine = AVAudioEngine()
-
-    /// The current recognition request, if active.
     private var request: SFSpeechAudioBufferRecognitionRequest?
-
-    /// The current recognition task, if active.
     private var task: SFSpeechRecognitionTask?
-
-    /// The continuation for the async `stopAndFinalize()` call.
     private var continuation: CheckedContinuation<String, any Error>?
 
     /// Stores a result that arrives before `stopAndFinalize()` sets up its continuation.
     private var earlyResult: Result<String, any Error>?
 
-    /// The latest partial transcription received from the recognizer.
     private var latestTranscription: String?
 
-    /// Creates a new speech repository with the given locale.
-    ///
-    /// - Parameter locale: The locale for speech recognition. Defaults to `en-US`.
     public init(locale: Locale = Locale(identifier: "en-US")) {
         self.recognizer = SFSpeechRecognizer(locale: locale)
     }
 
-    /// The current availability status of speech recognition.
-    ///
-    /// Checks whether the recognizer exists, is available, and that the user
-    /// has granted speech recognition authorization.
     public var availabilityStatus: SpeechAvailabilityStatus {
         get async {
             guard let recognizer else {
@@ -70,21 +53,11 @@ public final class SpeechRepository: SpeechResolving, @unchecked Sendable {
         }
     }
 
-    /// Starts live audio transcription using push-to-talk.
-    ///
-    /// Configures the audio session, installs a tap on the microphone input node,
-    /// and begins a recognition task. The recognition callback stores its result
-    /// for retrieval by ``stopAndFinalize()``.
-    ///
-    /// - Throws: ``VoiceNutritionError/speechRecognitionUnavailable`` if the recognizer
-    ///   is nil or unavailable, or ``VoiceNutritionError/microphoneUnavailable`` if the
-    ///   audio input format is invalid.
     public func startTranscription() async throws {
         guard let recognizer, recognizer.isAvailable else {
             throw VoiceNutritionError.speechRecognitionUnavailable
         }
 
-        // Cancel any existing task and reset engine.
         task?.cancel()
         self.task = nil
         audioEngine.stop()
@@ -144,15 +117,6 @@ public final class SpeechRepository: SpeechResolving, @unchecked Sendable {
         }
     }
 
-    /// Stops recording and returns the finalized transcription.
-    ///
-    /// Signals end-of-audio to the recognition request, stops the audio engine,
-    /// and removes the microphone tap. If the recognition callback already delivered
-    /// a result before this method was called, it resumes immediately.
-    ///
-    /// - Returns: The transcribed text.
-    /// - Throws: ``VoiceNutritionError/transcriptionFailed`` if transcription fails,
-    ///   or ``VoiceNutritionError/emptyTranscription`` if no speech was detected.
     public func stopAndFinalize() async throws -> String {
         try await withCheckedThrowingContinuation { continuation in
             self.request?.endAudio()
@@ -168,13 +132,9 @@ public final class SpeechRepository: SpeechResolving, @unchecked Sendable {
         }
     }
 
-    // MARK: - Private
-
-    /// Safely resumes the stored continuation exactly once, then nils it out.
-    ///
-    /// If no continuation exists yet (callback fired before `stopAndFinalize`),
-    /// stores the result for later retrieval.
-    /// - Parameter result: The result to resume with.
+    /// Resumes the continuation exactly once. If no continuation exists yet
+    /// (recognition callback fired before `stopAndFinalize`), stores the result
+    /// for later retrieval.
     private func resumeContinuation(with result: Result<String, any Error>) {
         guard let continuation else {
             self.earlyResult = result

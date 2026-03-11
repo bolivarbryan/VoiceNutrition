@@ -10,23 +10,11 @@ import SwiftUI
 @MainActor
 struct AppCoordinator: View {
 
-    // MARK: - Dependencies
-
-    /// The application dependency container.
     let container: DependencyContainer
 
-    // MARK: - State
-
-    /// The current availability routing state.
     @State private var availabilityState: AvailabilityState = .checking
-
-    /// The shared view model for the nutrition flow.
     @State private var viewModel: NutritionViewModel?
-
-    /// Whether the user has completed onboarding.
     @State private var hasCompletedOnboarding: Bool = UserDefaults.standard.bool(forKey: "hasCompletedOnboarding")
-
-    // MARK: - Body
 
     var body: some View {
         if !hasCompletedOnboarding {
@@ -60,8 +48,6 @@ struct AppCoordinator: View {
         }
     }
 
-    // MARK: - Main Content
-
     @ViewBuilder
     private var mainContent: some View {
         switch availabilityState {
@@ -89,11 +75,7 @@ struct AppCoordinator: View {
         }
     }
 
-    // MARK: - Availability Check
-
-    /// Checks speech and model availability, routing accordingly.
     private func checkAvailability() async {
-        // Ensure ViewModel exists
         if viewModel == nil {
             viewModel = NutritionViewModel(container: container)
         }
@@ -125,9 +107,6 @@ struct AppCoordinator: View {
         }
     }
 
-    // MARK: - Model Unavailable Banner
-
-    /// Banner shown at top of NutritionScreen when model is unavailable.
     private func modelUnavailableBanner(error: VoiceNutritionError) -> some View {
         VStack(spacing: 4) {
             HStack(spacing: 8) {
@@ -148,35 +127,22 @@ struct AppCoordinator: View {
     }
 }
 
-// MARK: - Availability State
-
 extension AppCoordinator {
 
-    /// Internal availability routing state.
     enum AvailabilityState {
-        /// Initial state while checking availability.
         case checking
-        /// Both speech and model available.
         case ready
-        /// Speech unavailable, model available (text fallback).
         case speechUnavailable
-        /// Speech available, model unavailable (show banner).
         case modelUnavailable(VoiceNutritionError)
-        /// Both unavailable (blocking screen).
         case fullyUnavailable(VoiceNutritionError)
     }
 }
-
-// MARK: - Fully Unavailable View
 
 /// Blocking screen shown when both speech and AI are unavailable.
 @MainActor
 private struct FullyUnavailableView: View {
 
-    /// The error describing why features are unavailable.
     let error: VoiceNutritionError
-
-    /// The session store for history navigation.
     let sessionStore: any NutritionSessionStoring
 
     var body: some View {

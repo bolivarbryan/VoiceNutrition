@@ -9,20 +9,10 @@ import SwiftUI
 @MainActor
 struct FlowBar: View {
 
-    // MARK: - Dependencies
-
-    /// The view model driving state transitions.
     let viewModel: NutritionViewModel
 
-    // MARK: - Local State
-
-    /// Text entered in the fallback text field.
     @State private var textInput: String = ""
-
-    /// Controls waveform bar animation.
     @State private var animateWaveform: Bool = false
-
-    // MARK: - Body
 
     var body: some View {
         VStack {
@@ -33,8 +23,6 @@ struct FlowBar: View {
         }
         .accessibilityIdentifier("nutrition.flowBar")
     }
-
-    // MARK: - Pill Content
 
     @ViewBuilder
     private var pillContent: some View {
@@ -65,9 +53,6 @@ struct FlowBar: View {
         }
     }
 
-    // MARK: - Idle Pill
-
-    /// Collapsed mic pill. Tap to start recording.
     private var idlePill: some View {
         HStack(spacing: 12) {
             Image(systemName: "mic.fill")
@@ -92,9 +77,6 @@ struct FlowBar: View {
         .accessibilityIdentifier("nutrition.micButton")
     }
 
-    // MARK: - Recording Pill
-
-    /// Expanded pill with animated waveform bars. Tap to stop.
     private var recordingPill: some View {
         HStack(spacing: 6) {
             Image(systemName: "mic.fill")
@@ -124,7 +106,6 @@ struct FlowBar: View {
         .transition(.scale.combined(with: .opacity))
     }
 
-    /// Animated waveform bars displayed during recording.
     private var waveformBars: some View {
         HStack(spacing: 3) {
             ForEach(0..<5, id: \.self) { index in
@@ -141,9 +122,6 @@ struct FlowBar: View {
         .frame(height: 24)
     }
 
-    // MARK: - Processing Pill
-
-    /// Pill with progress indicator during transcribing/resolving/saving.
     private var processingPill: some View {
         HStack(spacing: 12) {
             ProgressView()
@@ -163,7 +141,6 @@ struct FlowBar: View {
         .transition(.scale.combined(with: .opacity))
     }
 
-    /// Label text for the current processing state.
     private var processingLabel: String {
         switch viewModel.state {
         case .transcribing: return "Transcribing..."
@@ -173,9 +150,6 @@ struct FlowBar: View {
         }
     }
 
-    // MARK: - Saved Pill
-
-    /// Success toast with calorie count.
     private func savedPill(totalCalories: Int) -> some View {
         HStack(spacing: 12) {
             Image(systemName: "checkmark.circle.fill")
@@ -195,9 +169,6 @@ struct FlowBar: View {
         .transition(.scale.combined(with: .opacity))
     }
 
-    // MARK: - Text Fallback Pill
-
-    /// Text field with send button when speech is unavailable.
     private var textFallbackPill: some View {
         HStack(spacing: 8) {
             TextField("Describe your food...", text: $textInput)
@@ -230,9 +201,6 @@ struct FlowBar: View {
         )
     }
 
-    // MARK: - Error Pill
-
-    /// Error message pill, tap to dismiss.
     private func errorPill(error: VoiceNutritionError) -> some View {
         HStack(spacing: 12) {
             Image(systemName: "exclamationmark.triangle.fill")
